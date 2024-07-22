@@ -23,9 +23,11 @@ class _FirstScreenState extends State<FirstScreen>
       vsync: this,
     )..repeat(reverse: true);
 
-    _animation = CurvedAnimation(
-      parent: _controller,
-      curve: Curves.easeInOut,
+    _animation = Tween<double>(begin: 0, end: 1).animate(
+      CurvedAnimation(
+        parent: _controller,
+        curve: Curves.easeInOut,
+      ),
     );
 
     // Start a timer to navigate to the dashboard after 8 seconds
@@ -56,8 +58,16 @@ class _FirstScreenState extends State<FirstScreen>
     return Scaffold(
       backgroundColor: Colors.white,
       body: Center(
-        child: ScaleTransition(
-          scale: _animation,
+        child: AnimatedBuilder(
+          animation: _animation,
+          builder: (context, child) {
+            return Transform(
+              transform: Matrix4.identity()
+                ..rotateY(_animation.value * 3.1416), // Rotate around Y-axis
+              alignment: Alignment.center,
+              child: child,
+            );
+          },
           child: Image.asset(
             'lib/images/xkoyn.png',
             width: 50,
