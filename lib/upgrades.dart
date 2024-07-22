@@ -22,25 +22,6 @@ class _UpgradesState extends State<Upgrades> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.pop(context);
-                    },
-                    child: Container(
-                      width: 25,
-                      padding: const EdgeInsets.all(8),
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(5),
-                          color: Color(0xFFFAFAFA)),
-                      child: const Center(
-                        child: Icon(
-                          Icons.arrow_back_ios,
-                          color: Color.fromARGB(255, 0, 0, 0),
-                          size: 16,
-                        ),
-                      ),
-                    ),
-                  ),
                   const SizedBox(
                     height: 15,
                   ),
