@@ -94,12 +94,12 @@ class _UpgradesState extends State<Upgrades> {
                                           height: 4,
                                         ),
                                         const Text(
-                                          'Regular Vortex',
+                                          'Electro Pack',
                                           style: TextStyle(
                                               color:
                                                   Color.fromARGB(255, 0, 0, 0),
                                               fontWeight: FontWeight.w600,
-                                              fontSize: 14),
+                                              fontSize: 12),
                                         ),
                                         const SizedBox(
                                           height: 2,
@@ -207,23 +207,43 @@ class _UpgradesState extends State<Upgrades> {
                                           height: 4,
                                         ),
                                         const Text(
-                                          'Mega Vortex',
+                                          'Mystic Pack',
                                           style: TextStyle(
                                               color:
                                                   Color.fromARGB(255, 0, 0, 0),
                                               fontWeight: FontWeight.w600,
-                                              fontSize: 14),
+                                              fontSize: 12),
                                         ),
                                         const SizedBox(
                                           height: 2,
                                         ),
-                                        const Text(
-                                          'x6 tokens every hour',
-                                          style: TextStyle(
-                                              color: Color.fromARGB(
-                                                  255, 74, 74, 74),
-                                              fontWeight: FontWeight.w300,
-                                              fontSize: 10),
+                                        Row(
+                                          children: [
+                                            Center(
+                                                child: Transform.translate(
+                                              offset: const Offset(-4, 0),
+                                              child: Image.asset(
+                                                'lib/images/xkoyn.png',
+                                                width: 12,
+                                                height: 12,
+                                              ),
+                                            )),
+                                            const SizedBox(
+                                              width: 3,
+                                            ),
+                                            Center(
+                                                child: Transform.translate(
+                                                    offset: const Offset(-4, 0),
+                                                    child: const Text(
+                                                      '200',
+                                                      style: TextStyle(
+                                                          color: Color.fromARGB(
+                                                              255, 0, 0, 0),
+                                                          fontWeight:
+                                                              FontWeight.w300,
+                                                          fontSize: 10),
+                                                    ))),
+                                          ],
                                         ),
                                         const SizedBox(
                                           height: 6,
@@ -301,23 +321,43 @@ class _UpgradesState extends State<Upgrades> {
                                           height: 4,
                                         ),
                                         const Text(
-                                          'Ultra Vortex',
+                                          'Solar Pack',
                                           style: TextStyle(
                                               color:
                                                   Color.fromARGB(255, 0, 0, 0),
                                               fontWeight: FontWeight.w600,
-                                              fontSize: 14),
+                                              fontSize: 12),
                                         ),
                                         const SizedBox(
                                           height: 2,
                                         ),
-                                        const Text(
-                                          'x9 tokens every hour',
-                                          style: TextStyle(
-                                              color: Color.fromARGB(
-                                                  255, 74, 74, 74),
-                                              fontWeight: FontWeight.w300,
-                                              fontSize: 10),
+                                        Row(
+                                          children: [
+                                            Center(
+                                                child: Transform.translate(
+                                              offset: const Offset(-4, 0),
+                                              child: Image.asset(
+                                                'lib/images/xkoyn.png',
+                                                width: 12,
+                                                height: 12,
+                                              ),
+                                            )),
+                                            const SizedBox(
+                                              width: 3,
+                                            ),
+                                            Center(
+                                                child: Transform.translate(
+                                                    offset: const Offset(-4, 0),
+                                                    child: const Text(
+                                                      '200',
+                                                      style: TextStyle(
+                                                          color: Color.fromARGB(
+                                                              255, 0, 0, 0),
+                                                          fontWeight:
+                                                              FontWeight.w300,
+                                                          fontSize: 10),
+                                                    ))),
+                                          ],
                                         ),
                                         const SizedBox(
                                           height: 6,
@@ -391,23 +431,43 @@ class _UpgradesState extends State<Upgrades> {
                                           height: 4,
                                         ),
                                         const Text(
-                                          'Hyper Vortex',
+                                          'Luna Pack',
                                           style: TextStyle(
                                               color:
                                                   Color.fromARGB(255, 0, 0, 0),
                                               fontWeight: FontWeight.w600,
-                                              fontSize: 14),
+                                              fontSize: 12),
                                         ),
                                         const SizedBox(
                                           height: 2,
                                         ),
-                                        const Text(
-                                          'x12 tokens every hour',
-                                          style: TextStyle(
-                                              color: Color.fromARGB(
-                                                  255, 74, 74, 74),
-                                              fontWeight: FontWeight.w300,
-                                              fontSize: 10),
+                                        Row(
+                                          children: [
+                                            Center(
+                                                child: Transform.translate(
+                                              offset: const Offset(-4, 0),
+                                              child: Image.asset(
+                                                'lib/images/xkoyn.png',
+                                                width: 12,
+                                                height: 12,
+                                              ),
+                                            )),
+                                            const SizedBox(
+                                              width: 3,
+                                            ),
+                                            Center(
+                                                child: Transform.translate(
+                                                    offset: const Offset(-4, 0),
+                                                    child: const Text(
+                                                      '200',
+                                                      style: TextStyle(
+                                                          color: Color.fromARGB(
+                                                              255, 0, 0, 0),
+                                                          fontWeight:
+                                                              FontWeight.w300,
+                                                          fontSize: 10),
+                                                    ))),
+                                          ],
                                         ),
                                         const SizedBox(
                                           height: 6,
@@ -485,23 +545,43 @@ class _UpgradesState extends State<Upgrades> {
                                           height: 4,
                                         ),
                                         const Text(
-                                          'Thunder Vortex',
+                                          'Aqua Pack',
                                           style: TextStyle(
                                               color:
                                                   Color.fromARGB(255, 0, 0, 0),
                                               fontWeight: FontWeight.w600,
-                                              fontSize: 14),
+                                              fontSize: 12),
                                         ),
                                         const SizedBox(
                                           height: 2,
                                         ),
-                                        const Text(
-                                          'x15 tokens every hour',
-                                          style: TextStyle(
-                                              color: Color.fromARGB(
-                                                  255, 74, 74, 74),
-                                              fontWeight: FontWeight.w300,
-                                              fontSize: 10),
+                                        Row(
+                                          children: [
+                                            Center(
+                                                child: Transform.translate(
+                                              offset: const Offset(-4, 0),
+                                              child: Image.asset(
+                                                'lib/images/xkoyn.png',
+                                                width: 12,
+                                                height: 12,
+                                              ),
+                                            )),
+                                            const SizedBox(
+                                              width: 3,
+                                            ),
+                                            Center(
+                                                child: Transform.translate(
+                                                    offset: const Offset(-4, 0),
+                                                    child: const Text(
+                                                      '200',
+                                                      style: TextStyle(
+                                                          color: Color.fromARGB(
+                                                              255, 0, 0, 0),
+                                                          fontWeight:
+                                                              FontWeight.w300,
+                                                          fontSize: 10),
+                                                    ))),
+                                          ],
                                         ),
                                         const SizedBox(
                                           height: 6,
@@ -575,23 +655,43 @@ class _UpgradesState extends State<Upgrades> {
                                           height: 4,
                                         ),
                                         const Text(
-                                          'Turbo Vortex',
+                                          'Inferno Pack',
                                           style: TextStyle(
                                               color:
                                                   Color.fromARGB(255, 0, 0, 0),
                                               fontWeight: FontWeight.w600,
-                                              fontSize: 14),
+                                              fontSize: 12),
                                         ),
                                         const SizedBox(
                                           height: 2,
                                         ),
-                                        const Text(
-                                          'x20 tokens every hour',
-                                          style: TextStyle(
-                                              color: Color.fromARGB(
-                                                  255, 74, 74, 74),
-                                              fontWeight: FontWeight.w300,
-                                              fontSize: 10),
+                                        Row(
+                                          children: [
+                                            Center(
+                                                child: Transform.translate(
+                                              offset: const Offset(-4, 0),
+                                              child: Image.asset(
+                                                'lib/images/xkoyn.png',
+                                                width: 12,
+                                                height: 12,
+                                              ),
+                                            )),
+                                            const SizedBox(
+                                              width: 3,
+                                            ),
+                                            Center(
+                                                child: Transform.translate(
+                                                    offset: const Offset(-4, 0),
+                                                    child: const Text(
+                                                      '200',
+                                                      style: TextStyle(
+                                                          color: Color.fromARGB(
+                                                              255, 0, 0, 0),
+                                                          fontWeight:
+                                                              FontWeight.w300,
+                                                          fontSize: 10),
+                                                    ))),
+                                          ],
                                         ),
                                         const SizedBox(
                                           height: 6,
