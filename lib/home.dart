@@ -3,7 +3,6 @@ import 'package:sensors_plus/sensors_plus.dart';
 import 'dart:async';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:xcoin/invites.dart';
-import 'package:iconsax/iconsax.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
