@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sensors_plus/sensors_plus.dart';
 import 'dart:async';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -20,7 +19,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   double counter2 = 0.00005;
   int progressCounter = 200;
   double progressValue = 1.0;
-  Timer? incrementTimer;
+  bool canIncrement = true;
 
   @override
   void initState() {
@@ -48,51 +47,20 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
         isShaking = false;
       }
     });
-
-    _loadCounter();
   }
 
   @override
   void dispose() {
     _controller.dispose();
     _subscription?.cancel();
-    incrementTimer?.cancel();
     super.dispose();
-  }
-
-  Future<void> _saveCounter() async {
-    final prefs = await SharedPreferences.getInstance();
-    prefs.setInt('counter', counter1);
-    prefs.setDouble('counter2', counter2);
-  }
-
-  Future<void> _loadCounter() async {
-    final prefs = await SharedPreferences.getInstance();
-    setState(() {
-      counter1 = prefs.getInt('counter') ?? 0;
-      counter2 = prefs.getDouble('counter2') ?? 0;
-    });
   }
 
   void _shakeImage() {
     if (progressCounter > 0) {
       _controller.forward(from: 0.0);
       incrementCounter();
-      _saveCounter();
     }
-  }
-
-  void startIncrementing() {
-    incrementTimer = Timer.periodic(Duration(seconds: 1), (timer) {
-      if (progressCounter < 200) {
-        setState(() {
-          progressCounter += 1;
-          progressValue = progressCounter / 200;
-        });
-      } else {
-        incrementTimer?.cancel();
-      }
-    });
   }
 
   void incrementCounter() {
@@ -102,10 +70,9 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
         counter2 += 0.00004;
         progressCounter -= 1;
         progressValue = progressCounter / 200;
-
-        if (progressCounter == 0) {
-          startIncrementing();
-        }
+      } else {
+        progressCounter += 1;
+        progressValue = progressCounter / 200;
       }
     });
   }
@@ -134,11 +101,9 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                               borderRadius: BorderRadius.circular(50)),
                           child: Row(
                             children: const [
-                              Icon(
-                                Icons.person,
-                                color: Color.fromARGB(255, 0, 0, 0),
-                                size: 14,
-                              ),
+                              Icon(Icons.person,
+                                  color: Color.fromARGB(255, 0, 0, 0),
+                                  size: 14),
                             ],
                           ),
                         ),
@@ -162,11 +127,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             borderRadius: BorderRadius.circular(8)),
                         child: Row(
                           children: const [
-                            Icon(
-                              Icons.people,
-                              color: Color.fromARGB(255, 0, 0, 0),
-                              size: 14,
-                            ),
+                            Icon(Icons.people,
+                                color: Color.fromARGB(255, 0, 0, 0), size: 14),
                             SizedBox(
                               width: 4,
                             ),
@@ -209,11 +171,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
-                                Image.asset(
-                                  'lib/images/xkoyn.png',
-                                  width: 10,
-                                  height: 10,
-                                ),
+                                Image.asset('lib/images/xkoyn.png',
+                                    width: 10, height: 10),
                                 const SizedBox(
                                   width: 4,
                                 ),
@@ -232,11 +191,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
-                                Image.asset(
-                                  'lib/images/usdt2.png',
-                                  width: 10,
-                                  height: 10,
-                                ),
+                                Image.asset('lib/images/usdt2.png',
+                                    width: 10, height: 10),
                                 const SizedBox(
                                   width: 4,
                                 ),
@@ -275,11 +231,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
-                                Image.asset(
-                                  'lib/images/xkoyn.png',
-                                  width: 10,
-                                  height: 10,
-                                ),
+                                Image.asset('lib/images/xkoyn.png',
+                                    width: 10, height: 10),
                                 const SizedBox(
                                   width: 4,
                                 ),
@@ -298,11 +251,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
-                                Image.asset(
-                                  'lib/images/usdt2.png',
-                                  width: 10,
-                                  height: 10,
-                                ),
+                                Image.asset('lib/images/usdt2.png',
+                                    width: 10, height: 10),
                                 const SizedBox(
                                   width: 4,
                                 ),
@@ -331,11 +281,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Image.asset(
-                      'lib/images/xkoyn.png',
-                      width: 20,
-                      height: 20,
-                    ),
+                    Image.asset('lib/images/xkoyn.png', width: 20, height: 20),
                     const SizedBox(
                       width: 4,
                     ),
