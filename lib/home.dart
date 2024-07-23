@@ -3,6 +3,7 @@ import 'package:sensors_plus/sensors_plus.dart';
 import 'dart:async';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:xcoin/invites.dart';
+import 'package:iconsax/iconsax.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -22,6 +23,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   int progressCounter = 200;
   double progressValue = 1.0;
   Timer? incrementTimer;
+  String name = '';
 
   @override
   void initState() {
@@ -72,6 +74,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
     setState(() {
       counter1 = prefs.getInt('counter') ?? 0;
       counter2 = prefs.getDouble('counter2') ?? 0;
+      name = prefs.getString('userNickname') ?? '';
     });
   }
 
@@ -146,9 +149,9 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                         const SizedBox(
                           width: 4,
                         ),
-                        const Text(
-                          'Tosin',
-                          style: TextStyle(
+                        Text(
+                          ' $name',
+                          style: const TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
                               fontSize: 12),
                         ),
@@ -349,7 +352,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                     ),
                     Text(
                       '$counter1',
-                      style: TextStyle(
+                      style: const TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontSize: 34,
                           fontWeight: FontWeight.w800),
@@ -365,7 +368,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                     ),
                     Text(
                       counter2.toStringAsFixed(5),
-                      style: TextStyle(
+                      style: const TextStyle(
                           color: Color.fromARGB(255, 127, 127, 127),
                           fontSize: 16,
                           fontWeight: FontWeight.w600),

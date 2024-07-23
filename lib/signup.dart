@@ -11,7 +11,7 @@ class SignUpPage extends StatefulWidget {
 }
 
 class _SignUpPageState extends State<SignUpPage> {
-  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _nicknameController = TextEditingController();
   final TextEditingController _referralController = TextEditingController();
 
   @override
@@ -22,8 +22,8 @@ class _SignUpPageState extends State<SignUpPage> {
 
   Future<void> _checkUserEmail() async {
     final prefs = await SharedPreferences.getInstance();
-    final email = prefs.getString('userEmail');
-    if (email != null) {
+    final nickname = prefs.getString('userNickname');
+    if (nickname != null) {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => const Dashboard()),
@@ -32,11 +32,12 @@ class _SignUpPageState extends State<SignUpPage> {
   }
 
   Future<void> _signUp() async {
-    final String email = _emailController.text;
+    final String nickname = _nicknameController.text;
     final String referralCode = _referralController.text;
 
-    if (email.isNotEmpty) {
-      final userRef = FirebaseFirestore.instance.collection('users').doc(email);
+    if (nickname.isNotEmpty) {
+      final userRef =
+          FirebaseFirestore.instance.collection('users').doc(nickname);
 
       // Check if referral code is valid
       if (referralCode.isNotEmpty) {
@@ -58,14 +59,14 @@ class _SignUpPageState extends State<SignUpPage> {
 
       // Save user data to Firestore
       await userRef.set({
-        'email': email,
+        'nickname': nickname,
         'referralCode': newReferralCode,
         'referrer': referralCode.isNotEmpty ? referralCode : null,
       });
 
       // Save user email and referral code in shared preferences
       final prefs = await SharedPreferences.getInstance();
-      await prefs.setString('userEmail', email);
+      await prefs.setString('userNickname', nickname);
       await prefs.setString('referralCode', newReferralCode);
 
       Navigator.pushReplacement(
@@ -111,7 +112,7 @@ class _SignUpPageState extends State<SignUpPage> {
                   color: Color(0xFF3FAFAFA),
                   borderRadius: BorderRadius.circular(10)),
               child: TextField(
-                controller: _emailController,
+                controller: _nicknameController,
                 style: const TextStyle(
                     fontSize: 12, color: Color.fromARGB(255, 0, 0, 0)),
                 decoration: const InputDecoration(
