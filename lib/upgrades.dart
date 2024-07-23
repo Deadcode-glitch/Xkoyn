@@ -284,7 +284,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                 fontSize: 12),
                                           ),
                                           const SizedBox(
-                                            height: 2,
+                                            height: 4,
                                           ),
                                           Row(
                                             children: [
@@ -305,7 +305,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                       offset:
                                                           const Offset(-4, 0),
                                                       child: const Text(
-                                                        '200',
+                                                        '150',
                                                         style: TextStyle(
                                                             color:
                                                                 Color.fromARGB(
@@ -320,7 +320,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                             ],
                                           ),
                                           const SizedBox(
-                                            height: 6,
+                                            height: 2,
                                           ),
 
                                           //USDT AND BUY ROW
@@ -363,7 +363,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                             0),
                                                                         child:
                                                                             const Text(
-                                                                          '20',
+                                                                          '15',
                                                                           style: TextStyle(
                                                                               color: Color.fromARGB(255, 0, 0, 0),
                                                                               fontWeight: FontWeight.w300,
@@ -429,7 +429,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                           0),
                                                                   child:
                                                                       const Text(
-                                                                    '20',
+                                                                    '10',
                                                                     style: TextStyle(
                                                                         color: Color.fromARGB(
                                                                             255,
@@ -507,7 +507,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                 fontSize: 12),
                                           ),
                                           const SizedBox(
-                                            height: 2,
+                                            height: 4,
                                           ),
                                           Row(
                                             children: [
@@ -528,7 +528,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                       offset:
                                                           const Offset(-4, 0),
                                                       child: const Text(
-                                                        '200',
+                                                        '300',
                                                         style: TextStyle(
                                                             color:
                                                                 Color.fromARGB(
@@ -543,7 +543,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                             ],
                                           ),
                                           const SizedBox(
-                                            height: 6,
+                                            height: 2,
                                           ),
                                           //USDT AND BUY ROW
                                           Container(
@@ -733,7 +733,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                 fontSize: 12),
                                           ),
                                           const SizedBox(
-                                            height: 2,
+                                            height: 4,
                                           ),
                                           Row(
                                             children: [
@@ -754,7 +754,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                       offset:
                                                           const Offset(-4, 0),
                                                       child: const Text(
-                                                        '200',
+                                                        '500',
                                                         style: TextStyle(
                                                             color:
                                                                 Color.fromARGB(
@@ -769,7 +769,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                             ],
                                           ),
                                           const SizedBox(
-                                            height: 6,
+                                            height: 2,
                                           ),
                                           //USDT AND BUY ROW
                                           Container(
@@ -811,7 +811,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                             0),
                                                                         child:
                                                                             const Text(
-                                                                          '20',
+                                                                          '30',
                                                                           style: TextStyle(
                                                                               color: Color.fromARGB(255, 0, 0, 0),
                                                                               fontWeight: FontWeight.w300,
@@ -877,7 +877,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                           0),
                                                                   child:
                                                                       const Text(
-                                                                    '20',
+                                                                    '25',
                                                                     style: TextStyle(
                                                                         color: Color.fromARGB(
                                                                             255,
@@ -955,7 +955,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                 fontSize: 12),
                                           ),
                                           const SizedBox(
-                                            height: 2,
+                                            height: 4,
                                           ),
                                           Row(
                                             children: [
@@ -976,7 +976,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                       offset:
                                                           const Offset(-4, 0),
                                                       child: const Text(
-                                                        '200',
+                                                        '800',
                                                         style: TextStyle(
                                                             color:
                                                                 Color.fromARGB(
@@ -991,7 +991,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                             ],
                                           ),
                                           const SizedBox(
-                                            height: 6,
+                                            height: 2,
                                           ),
                                           //USDT AND BUY ROW
                                           Container(
@@ -1033,7 +1033,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                             0),
                                                                         child:
                                                                             const Text(
-                                                                          '20',
+                                                                          '50',
                                                                           style: TextStyle(
                                                                               color: Color.fromARGB(255, 0, 0, 0),
                                                                               fontWeight: FontWeight.w300,
@@ -1099,7 +1099,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                           0),
                                                                   child:
                                                                       const Text(
-                                                                    '20',
+                                                                    '45',
                                                                     style: TextStyle(
                                                                         color: Color.fromARGB(
                                                                             255,
@@ -1181,7 +1181,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                 fontSize: 12),
                                           ),
                                           const SizedBox(
-                                            height: 2,
+                                            height: 4,
                                           ),
                                           Row(
                                             children: [
@@ -1202,7 +1202,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                       offset:
                                                           const Offset(-4, 0),
                                                       child: const Text(
-                                                        '200',
+                                                        '1500',
                                                         style: TextStyle(
                                                             color:
                                                                 Color.fromARGB(
@@ -1217,7 +1217,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                             ],
                                           ),
                                           const SizedBox(
-                                            height: 6,
+                                            height: 2,
                                           ),
                                           //USDT AND BUY ROW
                                           Container(
@@ -1259,7 +1259,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                             0),
                                                                         child:
                                                                             const Text(
-                                                                          '20',
+                                                                          '100',
                                                                           style: TextStyle(
                                                                               color: Color.fromARGB(255, 0, 0, 0),
                                                                               fontWeight: FontWeight.w300,
@@ -1325,7 +1325,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                           0),
                                                                   child:
                                                                       const Text(
-                                                                    '20',
+                                                                    '95',
                                                                     style: TextStyle(
                                                                         color: Color.fromARGB(
                                                                             255,
@@ -1403,7 +1403,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                 fontSize: 12),
                                           ),
                                           const SizedBox(
-                                            height: 2,
+                                            height: 4,
                                           ),
                                           Row(
                                             children: [
@@ -1424,7 +1424,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                       offset:
                                                           const Offset(-4, 0),
                                                       child: const Text(
-                                                        '200',
+                                                        '2500',
                                                         style: TextStyle(
                                                             color:
                                                                 Color.fromARGB(
@@ -1439,7 +1439,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                             ],
                                           ),
                                           const SizedBox(
-                                            height: 6,
+                                            height: 2,
                                           ),
                                           //USDT AND BUY ROW
                                           Container(
@@ -1481,7 +1481,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                             0),
                                                                         child:
                                                                             const Text(
-                                                                          '20',
+                                                                          '250',
                                                                           style: TextStyle(
                                                                               color: Color.fromARGB(255, 0, 0, 0),
                                                                               fontWeight: FontWeight.w300,
@@ -1547,7 +1547,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                           0),
                                                                   child:
                                                                       const Text(
-                                                                    '20',
+                                                                    '245',
                                                                     style: TextStyle(
                                                                         color: Color.fromARGB(
                                                                             255,
