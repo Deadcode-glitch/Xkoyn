@@ -35,7 +35,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
       if (event.x.abs() > 2 || event.y.abs() > 2 || event.z.abs() > 2) {
         if (!isShaking) {
           isShaking = true;
-          _shakeImage();
+          incrementCounter();
         }
       } else {
         isShaking = false;
@@ -52,6 +52,12 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
 
   void _shakeImage() {
     _controller.forward(from: 0.0);
+  }
+
+  void incrementCounter() {
+    setState(() {
+      _controller.forward(from: 0.0);
+    });
   }
 
   @override
