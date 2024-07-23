@@ -130,7 +130,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
             filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
             child: Container(
               color: Color.fromARGB(255, 255, 224, 147)
-                  .withOpacity(0.7), // Adjust the opacity as needed
+                  .withOpacity(0.9), // Adjust the opacity as needed
             ),
           ),
           Container(
