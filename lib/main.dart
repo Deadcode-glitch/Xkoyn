@@ -4,6 +4,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'dart:js' as js;
 
 import 'package:xcoin/firstscreen.dart';
+import 'package:xcoin/tester.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

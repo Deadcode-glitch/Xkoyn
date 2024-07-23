@@ -1,3 +1,4 @@
+import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:xcoin/home.dart';
 import 'package:xcoin/upgrades.dart';
@@ -22,56 +23,78 @@ class _DashboardState extends State<Dashboard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 255, 255, 255),
-      bottomNavigationBar: Container(
-        padding: const EdgeInsets.all(20),
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(10),
-          child: BottomNavigationBar(
-            onTap: (index) => {
-              setState(() {
-                myIndex = index;
-              })
-            },
-            currentIndex: myIndex,
-            items: const [
-              BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.home,
-                  size: 18,
+      body: Stack(
+        fit: StackFit.expand,
+        children: [
+          // Background image
+          Image.asset(
+            'lib/images/wallpaper.png', // Replace with your image path
+            fit: BoxFit.cover,
+          ),
+          // Transparent overlay with blur
+          BackdropFilter(
+            filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
+            child: Container(
+              color: Color.fromARGB(255, 255, 224, 147)
+                  .withOpacity(0.7), // Adjust the opacity as needed
+            ),
+          ),
+          // Main content
+          Column(
+            children: [
+              Expanded(
+                child: IndexedStack(
+                  index: myIndex,
+                  children: widgetList,
                 ),
-                label: 'Home',
               ),
-              BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.handyman,
-                  size: 20,
+              Container(
+                padding: const EdgeInsets.all(20),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: BottomNavigationBar(
+                    onTap: (index) {
+                      setState(() {
+                        myIndex = index;
+                      });
+                    },
+                    currentIndex: myIndex,
+                    items: const [
+                      BottomNavigationBarItem(
+                        icon: Icon(
+                          Icons.home,
+                          size: 18,
+                        ),
+                        label: 'Home',
+                      ),
+                      BottomNavigationBarItem(
+                        icon: Icon(
+                          Icons.handyman,
+                          size: 20,
+                        ),
+                        label: 'Upgrades',
+                      ),
+                      BottomNavigationBarItem(
+                        icon: Icon(
+                          Icons.wallet,
+                          size: 20,
+                        ),
+                        label: 'Wallet',
+                      ),
+                    ],
+                    selectedFontSize: 11,
+                    unselectedFontSize: 10,
+                    selectedItemColor: Colors.white, // Set selected item color
+                    unselectedItemColor: Color.fromARGB(255, 166, 166, 166),
+                    showSelectedLabels: true,
+                    showUnselectedLabels: true,
+                    backgroundColor: Colors.black, // Set background color
+                  ),
                 ),
-                label: 'Upgrades',
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.wallet,
-                  size: 20,
-                ),
-                label: 'Wallet',
               ),
             ],
-            selectedFontSize: 11,
-            unselectedFontSize: 10,
-            selectedItemColor:
-                Color.fromARGB(255, 255, 255, 255), // Set selected item color
-            unselectedItemColor: Color.fromARGB(255, 166, 166, 166),
-            showSelectedLabels: true,
-            showUnselectedLabels: true,
-            backgroundColor: Colors.black,
-            // Set unselected item color
           ),
-        ),
-      ),
-      body: IndexedStack(
-        children: widgetList,
-        index: myIndex,
+        ],
       ),
     );
   }
