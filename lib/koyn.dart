@@ -18,12 +18,12 @@ class _KoynState extends State<Koyn> {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(20.0),
               side: const BorderSide(
-                color: Color.fromARGB(255, 50, 255, 122),
+                color: Color.fromARGB(255, 144, 144, 144),
                 width: 1.0,
               ), // Border color and width
             ),
             backgroundColor:
-                Colors.grey[900], // Example of custom background color
+                Color(0xFFFAFAFA), // Example of custom background color
             child: Container(
               padding: const EdgeInsets.all(20),
               height: 200,
@@ -33,7 +33,7 @@ class _KoynState extends State<Koyn> {
                   Text(
                     '$action Confirmation',
                     style: const TextStyle(
-                      color: Colors.white,
+                      color: Color.fromARGB(255, 0, 0, 0),
                       fontSize: 14,
                       fontWeight: FontWeight.bold,
                     ),
@@ -43,7 +43,7 @@ class _KoynState extends State<Koyn> {
                     'You cannot perform any transactions yet until coin has been listed on exchange platforms',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                        color: Colors.white,
+                        color: Color(0xFF898989),
                         fontSize: 10,
                         fontWeight: FontWeight.w300),
                   ),
@@ -58,7 +58,7 @@ class _KoynState extends State<Koyn> {
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
-                            color: const Color.fromARGB(255, 50, 255, 122),
+                            color: Color.fromARGB(255, 0, 0, 0),
                           ),
                           padding: const EdgeInsets.symmetric(
                             vertical: 10,
@@ -66,7 +66,9 @@ class _KoynState extends State<Koyn> {
                           ),
                           child: const Text(
                             'close',
-                            style: TextStyle(fontSize: 10, color: Colors.black),
+                            style: TextStyle(
+                                fontSize: 10,
+                                color: Color.fromARGB(255, 255, 255, 255)),
                           ),
                         ),
                       ),
@@ -84,7 +86,7 @@ class _KoynState extends State<Koyn> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Container(
           padding: const EdgeInsets.only(left: 20, top: 20, right: 20),
@@ -105,12 +107,12 @@ class _KoynState extends State<Koyn> {
                         padding: const EdgeInsets.all(8),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(5),
-                          color: const Color.fromARGB(255, 61, 61, 61),
+                          color: Color(0xFFFAFAFA),
                         ),
                         child: const Center(
                           child: Icon(
                             Icons.arrow_back_ios,
-                            color: Colors.white,
+                            color: Color.fromARGB(255, 0, 0, 0),
                             size: 16,
                           ),
                         ),
@@ -120,9 +122,9 @@ class _KoynState extends State<Koyn> {
                       height: 20,
                     ),
                     const Text(
-                      'VORTEX Balance',
+                      'XCOIN Balance',
                       style: TextStyle(
-                        color: Colors.white,
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 12,
                         fontWeight: FontWeight.w400,
                       ),
@@ -136,13 +138,13 @@ class _KoynState extends State<Koyn> {
                         const Text(
                           '0.0',
                           style: TextStyle(
-                            color: Colors.white,
+                            color: Color.fromARGB(255, 255, 255, 255),
                             fontSize: 30,
                             fontWeight: FontWeight.w700,
                           ),
                         ),
                         Image.asset(
-                          'lib/images/volts.png',
+                          'lib/images/xkoyn.png',
                           width: 30,
                           height: 30,
                         ),
@@ -151,7 +153,7 @@ class _KoynState extends State<Koyn> {
                     const Text(
                       '\$0.00',
                       style: TextStyle(
-                        color: Colors.white,
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 12,
                         fontWeight: FontWeight.w300,
                       ),
@@ -174,23 +176,22 @@ class _KoynState extends State<Koyn> {
                         padding: const EdgeInsets.all(4),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8),
-                          color: const Color.fromARGB(255, 52, 52, 52),
+                          color: Color(0xFFFAFAFA),
                         ),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Image.asset(
-                              'lib/images/up.png',
-                              width: 16,
-                              height: 16,
+                          children: const [
+                            Icon(
+                              Icons.arrow_downward,
+                              size: 15,
                             ),
-                            const SizedBox(
+                            SizedBox(
                               width: 4,
                             ),
-                            const Text(
+                            Text(
                               'Deposit',
                               style: TextStyle(
-                                color: Colors.white,
+                                color: Color.fromARGB(255, 0, 0, 0),
                                 fontSize: 12,
                               ),
                             ),
@@ -212,23 +213,22 @@ class _KoynState extends State<Koyn> {
                         padding: const EdgeInsets.all(4),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8),
-                          color: const Color.fromARGB(255, 52, 52, 52),
+                          color: Color(0xFFFAFAFA),
                         ),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Image.asset(
-                              'lib/images/down.png',
-                              width: 16,
-                              height: 16,
+                          children: const [
+                            Icon(
+                              Icons.arrow_downward,
+                              size: 15,
                             ),
-                            const SizedBox(
+                            SizedBox(
                               width: 4,
                             ),
-                            const Text(
-                              'Withdraw',
+                            Text(
+                              'Deposit',
                               style: TextStyle(
-                                color: Colors.white,
+                                color: Color.fromARGB(255, 0, 0, 0),
                                 fontSize: 12,
                               ),
                             ),
@@ -249,7 +249,7 @@ class _KoynState extends State<Koyn> {
                     padding: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
-                      color: const Color.fromARGB(255, 52, 52, 52),
+                      color: Color(0xFFFAFAFA),
                     ),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -257,9 +257,9 @@ class _KoynState extends State<Koyn> {
                         Column(
                           children: const [
                             Text(
-                              'Vortex withdrawals and deposits will be open after the token goes live on exchanges',
+                              'Xcoin withdrawals and deposits will be open after the token goes live on exchanges',
                               style: TextStyle(
-                                color: Colors.white,
+                                color: Color.fromARGB(255, 69, 69, 69),
                                 fontSize: 10,
                                 fontWeight: FontWeight.w300,
                               ),
@@ -272,18 +272,14 @@ class _KoynState extends State<Koyn> {
                   const SizedBox(
                     height: 50,
                   ),
-                  Image.asset(
-                    'lib/images/voltscancel.png',
-                    width: 30,
-                    height: 30,
-                  ),
+                  const Icon(Icons.cancel),
                   const SizedBox(
                     height: 10,
                   ),
                   const Text(
                     'No Transactions',
                     style: TextStyle(
-                      color: Colors.white,
+                      color: Color.fromARGB(255, 0, 0, 0),
                       fontSize: 20,
                       fontWeight: FontWeight.w700,
                     ),

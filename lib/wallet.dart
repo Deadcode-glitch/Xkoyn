@@ -4,6 +4,9 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'dart:ui';
 
+import 'package:xcoin/koyn.dart';
+import 'package:xcoin/uwallet.dart';
+
 class Wallet extends StatefulWidget {
   const Wallet({Key? key}) : super(key: key);
 
@@ -460,7 +463,14 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
             Column(
               children: [
                 GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const Koyn(),
+                      ),
+                    );
+                  },
                   child: Container(
                     height: 50,
                     padding: const EdgeInsets.all(10),
@@ -506,7 +516,14 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                   height: 10,
                 ),
                 GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const Uwallet(),
+                      ),
+                    );
+                  },
                   child: Container(
                     height: 50,
                     padding: const EdgeInsets.all(10),
