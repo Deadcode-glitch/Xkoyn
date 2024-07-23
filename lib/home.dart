@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:sensors_plus/sensors_plus.dart';
+import 'dart:async';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -10,6 +12,8 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _animation;
+  StreamSubscription? _subscription;
+  bool isShaking = false;
 
   @override
   void initState() {
@@ -26,11 +30,23 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
       TweenSequenceItem(tween: Tween(begin: 10.0, end: -10.0), weight: 1),
       TweenSequenceItem(tween: Tween(begin: -10.0, end: 0.0), weight: 1),
     ]).animate(_controller);
+
+    _subscription = accelerometerEvents.listen((AccelerometerEvent event) {
+      if (event.x.abs() > 2 || event.y.abs() > 2 || event.z.abs() > 2) {
+        if (!isShaking) {
+          isShaking = true;
+          _shakeImage();
+        }
+      } else {
+        isShaking = false;
+      }
+    });
   }
 
   @override
   void dispose() {
     _controller.dispose();
+    _subscription?.cancel();
     super.dispose();
   }
 
@@ -322,8 +338,37 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
               height: 20,
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
+                Expanded(
+                  child: Container(
+                    padding: const EdgeInsets.all(4),
+                    decoration:
+                        BoxDecoration(borderRadius: BorderRadius.circular(8)),
+                    child: Row(
+                      children: [
+                        const SizedBox(
+                          width: 4,
+                        ),
+                        Expanded(
+                          child: Container(
+                            width: 100,
+                            height: 6,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(10),
+                              child: const LinearProgressIndicator(
+                                backgroundColor:
+                                    Color.fromARGB(255, 207, 207, 207),
+                                valueColor: AlwaysStoppedAnimation<Color>(
+                                    Color.fromARGB(255, 0, 0, 0)),
+                                minHeight: 10,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
                 Container(
                   padding: const EdgeInsets.all(4),
                   decoration:
@@ -339,31 +384,6 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                     ],
                   ),
                 ),
-                Container(
-                  padding: const EdgeInsets.all(4),
-                  decoration:
-                      BoxDecoration(borderRadius: BorderRadius.circular(8)),
-                  child: Row(
-                    children: [
-                      const SizedBox(
-                        width: 4,
-                      ),
-                      Container(
-                        width: 60,
-                        height: 4,
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(10),
-                          child: const LinearProgressIndicator(
-                            backgroundColor: Color.fromARGB(255, 184, 184, 184),
-                            valueColor: AlwaysStoppedAnimation<Color>(
-                                Color.fromARGB(255, 0, 0, 0)),
-                            minHeight: 10,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                )
               ],
             ),
           ],

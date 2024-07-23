@@ -22,9 +22,6 @@ class _UpgradesState extends State<Upgrades> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const SizedBox(
-                    height: 15,
-                  ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: const [
@@ -116,37 +113,134 @@ class _UpgradesState extends State<Upgrades> {
                                         const SizedBox(
                                           height: 6,
                                         ),
-                                        Row(
-                                          children: [
-                                            Center(
-                                                child: Transform.translate(
-                                              offset: const Offset(-4, 0),
-                                              child: Image.asset(
-                                                'lib/images/usdt2.png',
-                                                width: 12,
-                                                height: 12,
+
+                                        //USDT AND BUY ROW
+                                        Container(
+                                          width:
+                                              MediaQuery.of(context).size.width,
+                                          child: Row(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.spaceBetween,
+                                            children: [
+                                              Container(
+                                                child: Row(
+                                                  children: [
+                                                    Container(
+                                                      child: Row(
+                                                        children: [
+                                                          Center(
+                                                              child: Transform
+                                                                  .translate(
+                                                            offset:
+                                                                const Offset(
+                                                                    -4, 0),
+                                                            child: Image.asset(
+                                                              'lib/images/usdt2.png',
+                                                              width: 12,
+                                                              height: 12,
+                                                            ),
+                                                          )),
+                                                          const SizedBox(
+                                                            width: 3,
+                                                          ),
+                                                          Center(
+                                                              child: Transform
+                                                                  .translate(
+                                                                      offset:
+                                                                          const Offset(
+                                                                              -4,
+                                                                              0),
+                                                                      child:
+                                                                          const Text(
+                                                                        '20',
+                                                                        style: TextStyle(
+                                                                            color: Color.fromARGB(
+                                                                                255,
+                                                                                0,
+                                                                                0,
+                                                                                0),
+                                                                            fontWeight:
+                                                                                FontWeight.w300,
+                                                                            fontSize: 10),
+                                                                      ))),
+                                                        ],
+                                                      ),
+                                                    ),
+                                                    const SizedBox(
+                                                      height: 20,
+                                                    ),
+                                                  ],
+                                                ),
                                               ),
-                                            )),
-                                            const SizedBox(
-                                              width: 3,
-                                            ),
-                                            Center(
-                                                child: Transform.translate(
-                                                    offset: const Offset(-4, 0),
-                                                    child: const Text(
-                                                      '20',
+
+                                              //second
+
+                                              Container(
+                                                padding:
+                                                    const EdgeInsets.all(4),
+                                                decoration: BoxDecoration(
+                                                    color: Colors.amber,
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            10)),
+                                                child: Row(
+                                                  children: [
+                                                    const Text(
+                                                      'Buy - ',
                                                       style: TextStyle(
                                                           color: Color.fromARGB(
-                                                              255, 0, 0, 0),
-                                                          fontWeight:
-                                                              FontWeight.w300,
+                                                              255, 14, 13, 13),
                                                           fontSize: 10),
-                                                    ))),
-                                          ],
+                                                    ),
+                                                    const SizedBox(
+                                                      width: 4,
+                                                    ),
+                                                    Center(
+                                                        child:
+                                                            Transform.translate(
+                                                      offset:
+                                                          const Offset(-4, 0),
+                                                      child: Image.asset(
+                                                        'lib/images/usdt2.png',
+                                                        width: 12,
+                                                        height: 12,
+                                                      ),
+                                                    )),
+                                                    const SizedBox(
+                                                      width: 3,
+                                                    ),
+                                                    Center(
+                                                        child:
+                                                            Transform.translate(
+                                                                offset:
+                                                                    const Offset(
+                                                                        -4, 0),
+                                                                child:
+                                                                    const Text(
+                                                                  '20',
+                                                                  style: TextStyle(
+                                                                      color: Color
+                                                                          .fromARGB(
+                                                                              255,
+                                                                              0,
+                                                                              0,
+                                                                              0),
+                                                                      fontWeight:
+                                                                          FontWeight
+                                                                              .w300,
+                                                                      fontSize:
+                                                                          10),
+                                                                ))),
+                                                  ],
+                                                ),
+                                              ),
+                                            ],
+                                          ),
                                         ),
                                         const SizedBox(
                                           height: 4,
                                         ),
+                                        //END
                                       ],
                                     ),
                                   ),
@@ -229,34 +323,133 @@ class _UpgradesState extends State<Upgrades> {
                                         const SizedBox(
                                           height: 6,
                                         ),
-                                        Row(
-                                          children: [
-                                            Center(
-                                                child: Transform.translate(
-                                              offset: const Offset(-4, 0),
-                                              child: Image.asset(
-                                                'lib/images/usdt2.png',
-                                                width: 12,
-                                                height: 12,
+                                        //USDT AND BUY ROW
+                                        Container(
+                                          width:
+                                              MediaQuery.of(context).size.width,
+                                          child: Row(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.spaceBetween,
+                                            children: [
+                                              Container(
+                                                child: Row(
+                                                  children: [
+                                                    Container(
+                                                      child: Row(
+                                                        children: [
+                                                          Center(
+                                                              child: Transform
+                                                                  .translate(
+                                                            offset:
+                                                                const Offset(
+                                                                    -4, 0),
+                                                            child: Image.asset(
+                                                              'lib/images/usdt2.png',
+                                                              width: 12,
+                                                              height: 12,
+                                                            ),
+                                                          )),
+                                                          const SizedBox(
+                                                            width: 3,
+                                                          ),
+                                                          Center(
+                                                              child: Transform
+                                                                  .translate(
+                                                                      offset:
+                                                                          const Offset(
+                                                                              -4,
+                                                                              0),
+                                                                      child:
+                                                                          const Text(
+                                                                        '20',
+                                                                        style: TextStyle(
+                                                                            color: Color.fromARGB(
+                                                                                255,
+                                                                                0,
+                                                                                0,
+                                                                                0),
+                                                                            fontWeight:
+                                                                                FontWeight.w300,
+                                                                            fontSize: 10),
+                                                                      ))),
+                                                        ],
+                                                      ),
+                                                    ),
+                                                    const SizedBox(
+                                                      height: 20,
+                                                    ),
+                                                  ],
+                                                ),
                                               ),
-                                            )),
-                                            Center(
-                                                child: Transform.translate(
-                                                    offset: const Offset(-4, 0),
-                                                    child: const Text(
-                                                      '100',
+
+                                              //second
+
+                                              Container(
+                                                padding:
+                                                    const EdgeInsets.all(4),
+                                                decoration: BoxDecoration(
+                                                    color: Color(0xFFD2D2D2),
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            10)),
+                                                child: Row(
+                                                  children: [
+                                                    const Text(
+                                                      'Buy - ',
                                                       style: TextStyle(
                                                           color: Color.fromARGB(
-                                                              255, 0, 0, 0),
-                                                          fontWeight:
-                                                              FontWeight.w300,
+                                                              255, 14, 13, 13),
                                                           fontSize: 10),
-                                                    ))),
-                                          ],
+                                                    ),
+                                                    const SizedBox(
+                                                      width: 4,
+                                                    ),
+                                                    Center(
+                                                        child:
+                                                            Transform.translate(
+                                                      offset:
+                                                          const Offset(-4, 0),
+                                                      child: Image.asset(
+                                                        'lib/images/usdt2.png',
+                                                        width: 12,
+                                                        height: 12,
+                                                      ),
+                                                    )),
+                                                    const SizedBox(
+                                                      width: 3,
+                                                    ),
+                                                    Center(
+                                                        child:
+                                                            Transform.translate(
+                                                                offset:
+                                                                    const Offset(
+                                                                        -4, 0),
+                                                                child:
+                                                                    const Text(
+                                                                  '20',
+                                                                  style: TextStyle(
+                                                                      color: Color
+                                                                          .fromARGB(
+                                                                              255,
+                                                                              0,
+                                                                              0,
+                                                                              0),
+                                                                      fontWeight:
+                                                                          FontWeight
+                                                                              .w300,
+                                                                      fontSize:
+                                                                          10),
+                                                                ))),
+                                                  ],
+                                                ),
+                                              ),
+                                            ],
+                                          ),
                                         ),
                                         const SizedBox(
                                           height: 4,
                                         ),
+                                        //END
                                       ],
                                     ),
                                   ),
@@ -343,34 +536,133 @@ class _UpgradesState extends State<Upgrades> {
                                         const SizedBox(
                                           height: 6,
                                         ),
-                                        Row(
-                                          children: [
-                                            Center(
-                                                child: Transform.translate(
-                                              offset: const Offset(-4, 0),
-                                              child: Image.asset(
-                                                'lib/images/usdt2.png',
-                                                width: 12,
-                                                height: 12,
+                                        //USDT AND BUY ROW
+                                        Container(
+                                          width:
+                                              MediaQuery.of(context).size.width,
+                                          child: Row(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.spaceBetween,
+                                            children: [
+                                              Container(
+                                                child: Row(
+                                                  children: [
+                                                    Container(
+                                                      child: Row(
+                                                        children: [
+                                                          Center(
+                                                              child: Transform
+                                                                  .translate(
+                                                            offset:
+                                                                const Offset(
+                                                                    -4, 0),
+                                                            child: Image.asset(
+                                                              'lib/images/usdt2.png',
+                                                              width: 12,
+                                                              height: 12,
+                                                            ),
+                                                          )),
+                                                          const SizedBox(
+                                                            width: 3,
+                                                          ),
+                                                          Center(
+                                                              child: Transform
+                                                                  .translate(
+                                                                      offset:
+                                                                          const Offset(
+                                                                              -4,
+                                                                              0),
+                                                                      child:
+                                                                          const Text(
+                                                                        '20',
+                                                                        style: TextStyle(
+                                                                            color: Color.fromARGB(
+                                                                                255,
+                                                                                0,
+                                                                                0,
+                                                                                0),
+                                                                            fontWeight:
+                                                                                FontWeight.w300,
+                                                                            fontSize: 10),
+                                                                      ))),
+                                                        ],
+                                                      ),
+                                                    ),
+                                                    const SizedBox(
+                                                      height: 20,
+                                                    ),
+                                                  ],
+                                                ),
                                               ),
-                                            )),
-                                            Center(
-                                                child: Transform.translate(
-                                                    offset: const Offset(-4, 0),
-                                                    child: const Text(
-                                                      '100',
+
+                                              //second
+
+                                              Container(
+                                                padding:
+                                                    const EdgeInsets.all(4),
+                                                decoration: BoxDecoration(
+                                                    color: Colors.amber,
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            10)),
+                                                child: Row(
+                                                  children: [
+                                                    const Text(
+                                                      'Buy - ',
                                                       style: TextStyle(
                                                           color: Color.fromARGB(
-                                                              255, 0, 0, 0),
-                                                          fontWeight:
-                                                              FontWeight.w300,
+                                                              255, 14, 13, 13),
                                                           fontSize: 10),
-                                                    ))),
-                                          ],
+                                                    ),
+                                                    const SizedBox(
+                                                      width: 4,
+                                                    ),
+                                                    Center(
+                                                        child:
+                                                            Transform.translate(
+                                                      offset:
+                                                          const Offset(-4, 0),
+                                                      child: Image.asset(
+                                                        'lib/images/usdt2.png',
+                                                        width: 12,
+                                                        height: 12,
+                                                      ),
+                                                    )),
+                                                    const SizedBox(
+                                                      width: 3,
+                                                    ),
+                                                    Center(
+                                                        child:
+                                                            Transform.translate(
+                                                                offset:
+                                                                    const Offset(
+                                                                        -4, 0),
+                                                                child:
+                                                                    const Text(
+                                                                  '20',
+                                                                  style: TextStyle(
+                                                                      color: Color
+                                                                          .fromARGB(
+                                                                              255,
+                                                                              0,
+                                                                              0,
+                                                                              0),
+                                                                      fontWeight:
+                                                                          FontWeight
+                                                                              .w300,
+                                                                      fontSize:
+                                                                          10),
+                                                                ))),
+                                                  ],
+                                                ),
+                                              ),
+                                            ],
+                                          ),
                                         ),
                                         const SizedBox(
                                           height: 4,
                                         ),
+                                        //END
                                       ],
                                     ),
                                   ),
@@ -453,34 +745,133 @@ class _UpgradesState extends State<Upgrades> {
                                         const SizedBox(
                                           height: 6,
                                         ),
-                                        Row(
-                                          children: [
-                                            Center(
-                                                child: Transform.translate(
-                                              offset: const Offset(-4, 0),
-                                              child: Image.asset(
-                                                'lib/images/usdt2.png',
-                                                width: 12,
-                                                height: 12,
+                                        //USDT AND BUY ROW
+                                        Container(
+                                          width:
+                                              MediaQuery.of(context).size.width,
+                                          child: Row(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.spaceBetween,
+                                            children: [
+                                              Container(
+                                                child: Row(
+                                                  children: [
+                                                    Container(
+                                                      child: Row(
+                                                        children: [
+                                                          Center(
+                                                              child: Transform
+                                                                  .translate(
+                                                            offset:
+                                                                const Offset(
+                                                                    -4, 0),
+                                                            child: Image.asset(
+                                                              'lib/images/usdt2.png',
+                                                              width: 12,
+                                                              height: 12,
+                                                            ),
+                                                          )),
+                                                          const SizedBox(
+                                                            width: 3,
+                                                          ),
+                                                          Center(
+                                                              child: Transform
+                                                                  .translate(
+                                                                      offset:
+                                                                          const Offset(
+                                                                              -4,
+                                                                              0),
+                                                                      child:
+                                                                          const Text(
+                                                                        '20',
+                                                                        style: TextStyle(
+                                                                            color: Color.fromARGB(
+                                                                                255,
+                                                                                0,
+                                                                                0,
+                                                                                0),
+                                                                            fontWeight:
+                                                                                FontWeight.w300,
+                                                                            fontSize: 10),
+                                                                      ))),
+                                                        ],
+                                                      ),
+                                                    ),
+                                                    const SizedBox(
+                                                      height: 20,
+                                                    ),
+                                                  ],
+                                                ),
                                               ),
-                                            )),
-                                            Center(
-                                                child: Transform.translate(
-                                                    offset: const Offset(-4, 0),
-                                                    child: const Text(
-                                                      '100',
+
+                                              //second
+
+                                              Container(
+                                                padding:
+                                                    const EdgeInsets.all(4),
+                                                decoration: BoxDecoration(
+                                                    color: Colors.amber,
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            10)),
+                                                child: Row(
+                                                  children: [
+                                                    const Text(
+                                                      'Buy - ',
                                                       style: TextStyle(
                                                           color: Color.fromARGB(
-                                                              255, 0, 0, 0),
-                                                          fontWeight:
-                                                              FontWeight.w300,
+                                                              255, 14, 13, 13),
                                                           fontSize: 10),
-                                                    ))),
-                                          ],
+                                                    ),
+                                                    const SizedBox(
+                                                      width: 4,
+                                                    ),
+                                                    Center(
+                                                        child:
+                                                            Transform.translate(
+                                                      offset:
+                                                          const Offset(-4, 0),
+                                                      child: Image.asset(
+                                                        'lib/images/usdt2.png',
+                                                        width: 12,
+                                                        height: 12,
+                                                      ),
+                                                    )),
+                                                    const SizedBox(
+                                                      width: 3,
+                                                    ),
+                                                    Center(
+                                                        child:
+                                                            Transform.translate(
+                                                                offset:
+                                                                    const Offset(
+                                                                        -4, 0),
+                                                                child:
+                                                                    const Text(
+                                                                  '20',
+                                                                  style: TextStyle(
+                                                                      color: Color
+                                                                          .fromARGB(
+                                                                              255,
+                                                                              0,
+                                                                              0,
+                                                                              0),
+                                                                      fontWeight:
+                                                                          FontWeight
+                                                                              .w300,
+                                                                      fontSize:
+                                                                          10),
+                                                                ))),
+                                                  ],
+                                                ),
+                                              ),
+                                            ],
+                                          ),
                                         ),
                                         const SizedBox(
                                           height: 4,
                                         ),
+                                        //END
                                       ],
                                     ),
                                   ),
@@ -567,34 +958,133 @@ class _UpgradesState extends State<Upgrades> {
                                         const SizedBox(
                                           height: 6,
                                         ),
-                                        Row(
-                                          children: [
-                                            Center(
-                                                child: Transform.translate(
-                                              offset: const Offset(-4, 0),
-                                              child: Image.asset(
-                                                'lib/images/usdt2.png',
-                                                width: 12,
-                                                height: 12,
+                                        //USDT AND BUY ROW
+                                        Container(
+                                          width:
+                                              MediaQuery.of(context).size.width,
+                                          child: Row(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.spaceBetween,
+                                            children: [
+                                              Container(
+                                                child: Row(
+                                                  children: [
+                                                    Container(
+                                                      child: Row(
+                                                        children: [
+                                                          Center(
+                                                              child: Transform
+                                                                  .translate(
+                                                            offset:
+                                                                const Offset(
+                                                                    -4, 0),
+                                                            child: Image.asset(
+                                                              'lib/images/usdt2.png',
+                                                              width: 12,
+                                                              height: 12,
+                                                            ),
+                                                          )),
+                                                          const SizedBox(
+                                                            width: 3,
+                                                          ),
+                                                          Center(
+                                                              child: Transform
+                                                                  .translate(
+                                                                      offset:
+                                                                          const Offset(
+                                                                              -4,
+                                                                              0),
+                                                                      child:
+                                                                          const Text(
+                                                                        '20',
+                                                                        style: TextStyle(
+                                                                            color: Color.fromARGB(
+                                                                                255,
+                                                                                0,
+                                                                                0,
+                                                                                0),
+                                                                            fontWeight:
+                                                                                FontWeight.w300,
+                                                                            fontSize: 10),
+                                                                      ))),
+                                                        ],
+                                                      ),
+                                                    ),
+                                                    const SizedBox(
+                                                      height: 20,
+                                                    ),
+                                                  ],
+                                                ),
                                               ),
-                                            )),
-                                            Center(
-                                                child: Transform.translate(
-                                                    offset: const Offset(-4, 0),
-                                                    child: const Text(
-                                                      '100',
+
+                                              //second
+
+                                              Container(
+                                                padding:
+                                                    const EdgeInsets.all(4),
+                                                decoration: BoxDecoration(
+                                                    color: Colors.amber,
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            10)),
+                                                child: Row(
+                                                  children: [
+                                                    const Text(
+                                                      'Buy - ',
                                                       style: TextStyle(
                                                           color: Color.fromARGB(
-                                                              255, 0, 0, 0),
-                                                          fontWeight:
-                                                              FontWeight.w300,
+                                                              255, 14, 13, 13),
                                                           fontSize: 10),
-                                                    ))),
-                                          ],
+                                                    ),
+                                                    const SizedBox(
+                                                      width: 4,
+                                                    ),
+                                                    Center(
+                                                        child:
+                                                            Transform.translate(
+                                                      offset:
+                                                          const Offset(-4, 0),
+                                                      child: Image.asset(
+                                                        'lib/images/usdt2.png',
+                                                        width: 12,
+                                                        height: 12,
+                                                      ),
+                                                    )),
+                                                    const SizedBox(
+                                                      width: 3,
+                                                    ),
+                                                    Center(
+                                                        child:
+                                                            Transform.translate(
+                                                                offset:
+                                                                    const Offset(
+                                                                        -4, 0),
+                                                                child:
+                                                                    const Text(
+                                                                  '20',
+                                                                  style: TextStyle(
+                                                                      color: Color
+                                                                          .fromARGB(
+                                                                              255,
+                                                                              0,
+                                                                              0,
+                                                                              0),
+                                                                      fontWeight:
+                                                                          FontWeight
+                                                                              .w300,
+                                                                      fontSize:
+                                                                          10),
+                                                                ))),
+                                                  ],
+                                                ),
+                                              ),
+                                            ],
+                                          ),
                                         ),
                                         const SizedBox(
                                           height: 4,
                                         ),
+                                        //END
                                       ],
                                     ),
                                   ),
@@ -677,34 +1167,133 @@ class _UpgradesState extends State<Upgrades> {
                                         const SizedBox(
                                           height: 6,
                                         ),
-                                        Row(
-                                          children: [
-                                            Center(
-                                                child: Transform.translate(
-                                              offset: const Offset(-4, 0),
-                                              child: Image.asset(
-                                                'lib/images/usdt2.png',
-                                                width: 12,
-                                                height: 12,
+                                        //USDT AND BUY ROW
+                                        Container(
+                                          width:
+                                              MediaQuery.of(context).size.width,
+                                          child: Row(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.spaceBetween,
+                                            children: [
+                                              Container(
+                                                child: Row(
+                                                  children: [
+                                                    Container(
+                                                      child: Row(
+                                                        children: [
+                                                          Center(
+                                                              child: Transform
+                                                                  .translate(
+                                                            offset:
+                                                                const Offset(
+                                                                    -4, 0),
+                                                            child: Image.asset(
+                                                              'lib/images/usdt2.png',
+                                                              width: 12,
+                                                              height: 12,
+                                                            ),
+                                                          )),
+                                                          const SizedBox(
+                                                            width: 3,
+                                                          ),
+                                                          Center(
+                                                              child: Transform
+                                                                  .translate(
+                                                                      offset:
+                                                                          const Offset(
+                                                                              -4,
+                                                                              0),
+                                                                      child:
+                                                                          const Text(
+                                                                        '20',
+                                                                        style: TextStyle(
+                                                                            color: Color.fromARGB(
+                                                                                255,
+                                                                                0,
+                                                                                0,
+                                                                                0),
+                                                                            fontWeight:
+                                                                                FontWeight.w300,
+                                                                            fontSize: 10),
+                                                                      ))),
+                                                        ],
+                                                      ),
+                                                    ),
+                                                    const SizedBox(
+                                                      height: 20,
+                                                    ),
+                                                  ],
+                                                ),
                                               ),
-                                            )),
-                                            Center(
-                                                child: Transform.translate(
-                                                    offset: const Offset(-4, 0),
-                                                    child: const Text(
-                                                      '100',
+
+                                              //second
+
+                                              Container(
+                                                padding:
+                                                    const EdgeInsets.all(4),
+                                                decoration: BoxDecoration(
+                                                    color: Colors.amber,
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            10)),
+                                                child: Row(
+                                                  children: [
+                                                    const Text(
+                                                      'Buy - ',
                                                       style: TextStyle(
                                                           color: Color.fromARGB(
-                                                              255, 0, 0, 0),
-                                                          fontWeight:
-                                                              FontWeight.w300,
+                                                              255, 14, 13, 13),
                                                           fontSize: 10),
-                                                    ))),
-                                          ],
+                                                    ),
+                                                    const SizedBox(
+                                                      width: 4,
+                                                    ),
+                                                    Center(
+                                                        child:
+                                                            Transform.translate(
+                                                      offset:
+                                                          const Offset(-4, 0),
+                                                      child: Image.asset(
+                                                        'lib/images/usdt2.png',
+                                                        width: 12,
+                                                        height: 12,
+                                                      ),
+                                                    )),
+                                                    const SizedBox(
+                                                      width: 3,
+                                                    ),
+                                                    Center(
+                                                        child:
+                                                            Transform.translate(
+                                                                offset:
+                                                                    const Offset(
+                                                                        -4, 0),
+                                                                child:
+                                                                    const Text(
+                                                                  '20',
+                                                                  style: TextStyle(
+                                                                      color: Color
+                                                                          .fromARGB(
+                                                                              255,
+                                                                              0,
+                                                                              0,
+                                                                              0),
+                                                                      fontWeight:
+                                                                          FontWeight
+                                                                              .w300,
+                                                                      fontSize:
+                                                                          10),
+                                                                ))),
+                                                  ],
+                                                ),
+                                              ),
+                                            ],
+                                          ),
                                         ),
                                         const SizedBox(
                                           height: 4,
                                         ),
+                                        //END
                                       ],
                                     ),
                                   ),
