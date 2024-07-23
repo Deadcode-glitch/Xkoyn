@@ -249,7 +249,7 @@ class _SendzState extends State<Sendz> with TickerProviderStateMixin {
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 12),
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    color: Color(0xFFFAFAFA),
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: DropdownButtonHideUnderline(
