@@ -44,7 +44,7 @@ class _DashboardState extends State<Dashboard> {
               ),
               BottomNavigationBarItem(
                 icon: Icon(
-                  Icons.upgrade,
+                  Icons.handyman,
                   size: 20,
                 ),
                 label: 'Upgrades',
