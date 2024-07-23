@@ -21,6 +21,19 @@ class _SendzState extends State<Sendz> with TickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _scaleAnimation;
 
+  String? selectedChain;
+
+  final List<Map<String, dynamic>> chains = [
+    {
+      'image': 'lib/images/ton.png', // Replace with your image path
+      'name': 'TON',
+    },
+    {
+      'image': 'lib/images/tron.png', // Replace with your image path
+      'name': 'TRON',
+    },
+  ];
+
   @override
   void initState() {
     super.initState();
@@ -214,6 +227,71 @@ class _SendzState extends State<Sendz> with TickerProviderStateMixin {
                   'Dollar Equivalent: \$$_dollarEquivalent',
                   style: const TextStyle(
                       color: Color.fromARGB(255, 185, 185, 185), fontSize: 10),
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  'Chain',
+                  style: TextStyle(
+                    color: Color.fromARGB(255, 0, 0, 0),
+                    fontSize: 12,
+                  ),
+                ),
+                const SizedBox(height: 8),
+                Container(
+                  padding: EdgeInsets.symmetric(horizontal: 12),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(8),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.2),
+                        spreadRadius: 2,
+                        blurRadius: 5,
+                      ),
+                    ],
+                  ),
+                  child: DropdownButtonHideUnderline(
+                    child: DropdownButton<String>(
+                      value: selectedChain,
+                      icon: Icon(Icons.arrow_drop_down),
+                      iconSize: 18,
+                      isExpanded: true,
+                      onChanged: (String? newValue) {
+                        setState(() {
+                          selectedChain = newValue;
+                        });
+                      },
+                      items: chains.map<DropdownMenuItem<String>>(
+                          (Map<String, dynamic> chain) {
+                        return DropdownMenuItem<String>(
+                          value: chain['name'],
+                          child: Row(
+                            children: [
+                              Image.asset(
+                                chain['image'],
+                                width: 18,
+                                height: 18,
+                              ),
+                              SizedBox(width: 12),
+                              Text(
+                                chain['name'],
+                                style: TextStyle(fontSize: 12),
+                              ),
+                            ],
+                          ),
+                        );
+                      }).toList(),
+                      dropdownColor:
+                          Colors.white, // Background color for the dropdown
+                    ),
+                  ),
                 ),
               ],
             ),

@@ -228,7 +228,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                       ),
                       const SizedBox(height: 10),
                       const Text(
-                        'Yay! You just received 15 USDT for joining. We are giving out 15 USDT to the first 1000 players who join the Vortex telegram game. You can view your balance in your wallet.',
+                        'Yay! You just received 15 USDT for joining. We are giving out 15 USDT to the first 1000 players who join the Xcoin telegram game. You can view your balance in your wallet.',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           color: Color.fromARGB(255, 60, 60, 60),
