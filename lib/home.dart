@@ -92,8 +92,6 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
           progressCounter += 1;
           progressValue = progressCounter / 200;
         });
-      } else if (progressCounter == 200) {
-        incrementTimer?.cancel();
       } else {
         incrementTimer?.cancel();
       }
