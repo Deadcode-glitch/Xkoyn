@@ -63,6 +63,8 @@ class _SendzState extends State<Sendz> with TickerProviderStateMixin {
         curve: Curves.easeInOut,
       ),
     );
+
+    selectedChain = chains.first['name'];
   }
 
   Future<void> _initialize() async {
@@ -249,13 +251,6 @@ class _SendzState extends State<Sendz> with TickerProviderStateMixin {
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(8),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.grey.withOpacity(0.2),
-                        spreadRadius: 2,
-                        blurRadius: 5,
-                      ),
-                    ],
                   ),
                   child: DropdownButtonHideUnderline(
                     child: DropdownButton<String>(
@@ -288,8 +283,9 @@ class _SendzState extends State<Sendz> with TickerProviderStateMixin {
                           ),
                         );
                       }).toList(),
-                      dropdownColor:
-                          Colors.white, // Background color for the dropdown
+
+                      dropdownColor: Colors.white,
+                      // Background color for the dropdown
                     ),
                   ),
                 ),
