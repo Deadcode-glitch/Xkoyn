@@ -117,7 +117,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                       ),
                       const SizedBox(height: 10),
                       const Text(
-                        'Bonus balance is locked. Perform any transaction between 5-10 USDT to unlock and withdraw your bonus',
+                        'You do not have sufficient balance to purchase this pack',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           color: Color.fromARGB(255, 80, 80, 80),
@@ -142,7 +142,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                 horizontal: 20,
                               ),
                               child: const Text(
-                                'Continue',
+                                'Close',
                                 style: TextStyle(
                                   fontSize: 12,
                                   color: Color.fromARGB(255, 0, 0, 0),
