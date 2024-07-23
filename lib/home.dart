@@ -92,6 +92,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
           progressCounter += 1;
           progressValue = progressCounter / 200;
         });
+      } else if (progressCounter == 200) {
+        incrementTimer?.cancel();
       } else {
         incrementTimer?.cancel();
       }
@@ -139,7 +141,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             children: const [
                               Icon(
                                 Icons.person,
-                                color: Color.fromARGB(255, 0, 0, 0),
+                                color: Color.fromARGB(255, 207, 180, 0),
                                 size: 14,
                               ),
                             ],
