@@ -191,7 +191,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                   width: 4,
                                 ),
                                 const Text(
-                                  '+0.005',
+                                  '+0.0005',
                                   style: TextStyle(
                                       color: Color.fromARGB(255, 105, 105, 105),
                                       fontSize: 10,
