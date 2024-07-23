@@ -219,14 +219,14 @@ class _KoynState extends State<Koyn> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: const [
                             Icon(
-                              Icons.arrow_downward,
+                              Icons.arrow_upward,
                               size: 15,
                             ),
                             SizedBox(
                               width: 4,
                             ),
                             Text(
-                              'Deposit',
+                              'Withdraw',
                               style: TextStyle(
                                 color: Color.fromARGB(255, 0, 0, 0),
                                 fontSize: 12,
