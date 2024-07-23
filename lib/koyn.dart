@@ -138,7 +138,7 @@ class _KoynState extends State<Koyn> {
                         const Text(
                           '0.0',
                           style: TextStyle(
-                            color: Color.fromARGB(255, 255, 255, 255),
+                            color: Color.fromARGB(255, 0, 0, 0),
                             fontSize: 30,
                             fontWeight: FontWeight.w700,
                           ),
