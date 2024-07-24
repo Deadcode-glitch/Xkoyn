@@ -27,7 +27,7 @@ class _DashboardState extends State<Dashboard> {
         fit: StackFit.expand,
         children: [
           // Background image
-          Image.asset(
+          /* Image.asset(
             'lib/images/wallpaper.png', // Replace with your image path
             fit: BoxFit.cover,
           ),
@@ -40,6 +40,7 @@ class _DashboardState extends State<Dashboard> {
             ),
           ),
           // Main content
+          */
           Column(
             children: [
               Expanded(
