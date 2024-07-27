@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:math';
+import 'dart:ui';
 
 import 'package:xcoin/dashboard.dart';
 
@@ -10,14 +11,28 @@ class SignUpPage extends StatefulWidget {
   _SignUpPageState createState() => _SignUpPageState();
 }
 
-class _SignUpPageState extends State<SignUpPage> {
+class _SignUpPageState extends State<SignUpPage> with TickerProviderStateMixin {
   final TextEditingController _nicknameController = TextEditingController();
   final TextEditingController _referralController = TextEditingController();
+  late AnimationController _controller;
+  late Animation<double> _scaleAnimation;
 
   @override
   void initState() {
     super.initState();
     _checkUserEmail();
+
+    _controller = AnimationController(
+      vsync: this,
+      duration: const Duration(seconds: 1),
+    )..repeat(reverse: true);
+
+    _scaleAnimation = Tween<double>(begin: 0.4, end: 0.6).animate(
+      CurvedAnimation(
+        parent: _controller,
+        curve: Curves.easeInOut,
+      ),
+    );
   }
 
   Future<void> _checkUserEmail() async {
@@ -82,6 +97,54 @@ class _SignUpPageState extends State<SignUpPage> {
     final random = Random();
     final code = List<int>.generate(6, (index) => random.nextInt(10));
     return code.join('');
+  }
+
+  void _showLoadingDialog() {
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (context) {
+        return Stack(
+          children: [
+            // Blurred background
+            BackdropFilter(
+              filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
+              child: Container(
+                color: Colors.black.withOpacity(0.2),
+              ),
+            ),
+            // Loading animation
+            Center(
+              child: AnimatedBuilder(
+                animation: _controller,
+                builder: (context, child) {
+                  return Transform.scale(
+                    scale: _scaleAnimation.value,
+                    child: child,
+                  );
+                },
+                child: Image.asset(
+                  'lib/images/xkoyn.png',
+                  width: 100,
+                  height: 100,
+                ),
+              ),
+            ),
+          ],
+        );
+      },
+    );
+
+    // Close the loading dialog after 3 seconds
+    Future.delayed(const Duration(seconds: 3), () {
+      Navigator.of(context).pop();
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (context) => const Dashboard(),
+        ),
+      );
+    });
   }
 
   @override
@@ -151,7 +214,7 @@ class _SignUpPageState extends State<SignUpPage> {
             ),
             const SizedBox(height: 40),
             InkWell(
-              onTap: _signUp,
+              onTap: _showLoadingDialog,
               child: Container(
                 width: MediaQuery.of(context).size.width,
                 padding: const EdgeInsets.only(
