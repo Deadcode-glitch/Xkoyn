@@ -199,6 +199,9 @@ class _SignUpPageState extends State<SignUpPage> with TickerProviderStateMixin {
                     fontSize: 12, color: Color.fromARGB(255, 0, 0, 0)),
                 decoration: const InputDecoration(
                   labelText: 'Referral Code',
+                  hintText: 'optional',
+                  hintStyle: TextStyle(
+                      fontSize: 12, color: Color.fromARGB(255, 163, 163, 163)),
                   labelStyle: TextStyle(
                       fontSize: 12, color: Color.fromARGB(255, 133, 133, 133)),
                   enabledBorder:
