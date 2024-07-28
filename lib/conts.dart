@@ -10,8 +10,9 @@ class UpgradeModal extends StatelessWidget {
     return Container(
       width: MediaQuery.of(context).size.width,
       padding: const EdgeInsets.only(left: 25, top: 20, right: 25),
-      decoration:
-          const BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)),
+      decoration: BoxDecoration(
+          color: const Color.fromARGB(255, 255, 255, 255),
+          borderRadius: BorderRadius.circular(20)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
@@ -351,8 +352,9 @@ class UpgradeModal2 extends StatelessWidget {
     return Container(
       width: MediaQuery.of(context).size.width,
       padding: const EdgeInsets.only(left: 25, top: 20, right: 25),
-      decoration:
-          const BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)),
+      decoration: BoxDecoration(
+          color: Color.fromARGB(255, 255, 255, 255),
+          borderRadius: BorderRadius.circular(20)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
@@ -692,8 +694,9 @@ class UpgradeModal3 extends StatelessWidget {
     return Container(
       width: MediaQuery.of(context).size.width,
       padding: const EdgeInsets.only(left: 25, top: 20, right: 25),
-      decoration:
-          const BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)),
+      decoration: BoxDecoration(
+          color: Color.fromARGB(255, 255, 255, 255),
+          borderRadius: BorderRadius.circular(20)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
@@ -1033,8 +1036,9 @@ class UpgradeModal4 extends StatelessWidget {
     return Container(
       width: MediaQuery.of(context).size.width,
       padding: const EdgeInsets.only(left: 25, top: 20, right: 25),
-      decoration:
-          const BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)),
+      decoration: BoxDecoration(
+          color: Color.fromARGB(255, 255, 255, 255),
+          borderRadius: BorderRadius.circular(20)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
@@ -1374,8 +1378,9 @@ class UpgradeModal5 extends StatelessWidget {
     return Container(
       width: MediaQuery.of(context).size.width,
       padding: const EdgeInsets.only(left: 25, top: 20, right: 25),
-      decoration:
-          const BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)),
+      decoration: BoxDecoration(
+          color: Color.fromARGB(255, 255, 255, 255),
+          borderRadius: BorderRadius.circular(20)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
@@ -1715,8 +1720,9 @@ class UpgradeModal6 extends StatelessWidget {
     return Container(
       width: MediaQuery.of(context).size.width,
       padding: const EdgeInsets.only(left: 25, top: 20, right: 25),
-      decoration:
-          const BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)),
+      decoration: BoxDecoration(
+          color: Color.fromARGB(255, 255, 255, 255),
+          borderRadius: BorderRadius.circular(20)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
