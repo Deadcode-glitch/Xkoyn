@@ -22,7 +22,7 @@ class _UwalletState extends State<Uwallet> with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _scaleAnimation;
   DateTime currentDate = DateTime.now();
-  double usdtBalance = 15;
+  double usdtBalance = 10;
   double usdtToDollarRate = 1.0; // Default value
   double dollarEquivalent = 0.0;
 
@@ -235,7 +235,7 @@ class _UwalletState extends State<Uwallet> with SingleTickerProviderStateMixin {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             const Text(
-                              '15',
+                              '10',
                               style: TextStyle(
                                   color: Color.fromARGB(255, 0, 0, 0),
                                   fontSize: 30,
@@ -364,7 +364,7 @@ class _UwalletState extends State<Uwallet> with SingleTickerProviderStateMixin {
                               padding: const EdgeInsets.all(8),
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(50),
-                                color: Color.fromARGB(240, 184, 184, 184),
+                                color: Color.fromARGB(239, 232, 232, 232),
                               ),
                               child: const Icon(
                                 Icons.arrow_downward,
