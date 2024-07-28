@@ -552,7 +552,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                               width: 4,
                             ),
                             const Text(
-                              'XCOIN',
+                              'XKOYN',
                               style: TextStyle(
                                 color: Color.fromARGB(255, 0, 0, 0),
                                 fontSize: 12,

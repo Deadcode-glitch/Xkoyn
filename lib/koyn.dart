@@ -122,7 +122,7 @@ class _KoynState extends State<Koyn> {
                       height: 20,
                     ),
                     const Text(
-                      'XCOIN Balance',
+                      'XKOYN Balance',
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 12,
