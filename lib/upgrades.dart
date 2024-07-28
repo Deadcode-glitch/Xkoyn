@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:xcoin/conts.dart';
 import 'dart:ui';
+
+import 'package:xcoin/profs.dart';
 
 class Upgrades extends StatefulWidget {
   const Upgrades({Key? key}) : super(key: key);
@@ -207,6 +210,108 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
     });
   }
 
+  void _showModal() {
+    showModalBottomSheet(
+        context: context,
+        shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(20), topRight: Radius.circular(20))),
+        builder: (context) {
+          return UpgradeModal(
+            onContinue: () {
+              // Your function to be called when the Continue button is pressed
+              _showLoadingDialog();
+              // You can call your actual function here
+            },
+          );
+        });
+  }
+
+  void _showMystic() {
+    showModalBottomSheet(
+        context: context,
+        shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(20), topRight: Radius.circular(20))),
+        builder: (context) {
+          return UpgradeModal2(
+            onContinue: () {
+              // Your function to be called when the Continue button is pressed
+              _showLoadingDialog();
+              // You can call your actual function here
+            },
+          );
+        });
+  }
+
+  void _showSolar() {
+    showModalBottomSheet(
+        context: context,
+        shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(20), topRight: Radius.circular(20))),
+        builder: (context) {
+          return UpgradeModal3(
+            onContinue: () {
+              // Your function to be called when the Continue button is pressed
+              _showLoadingDialog();
+              // You can call your actual function here
+            },
+          );
+        });
+  }
+
+  void _showLuna() {
+    showModalBottomSheet(
+        context: context,
+        shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(20), topRight: Radius.circular(20))),
+        builder: (context) {
+          return UpgradeModal4(
+            onContinue: () {
+              // Your function to be called when the Continue button is pressed
+              _showLoadingDialog();
+              // You can call your actual function here
+            },
+          );
+        });
+  }
+
+  void _showAqua() {
+    showModalBottomSheet(
+        context: context,
+        shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(20), topRight: Radius.circular(20))),
+        builder: (context) {
+          return UpgradeModal5(
+            onContinue: () {
+              // Your function to be called when the Continue button is pressed
+              _showLoadingDialog();
+              // You can call your actual function here
+            },
+          );
+        });
+  }
+
+  void _showInferno() {
+    showModalBottomSheet(
+        context: context,
+        shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(20), topRight: Radius.circular(20))),
+        builder: (context) {
+          return UpgradeModal6(
+            onContinue: () {
+              // Your function to be called when the Continue button is pressed
+              _showLoadingDialog();
+              // You can call your actual function here
+            },
+          );
+        });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -243,7 +348,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                           Expanded(
                             child: GestureDetector(
                               onTap: () {
-                                _showLoadingDialog();
+                                _showModal();
                               },
                               child: Container(
                                 height: 170,
@@ -466,7 +571,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                           Expanded(
                             child: GestureDetector(
                               onTap: () {
-                                _showLoadingDialog();
+                                _showMystic();
                               },
                               child: Container(
                                 height: 170,
@@ -692,7 +797,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                           Expanded(
                             child: GestureDetector(
                               onTap: () {
-                                _showLoadingDialog();
+                                _showSolar();
                               },
                               child: Container(
                                 height: 170,
@@ -914,7 +1019,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                           Expanded(
                             child: GestureDetector(
                               onTap: () {
-                                _showLoadingDialog();
+                                _showLuna();
                               },
                               child: Container(
                                 height: 170,
@@ -1140,7 +1245,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                           Expanded(
                             child: GestureDetector(
                               onTap: () {
-                                _showLoadingDialog();
+                                _showAqua();
                               },
                               child: Container(
                                 height: 170,
@@ -1362,7 +1467,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                           Expanded(
                             child: GestureDetector(
                               onTap: () {
-                                _showLoadingDialog();
+                                _showInferno();
                               },
                               child: Container(
                                 height: 170,
@@ -1503,8 +1608,12 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                   padding:
                                                       const EdgeInsets.all(4),
                                                   decoration: BoxDecoration(
-                                                      color: Color.fromARGB(
-                                                          255, 217, 217, 217),
+                                                      color:
+                                                          const Color.fromARGB(
+                                                              255,
+                                                              217,
+                                                              217,
+                                                              217),
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               10)),

@@ -138,12 +138,7 @@ class _SignUpPageState extends State<SignUpPage> with TickerProviderStateMixin {
     // Close the loading dialog after 3 seconds
     Future.delayed(const Duration(seconds: 3), () {
       Navigator.of(context).pop();
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(
-          builder: (context) => const Dashboard(),
-        ),
-      );
+      _signUp();
     });
   }
 

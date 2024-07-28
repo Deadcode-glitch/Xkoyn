@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
 import 'package:http/http.dart' as http;
+import 'package:xcoin/depo.dart';
 import 'dart:convert';
 import 'dart:ui';
 
 import 'package:xcoin/koyn.dart';
+import 'package:xcoin/ussf.dart';
 import 'package:xcoin/uwallet.dart';
 
 class Wallet extends StatefulWidget {
@@ -20,7 +22,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
   late AnimationController _rotationController;
   late AnimationController _controller;
   late Animation<double> _scaleAnimation;
-  double usdtBalance = 15;
+  double usdtBalance = 10;
   double usdtToDollarRate = 1.0; // Default value
   double dollarEquivalent = 0.0;
 
@@ -228,7 +230,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                       ),
                       const SizedBox(height: 10),
                       const Text(
-                        'Yay! You just received 15 USDT for joining. We are giving out 15 USDT to the first 1000 players who join the Xcoin telegram game. You can view your balance in your wallet.',
+                        'Yay! You just received 10 USDT for joining. We are giving out 10 USDT to random players who join the XKoyn telegram mini app. You can view your balance in your wallet.',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           color: Color.fromARGB(255, 60, 60, 60),
@@ -318,6 +320,54 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
     });
   }
 
+  void _showLoadingDialog2() {
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (context) {
+        return Stack(
+          children: [
+            // Blurred background
+            BackdropFilter(
+              filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
+              child: Container(
+                color: Colors.black.withOpacity(0.2),
+              ),
+            ),
+            // Loading animation
+            Center(
+              child: AnimatedBuilder(
+                animation: _controller,
+                builder: (context, child) {
+                  return Transform.scale(
+                    scale: _scaleAnimation.value,
+                    child: child,
+                  );
+                },
+                child: Image.asset(
+                  'lib/images/xkoyn.png',
+                  width: 100,
+                  height: 100,
+                ),
+              ),
+            ),
+          ],
+        );
+      },
+    );
+
+    // Close the loading dialog after 3 seconds
+    Future.delayed(const Duration(seconds: 3), () {
+      Navigator.of(context).pop();
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => const Depo(),
+        ),
+      );
+    });
+  }
+
   Future<double> fetchUsdtToDollarRate() async {
     final url =
         'https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd';
@@ -388,7 +438,17 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
               children: [
                 Expanded(
                   child: GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      _showLoadingDialog2();
+                    },
+                    onDoubleTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Sway(),
+                        ),
+                      );
+                    },
                     child: Container(
                       height: 50,
                       padding: const EdgeInsets.all(4),
@@ -558,7 +618,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                           crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
                             const Text(
-                              '15',
+                              '10',
                               style: TextStyle(
                                 color: Color.fromARGB(255, 0, 0, 0),
                                 fontSize: 12,

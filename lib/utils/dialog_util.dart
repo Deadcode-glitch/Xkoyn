@@ -65,7 +65,7 @@ class DialogUtil {
                       ),
                       const SizedBox(height: 10),
                       const Text(
-                        'Bonus balance is locked. Perform any transaction between 5-10 USDT to unlock and withdraw your bonus',
+                        'Bonus balance is locked. Perform any transaction between 10-15 USDT to unlock and withdraw your bonus',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           color: Color.fromARGB(255, 99, 99, 99),

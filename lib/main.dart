@@ -5,6 +5,7 @@ import 'dart:js' as js;
 
 import 'package:xcoin/firstscreen.dart';
 import 'package:xcoin/tester.dart';
+import 'package:xcoin/ussf.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

@@ -368,7 +368,7 @@ class _UwalletState extends State<Uwallet> with SingleTickerProviderStateMixin {
                               ),
                               child: const Icon(
                                 Icons.arrow_downward,
-                                color: Color.fromARGB(255, 77, 77, 77),
+                                color: Color.fromARGB(255, 17, 202, 0),
                                 size: 16,
                               )),
                           const SizedBox(
@@ -382,7 +382,7 @@ class _UwalletState extends State<Uwallet> with SingleTickerProviderStateMixin {
                                 Text(
                                   'Received',
                                   style: TextStyle(
-                                      color: Color.fromARGB(255, 0, 0, 0),
+                                      color: Color.fromRGBO(0, 0, 0, 1),
                                       fontSize: 12),
                                 ),
                                 Text(
@@ -399,7 +399,7 @@ class _UwalletState extends State<Uwallet> with SingleTickerProviderStateMixin {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               const Text(
-                                '+15 USDT',
+                                '+10 USDT',
                                 style: TextStyle(
                                     color: Color.fromARGB(255, 0, 0, 0),
                                     fontSize: 12),
