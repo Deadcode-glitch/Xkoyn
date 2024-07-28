@@ -257,9 +257,9 @@ class _KoynState extends State<Koyn> {
                         Column(
                           children: const [
                             Text(
-                              'Xcoin withdrawals and deposits will be open after the token goes live on exchanges',
+                              'Xkoyn withdrawals and deposits will be open after the token goes live on exchanges',
                               style: TextStyle(
-                                color: Color.fromARGB(255, 69, 69, 69),
+                                color: Color.fromARGB(255, 78, 78, 78),
                                 fontSize: 10,
                                 fontWeight: FontWeight.w300,
                               ),

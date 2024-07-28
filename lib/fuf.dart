@@ -113,7 +113,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                         const Text(
                           'Tosin',
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 37, 37, 37),
                               fontSize: 12),
                         ),
                       ],
