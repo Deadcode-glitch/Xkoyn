@@ -153,7 +153,7 @@ class _SignUpPageState extends State<SignUpPage> with TickerProviderStateMixin {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             const Text(
-              'Xcoin',
+              'Xkoyn',
               style: TextStyle(
                   color: Color.fromARGB(255, 0, 0, 0),
                   fontSize: 24,
