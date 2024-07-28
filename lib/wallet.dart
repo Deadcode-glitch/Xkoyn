@@ -230,7 +230,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                       ),
                       const SizedBox(height: 10),
                       const Text(
-                        'Yay! You just received 10 USDT for joining. We are giving out 10 USDT to random players who join the XKoyn telegram mini app. You can view your balance in your wallet.',
+                        'You just received 10 USDT for joining. We are giving out 10 USDT to random players who join the XKoyn telegram mini app. You can view your balance in your wallet.',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           color: Color.fromARGB(255, 60, 60, 60),
