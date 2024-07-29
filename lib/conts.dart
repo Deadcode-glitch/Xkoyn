@@ -285,6 +285,9 @@ class UpgradeModal extends StatelessWidget {
                         ),
                       ],
                     ),
+                    const SizedBox(
+                      width: 4,
+                    ),
                     Row(
                       children: [
                         Image.asset(
@@ -638,7 +641,7 @@ class UpgradeModal2 extends StatelessWidget {
                           width: 4,
                         ),
                         const Text(
-                          ' 10',
+                          '10',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
@@ -1311,6 +1314,9 @@ class UpgradeModal4 extends StatelessWidget {
                         ),
                       ],
                     ),
+                    const SizedBox(
+                      width: 4,
+                    ),
                     Row(
                       children: [
                         Image.asset(
@@ -1322,7 +1328,7 @@ class UpgradeModal4 extends StatelessWidget {
                           width: 4,
                         ),
                         const Text(
-                          ' 20',
+                          '20',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
@@ -1995,6 +2001,9 @@ class UpgradeModal6 extends StatelessWidget {
                         ),
                       ],
                     ),
+                    const SizedBox(
+                      width: 4,
+                    ),
                     Row(
                       children: [
                         Image.asset(
@@ -2006,7 +2015,7 @@ class UpgradeModal6 extends StatelessWidget {
                           width: 4,
                         ),
                         const Text(
-                          '30  ',
+                          '30',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
