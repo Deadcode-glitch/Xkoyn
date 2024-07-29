@@ -972,6 +972,9 @@ class UpgradeModal3 extends StatelessWidget {
                         ),
                       ],
                     ),
+                    const SizedBox(
+                      width: 4,
+                    ),
                     Row(
                       children: [
                         Image.asset(
@@ -983,7 +986,7 @@ class UpgradeModal3 extends StatelessWidget {
                           width: 4,
                         ),
                         const Text(
-                          '15 ',
+                          '15',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
