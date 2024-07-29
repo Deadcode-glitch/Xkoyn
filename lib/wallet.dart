@@ -8,6 +8,7 @@ import 'dart:ui';
 import 'package:xcoin/koyn.dart';
 import 'package:xcoin/ussf.dart';
 import 'package:xcoin/uwallet.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class Wallet extends StatefulWidget {
   const Wallet({Key? key}) : super(key: key);
@@ -59,7 +60,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
       ),
     );
 
-    _showWelcomeDialog();
+    //_showWelcomeDialog();
 
     fetchUsdtToDollarRate().then((rate) {
       setState(() {
@@ -67,6 +68,8 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
         dollarEquivalent = usdtBalance * usdtToDollarRate;
       });
     });
+
+    _checkWelcomeDialogStatus();
   }
 
   @override
@@ -184,12 +187,21 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
     });
   }
 
+  Future<void> _checkWelcomeDialogStatus() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    bool hasSeenWelcomeDialog = prefs.getBool('hasSeenWelcomeDialog') ?? false;
+
+    if (!hasSeenWelcomeDialog) {
+      _showWelcomeDialog();
+    }
+  }
+
   void _showWelcomeDialog() {
     Future.delayed(Duration.zero, () {
       _slideController.forward();
       showDialog(
         context: context,
-        barrierDismissible: true,
+        barrierDismissible: false,
         builder: (BuildContext context) {
           return SlideTransition(
             position: _offsetAnimation,
@@ -245,6 +257,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                           GestureDetector(
                             onTap: () {
                               Navigator.of(context).pop();
+                              _setWelcomeDialogSeen();
                             },
                             child: Container(
                               decoration: BoxDecoration(
@@ -275,6 +288,11 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
         },
       ).then((_) => _slideController.reset());
     });
+  }
+
+  Future<void> _setWelcomeDialogSeen() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.setBool('hasSeenWelcomeDialog', true);
   }
 
   void _showLoadingDialog() {
