@@ -296,7 +296,7 @@ class UpgradeModal extends StatelessWidget {
                           width: 4,
                         ),
                         const Text(
-                          '0.000150  ',
+                          '5',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
@@ -638,7 +638,7 @@ class UpgradeModal2 extends StatelessWidget {
                           width: 4,
                         ),
                         const Text(
-                          ' 0.000200  ',
+                          ' 10',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
@@ -980,7 +980,7 @@ class UpgradeModal3 extends StatelessWidget {
                           width: 4,
                         ),
                         const Text(
-                          '0.000250 ',
+                          '15 ',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
@@ -1322,7 +1322,7 @@ class UpgradeModal4 extends StatelessWidget {
                           width: 4,
                         ),
                         const Text(
-                          ' 0.000300 ',
+                          ' 20',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
@@ -1664,7 +1664,7 @@ class UpgradeModal5 extends StatelessWidget {
                           width: 4,
                         ),
                         const Text(
-                          ' 0.000350 ',
+                          ' 25 ',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
@@ -2006,7 +2006,7 @@ class UpgradeModal6 extends StatelessWidget {
                           width: 4,
                         ),
                         const Text(
-                          '0.000400  ',
+                          '30  ',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
