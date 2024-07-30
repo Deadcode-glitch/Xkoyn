@@ -157,7 +157,8 @@ class _SignUpPageState extends State<SignUpPage> with TickerProviderStateMixin {
               style: TextStyle(
                   color: Color.fromARGB(255, 0, 0, 0),
                   fontSize: 24,
-                  fontWeight: FontWeight.w600),
+                  fontFamily: 'OpenSans Medium',
+                  fontWeight: FontWeight.w900),
             ),
             const SizedBox(
               height: 20,
@@ -176,7 +177,9 @@ class _SignUpPageState extends State<SignUpPage> with TickerProviderStateMixin {
                 decoration: const InputDecoration(
                   labelText: 'Nickname',
                   labelStyle: TextStyle(
-                      fontSize: 12, color: Color.fromARGB(255, 133, 133, 133)),
+                      fontSize: 12,
+                      color: Color.fromARGB(255, 133, 133, 133),
+                      fontFamily: 'OpenSans Regular'),
                   enabledBorder:
                       InputBorder.none, // Remove underline when enabled
                   focusedBorder: InputBorder.none,
@@ -201,9 +204,13 @@ class _SignUpPageState extends State<SignUpPage> with TickerProviderStateMixin {
                   labelText: 'Referral Code',
                   hintText: 'optional',
                   hintStyle: TextStyle(
-                      fontSize: 12, color: Color.fromARGB(255, 163, 163, 163)),
+                      fontSize: 12,
+                      color: Color.fromARGB(255, 163, 163, 163),
+                      fontFamily: 'OpenSans Regular'),
                   labelStyle: TextStyle(
-                      fontSize: 12, color: Color.fromARGB(255, 133, 133, 133)),
+                      fontSize: 12,
+                      color: Color.fromARGB(255, 133, 133, 133),
+                      fontFamily: 'OpenSans Regular'),
                   enabledBorder:
                       InputBorder.none, // Remove underline when enabled
                   focusedBorder: InputBorder.none,
@@ -227,6 +234,7 @@ class _SignUpPageState extends State<SignUpPage> with TickerProviderStateMixin {
                     style: TextStyle(
                         color: Color.fromARGB(255, 255, 255, 255),
                         fontSize: 12,
+                        fontFamily: 'OpenSans Medium',
                         fontWeight: FontWeight.w500),
                   ),
                 ),
