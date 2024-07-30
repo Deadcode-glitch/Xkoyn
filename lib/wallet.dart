@@ -459,14 +459,14 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                     onTap: () {
                       _showLoadingDialog2();
                     },
-                    onDoubleTap: () {
+                    /*onDoubleTap: () {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
                           builder: (context) => const Sway(),
                         ),
                       );
-                    },
+                    }, */
                     child: Container(
                       height: 50,
                       padding: const EdgeInsets.all(4),
