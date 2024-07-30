@@ -115,6 +115,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                         style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontSize: 14,
+                          fontFamily: 'Montserrat SemiBold',
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -125,6 +126,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                         style: TextStyle(
                           color: Color.fromARGB(255, 80, 80, 80),
                           fontSize: 10,
+                          fontFamily: 'Montserrat Regular',
                           fontWeight: FontWeight.w300,
                         ),
                       ),
@@ -148,6 +150,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                 'Close',
                                 style: TextStyle(
                                   fontSize: 12,
+                                  fontFamily: 'Montserrat SemiBold',
                                   color: Color.fromARGB(255, 0, 0, 0),
                                   fontWeight: FontWeight.w600,
                                 ),
@@ -334,6 +337,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                         style: TextStyle(
                             color: Color.fromARGB(255, 0, 0, 0),
                             fontWeight: FontWeight.w700,
+                            fontFamily: 'Montserrat SemiBold',
                             fontSize: 22),
                       ),
                     ],
@@ -386,6 +390,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                 color: Color.fromARGB(
                                                     255, 0, 0, 0),
                                                 fontWeight: FontWeight.w600,
+                                                fontFamily: 'Montserrat Medium',
                                                 fontSize: 12),
                                           ),
                                           const SizedBox(
@@ -420,6 +425,8 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                     0),
                                                             fontWeight:
                                                                 FontWeight.w300,
+                                                            fontFamily:
+                                                                'Montserrat Regular',
                                                             fontSize: 10),
                                                       ))),
                                             ],
@@ -472,6 +479,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                           style: TextStyle(
                                                                               color: Color.fromARGB(255, 0, 0, 0),
                                                                               fontWeight: FontWeight.w300,
+                                                                              fontFamily: 'Montserrat Regular',
                                                                               fontSize: 10),
                                                                         ))),
                                                           ],
@@ -506,6 +514,8 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                     14,
                                                                     13,
                                                                     13),
+                                                            fontFamily:
+                                                                'Montserrat Regular',
                                                             fontSize: 10),
                                                       ),
                                                       const SizedBox(
@@ -544,6 +554,8 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                         fontWeight:
                                                                             FontWeight
                                                                                 .w300,
+                                                                        fontFamily:
+                                                                            'Montserrat Regular',
                                                                         fontSize:
                                                                             10),
                                                                   ))),
@@ -609,6 +621,8 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                 color: Color.fromARGB(
                                                     255, 0, 0, 0),
                                                 fontWeight: FontWeight.w600,
+                                                fontFamily:
+                                                    'Montserrat SemiBold',
                                                 fontSize: 12),
                                           ),
                                           const SizedBox(
@@ -643,6 +657,8 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                     0),
                                                             fontWeight:
                                                                 FontWeight.w300,
+                                                            fontFamily:
+                                                                'Montserrat Regular',
                                                             fontSize: 10),
                                                       ))),
                                             ],
@@ -694,6 +710,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                           style: TextStyle(
                                                                               color: Color.fromARGB(255, 0, 0, 0),
                                                                               fontWeight: FontWeight.w300,
+                                                                              fontFamily: 'Montserrat Regular',
                                                                               fontSize: 10),
                                                                         ))),
                                                           ],
@@ -728,6 +745,8 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                     14,
                                                                     13,
                                                                     13),
+                                                            fontFamily:
+                                                                'Montserrat Regular',
                                                             fontSize: 10),
                                                       ),
                                                       const SizedBox(
@@ -763,6 +782,8 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                             0,
                                                                             0,
                                                                             0),
+                                                                        fontFamily:
+                                                                            'Montserrat Regular',
                                                                         fontWeight:
                                                                             FontWeight
                                                                                 .w300,
@@ -835,6 +856,8 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                 color: Color.fromARGB(
                                                     255, 0, 0, 0),
                                                 fontWeight: FontWeight.w600,
+                                                fontFamily:
+                                                    'Montserrat SemiBold',
                                                 fontSize: 12),
                                           ),
                                           const SizedBox(
@@ -869,6 +892,8 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                     0),
                                                             fontWeight:
                                                                 FontWeight.w300,
+                                                            fontFamily:
+                                                                'Montserrat Regular',
                                                             fontSize: 10),
                                                       ))),
                                             ],
@@ -920,6 +945,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                           style: TextStyle(
                                                                               color: Color.fromARGB(255, 0, 0, 0),
                                                                               fontWeight: FontWeight.w300,
+                                                                              fontFamily: 'Montserrat Regular',
                                                                               fontSize: 10),
                                                                         ))),
                                                           ],
@@ -954,6 +980,8 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                     14,
                                                                     13,
                                                                     13),
+                                                            fontFamily:
+                                                                'Montserrat Regular',
                                                             fontSize: 10),
                                                       ),
                                                       const SizedBox(
@@ -989,6 +1017,8 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                             0,
                                                                             0,
                                                                             0),
+                                                                        fontFamily:
+                                                                            'Montserrat Regular',
                                                                         fontWeight:
                                                                             FontWeight
                                                                                 .w300,
@@ -1057,6 +1087,8 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                 color: Color.fromARGB(
                                                     255, 0, 0, 0),
                                                 fontWeight: FontWeight.w600,
+                                                fontFamily:
+                                                    'Montserrat SemiBold',
                                                 fontSize: 12),
                                           ),
                                           const SizedBox(
@@ -1091,6 +1123,8 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                     0),
                                                             fontWeight:
                                                                 FontWeight.w300,
+                                                            fontFamily:
+                                                                'Montserrat Regular',
                                                             fontSize: 10),
                                                       ))),
                                             ],
@@ -1142,6 +1176,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                           style: TextStyle(
                                                                               color: Color.fromARGB(255, 0, 0, 0),
                                                                               fontWeight: FontWeight.w300,
+                                                                              fontFamily: 'Montserrat Regular',
                                                                               fontSize: 10),
                                                                         ))),
                                                           ],
@@ -1176,6 +1211,8 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                     14,
                                                                     13,
                                                                     13),
+                                                            fontFamily:
+                                                                'Montserrat Regular',
                                                             fontSize: 10),
                                                       ),
                                                       const SizedBox(
@@ -1211,6 +1248,8 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                             0,
                                                                             0,
                                                                             0),
+                                                                        fontFamily:
+                                                                            'Montserrat Regular',
                                                                         fontWeight:
                                                                             FontWeight
                                                                                 .w300,
@@ -1283,6 +1322,8 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                 color: Color.fromARGB(
                                                     255, 0, 0, 0),
                                                 fontWeight: FontWeight.w600,
+                                                fontFamily:
+                                                    'Montserrat SemiBold',
                                                 fontSize: 12),
                                           ),
                                           const SizedBox(
@@ -1315,6 +1356,8 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                     0,
                                                                     0,
                                                                     0),
+                                                            fontFamily:
+                                                                'Montserrat Regular',
                                                             fontWeight:
                                                                 FontWeight.w300,
                                                             fontSize: 10),
@@ -1368,6 +1411,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                           style: TextStyle(
                                                                               color: Color.fromARGB(255, 0, 0, 0),
                                                                               fontWeight: FontWeight.w300,
+                                                                              fontFamily: 'Montserrat Regular',
                                                                               fontSize: 10),
                                                                         ))),
                                                           ],
@@ -1402,6 +1446,8 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                     14,
                                                                     13,
                                                                     13),
+                                                            fontFamily:
+                                                                'Montserrat Regular',
                                                             fontSize: 10),
                                                       ),
                                                       const SizedBox(
@@ -1437,6 +1483,8 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                             0,
                                                                             0,
                                                                             0),
+                                                                        fontFamily:
+                                                                            'Montserrat Regular',
                                                                         fontWeight:
                                                                             FontWeight
                                                                                 .w300,
@@ -1504,6 +1552,8 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                             style: TextStyle(
                                                 color: Color.fromARGB(
                                                     255, 0, 0, 0),
+                                                fontFamily:
+                                                    'Montserrat SemiBold',
                                                 fontWeight: FontWeight.w600,
                                                 fontSize: 12),
                                           ),
@@ -1537,6 +1587,8 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                     0,
                                                                     0,
                                                                     0),
+                                                            fontFamily:
+                                                                'Montserrat Regular',
                                                             fontWeight:
                                                                 FontWeight.w300,
                                                             fontSize: 10),
@@ -1590,6 +1642,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                           style: TextStyle(
                                                                               color: Color.fromARGB(255, 0, 0, 0),
                                                                               fontWeight: FontWeight.w300,
+                                                                              fontFamily: 'Montserrat Regular',
                                                                               fontSize: 10),
                                                                         ))),
                                                           ],
@@ -1628,6 +1681,8 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                     14,
                                                                     13,
                                                                     13),
+                                                            fontFamily:
+                                                                'Montserrat Regular',
                                                             fontSize: 10),
                                                       ),
                                                       const SizedBox(
@@ -1663,6 +1718,8 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                             0,
                                                                             0,
                                                                             0),
+                                                                        fontFamily:
+                                                                            'Montserrat Regular',
                                                                         fontWeight:
                                                                             FontWeight
                                                                                 .w300,

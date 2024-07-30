@@ -29,6 +29,7 @@ class UpgradeModal extends StatelessWidget {
             style: TextStyle(
                 color: Color.fromARGB(255, 0, 0, 0),
                 fontSize: 24,
+                fontFamily: 'Montserrat SemiBold',
                 fontWeight: FontWeight.w700),
           ),
           const SizedBox(
@@ -45,6 +46,7 @@ class UpgradeModal extends StatelessWidget {
                     style: TextStyle(
                         color: Color.fromARGB(255, 165, 165, 165),
                         fontWeight: FontWeight.w300,
+                        fontFamily: 'Montserrat Regular',
                         fontSize: 12),
                   ),
                 ],
@@ -59,7 +61,9 @@ class UpgradeModal extends StatelessWidget {
                       '14 Days',
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0), fontSize: 12),
+                          color: Color.fromARGB(255, 0, 0, 0),
+                          fontFamily: 'Montserrat Regular',
+                          fontSize: 12),
                     ),
                   ],
                 ),
@@ -94,6 +98,7 @@ class UpgradeModal extends StatelessWidget {
                     style: TextStyle(
                         color: Color.fromARGB(255, 165, 165, 165),
                         fontWeight: FontWeight.w300,
+                        fontFamily: 'Montserrat Regular',
                         fontSize: 12),
                   ),
                 ],
@@ -119,6 +124,7 @@ class UpgradeModal extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -138,6 +144,7 @@ class UpgradeModal extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -175,6 +182,7 @@ class UpgradeModal extends StatelessWidget {
                     style: TextStyle(
                         color: Color.fromARGB(255, 165, 165, 165),
                         fontWeight: FontWeight.w300,
+                        fontFamily: 'Montserrat Regular',
                         fontSize: 12),
                   ),
                 ],
@@ -200,6 +208,7 @@ class UpgradeModal extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -219,6 +228,7 @@ class UpgradeModal extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -256,6 +266,7 @@ class UpgradeModal extends StatelessWidget {
                     style: TextStyle(
                         color: Color.fromARGB(255, 165, 165, 165),
                         fontWeight: FontWeight.w300,
+                        fontFamily: 'Montserrat Regular',
                         fontSize: 12),
                   ),
                 ],
@@ -281,6 +292,7 @@ class UpgradeModal extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -303,6 +315,7 @@ class UpgradeModal extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -334,6 +347,7 @@ class UpgradeModal extends StatelessWidget {
                   style: TextStyle(
                       color: Color.fromARGB(255, 255, 255, 255),
                       fontSize: 12,
+                      fontFamily: 'Montserrat Medium',
                       fontWeight: FontWeight.w500),
                 ),
               ),
@@ -374,6 +388,7 @@ class UpgradeModal2 extends StatelessWidget {
             style: TextStyle(
                 color: Color.fromARGB(255, 0, 0, 0),
                 fontSize: 24,
+                fontFamily: 'Montserrat SemiBold',
                 fontWeight: FontWeight.w700),
           ),
           const SizedBox(
@@ -390,6 +405,7 @@ class UpgradeModal2 extends StatelessWidget {
                     style: TextStyle(
                         color: Color.fromARGB(255, 165, 165, 165),
                         fontWeight: FontWeight.w300,
+                        fontFamily: 'Montserrat Regular',
                         fontSize: 12),
                   ),
                 ],
@@ -404,7 +420,9 @@ class UpgradeModal2 extends StatelessWidget {
                       '14 Days',
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0), fontSize: 12),
+                          color: Color.fromARGB(255, 0, 0, 0),
+                          fontFamily: 'Montserrat Regular',
+                          fontSize: 12),
                     ),
                   ],
                 ),
@@ -439,6 +457,7 @@ class UpgradeModal2 extends StatelessWidget {
                     style: TextStyle(
                         color: Color.fromARGB(255, 165, 165, 165),
                         fontWeight: FontWeight.w300,
+                        fontFamily: 'Montserrat Regular',
                         fontSize: 12),
                   ),
                 ],
@@ -464,6 +483,7 @@ class UpgradeModal2 extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -483,6 +503,7 @@ class UpgradeModal2 extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -520,6 +541,7 @@ class UpgradeModal2 extends StatelessWidget {
                     style: TextStyle(
                         color: Color.fromARGB(255, 165, 165, 165),
                         fontWeight: FontWeight.w300,
+                        fontFamily: 'Montserrat Regular',
                         fontSize: 12),
                   ),
                 ],
@@ -545,6 +567,7 @@ class UpgradeModal2 extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -564,6 +587,7 @@ class UpgradeModal2 extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -601,6 +625,7 @@ class UpgradeModal2 extends StatelessWidget {
                     style: TextStyle(
                         color: Color.fromARGB(255, 165, 165, 165),
                         fontWeight: FontWeight.w300,
+                        fontFamily: 'Montserrat Regular',
                         fontSize: 12),
                   ),
                 ],
@@ -626,6 +651,7 @@ class UpgradeModal2 extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -645,6 +671,7 @@ class UpgradeModal2 extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -676,6 +703,7 @@ class UpgradeModal2 extends StatelessWidget {
                   style: TextStyle(
                       color: Color.fromARGB(255, 255, 255, 255),
                       fontSize: 12,
+                      fontFamily: 'Montserrat Medium',
                       fontWeight: FontWeight.w500),
                 ),
               ),
@@ -716,6 +744,7 @@ class UpgradeModal3 extends StatelessWidget {
             style: TextStyle(
                 color: Color.fromARGB(255, 0, 0, 0),
                 fontSize: 24,
+                fontFamily: 'Montserrat SemiBold',
                 fontWeight: FontWeight.w700),
           ),
           const SizedBox(
@@ -732,6 +761,7 @@ class UpgradeModal3 extends StatelessWidget {
                     style: TextStyle(
                         color: Color.fromARGB(255, 165, 165, 165),
                         fontWeight: FontWeight.w300,
+                        fontFamily: 'Montserrat Regular',
                         fontSize: 12),
                   ),
                 ],
@@ -746,7 +776,9 @@ class UpgradeModal3 extends StatelessWidget {
                       '14 Days',
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0), fontSize: 12),
+                          color: Color.fromARGB(255, 0, 0, 0),
+                          fontFamily: 'Montserrat Regular',
+                          fontSize: 12),
                     ),
                   ],
                 ),
@@ -781,6 +813,7 @@ class UpgradeModal3 extends StatelessWidget {
                     style: TextStyle(
                         color: Color.fromARGB(255, 165, 165, 165),
                         fontWeight: FontWeight.w300,
+                        fontFamily: 'Montserrat Regular',
                         fontSize: 12),
                   ),
                 ],
@@ -806,6 +839,7 @@ class UpgradeModal3 extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -825,6 +859,7 @@ class UpgradeModal3 extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -861,6 +896,7 @@ class UpgradeModal3 extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Color.fromARGB(255, 165, 165, 165),
+                        fontFamily: 'Montserrat Regular',
                         fontWeight: FontWeight.w300,
                         fontSize: 12),
                   ),
@@ -887,6 +923,7 @@ class UpgradeModal3 extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -906,6 +943,7 @@ class UpgradeModal3 extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -942,6 +980,7 @@ class UpgradeModal3 extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Color.fromARGB(255, 165, 165, 165),
+                        fontFamily: 'Montserrat Regular',
                         fontWeight: FontWeight.w300,
                         fontSize: 12),
                   ),
@@ -968,6 +1007,7 @@ class UpgradeModal3 extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -990,6 +1030,7 @@ class UpgradeModal3 extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -1021,6 +1062,7 @@ class UpgradeModal3 extends StatelessWidget {
                   style: TextStyle(
                       color: Color.fromARGB(255, 255, 255, 255),
                       fontSize: 12,
+                      fontFamily: 'Montserrat Medium',
                       fontWeight: FontWeight.w500),
                 ),
               ),
@@ -1061,6 +1103,7 @@ class UpgradeModal4 extends StatelessWidget {
             style: TextStyle(
                 color: Color.fromARGB(255, 0, 0, 0),
                 fontSize: 24,
+                fontFamily: 'Montserrat SemiBold',
                 fontWeight: FontWeight.w700),
           ),
           const SizedBox(
@@ -1077,6 +1120,7 @@ class UpgradeModal4 extends StatelessWidget {
                     style: TextStyle(
                         color: Color.fromARGB(255, 165, 165, 165),
                         fontWeight: FontWeight.w300,
+                        fontFamily: 'Montserrat Regular',
                         fontSize: 12),
                   ),
                 ],
@@ -1091,7 +1135,9 @@ class UpgradeModal4 extends StatelessWidget {
                       '14 Days',
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0), fontSize: 12),
+                          color: Color.fromARGB(255, 0, 0, 0),
+                          fontFamily: 'Montserrat Regular',
+                          fontSize: 12),
                     ),
                   ],
                 ),
@@ -1126,6 +1172,7 @@ class UpgradeModal4 extends StatelessWidget {
                     style: TextStyle(
                         color: Color.fromARGB(255, 165, 165, 165),
                         fontWeight: FontWeight.w300,
+                        fontFamily: 'Montserrat Regular',
                         fontSize: 12),
                   ),
                 ],
@@ -1151,6 +1198,7 @@ class UpgradeModal4 extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -1170,6 +1218,7 @@ class UpgradeModal4 extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -1206,6 +1255,7 @@ class UpgradeModal4 extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Color.fromARGB(255, 165, 165, 165),
+                        fontFamily: 'Montserrat Regular',
                         fontWeight: FontWeight.w300,
                         fontSize: 12),
                   ),
@@ -1232,6 +1282,7 @@ class UpgradeModal4 extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -1251,6 +1302,7 @@ class UpgradeModal4 extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -1287,6 +1339,7 @@ class UpgradeModal4 extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Color.fromARGB(255, 165, 165, 165),
+                        fontFamily: 'Montserrat Regular',
                         fontWeight: FontWeight.w300,
                         fontSize: 12),
                   ),
@@ -1313,6 +1366,7 @@ class UpgradeModal4 extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -1335,6 +1389,7 @@ class UpgradeModal4 extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -1366,6 +1421,7 @@ class UpgradeModal4 extends StatelessWidget {
                   style: TextStyle(
                       color: Color.fromARGB(255, 255, 255, 255),
                       fontSize: 12,
+                      fontFamily: 'Montserrat Medium',
                       fontWeight: FontWeight.w500),
                 ),
               ),
@@ -1406,6 +1462,7 @@ class UpgradeModal5 extends StatelessWidget {
             style: TextStyle(
                 color: Color.fromARGB(255, 0, 0, 0),
                 fontSize: 24,
+                fontFamily: 'Montserrat SemiBold',
                 fontWeight: FontWeight.w700),
           ),
           const SizedBox(
@@ -1422,6 +1479,7 @@ class UpgradeModal5 extends StatelessWidget {
                     style: TextStyle(
                         color: Color.fromARGB(255, 165, 165, 165),
                         fontWeight: FontWeight.w300,
+                        fontFamily: 'Montserrat Regular',
                         fontSize: 12),
                   ),
                 ],
@@ -1436,7 +1494,9 @@ class UpgradeModal5 extends StatelessWidget {
                       '14 Days',
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0), fontSize: 12),
+                          color: Color.fromARGB(255, 0, 0, 0),
+                          fontFamily: 'Montserrat Regular',
+                          fontSize: 12),
                     ),
                   ],
                 ),
@@ -1471,6 +1531,7 @@ class UpgradeModal5 extends StatelessWidget {
                     style: TextStyle(
                         color: Color.fromARGB(255, 165, 165, 165),
                         fontWeight: FontWeight.w300,
+                        fontFamily: 'Montserrat Regular',
                         fontSize: 12),
                   ),
                 ],
@@ -1496,6 +1557,7 @@ class UpgradeModal5 extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -1515,6 +1577,7 @@ class UpgradeModal5 extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -1551,6 +1614,7 @@ class UpgradeModal5 extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Color.fromARGB(255, 165, 165, 165),
+                        fontFamily: 'Montserrat Regular',
                         fontWeight: FontWeight.w300,
                         fontSize: 12),
                   ),
@@ -1577,6 +1641,7 @@ class UpgradeModal5 extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -1596,6 +1661,7 @@ class UpgradeModal5 extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -1632,6 +1698,7 @@ class UpgradeModal5 extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Color.fromARGB(255, 165, 165, 165),
+                        fontFamily: 'Montserrat Regular',
                         fontWeight: FontWeight.w300,
                         fontSize: 12),
                   ),
@@ -1658,6 +1725,7 @@ class UpgradeModal5 extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -1677,6 +1745,7 @@ class UpgradeModal5 extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -1708,6 +1777,7 @@ class UpgradeModal5 extends StatelessWidget {
                   style: TextStyle(
                       color: Color.fromARGB(255, 255, 255, 255),
                       fontSize: 12,
+                      fontFamily: 'Montserrat Medium',
                       fontWeight: FontWeight.w500),
                 ),
               ),
@@ -1748,6 +1818,7 @@ class UpgradeModal6 extends StatelessWidget {
             style: TextStyle(
                 color: Color.fromARGB(255, 0, 0, 0),
                 fontSize: 24,
+                fontFamily: 'Montserrat SemiBold',
                 fontWeight: FontWeight.w700),
           ),
           const SizedBox(
@@ -1764,6 +1835,7 @@ class UpgradeModal6 extends StatelessWidget {
                     style: TextStyle(
                         color: Color.fromARGB(255, 165, 165, 165),
                         fontWeight: FontWeight.w300,
+                        fontFamily: 'Montserrat Regular',
                         fontSize: 12),
                   ),
                 ],
@@ -1778,7 +1850,9 @@ class UpgradeModal6 extends StatelessWidget {
                       '14 Days',
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0), fontSize: 12),
+                          color: Color.fromARGB(255, 0, 0, 0),
+                          fontFamily: 'Montserrat Regular',
+                          fontSize: 12),
                     ),
                   ],
                 ),
@@ -1812,6 +1886,7 @@ class UpgradeModal6 extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Color.fromARGB(255, 165, 165, 165),
+                        fontFamily: 'Montserrat Regular',
                         fontWeight: FontWeight.w300,
                         fontSize: 12),
                   ),
@@ -1838,6 +1913,7 @@ class UpgradeModal6 extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -1857,6 +1933,7 @@ class UpgradeModal6 extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -1893,6 +1970,7 @@ class UpgradeModal6 extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Color.fromARGB(255, 165, 165, 165),
+                        fontFamily: 'Montserrat Regular',
                         fontWeight: FontWeight.w300,
                         fontSize: 12),
                   ),
@@ -1919,6 +1997,7 @@ class UpgradeModal6 extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -1938,6 +2017,7 @@ class UpgradeModal6 extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -1975,6 +2055,7 @@ class UpgradeModal6 extends StatelessWidget {
                     style: TextStyle(
                         color: Color.fromARGB(255, 165, 165, 165),
                         fontWeight: FontWeight.w300,
+                        fontFamily: 'Montserrat Regular',
                         fontSize: 12),
                   ),
                 ],
@@ -2000,6 +2081,7 @@ class UpgradeModal6 extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -2022,6 +2104,7 @@ class UpgradeModal6 extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
                       ],
@@ -2053,6 +2136,7 @@ class UpgradeModal6 extends StatelessWidget {
                   style: TextStyle(
                       color: Color.fromARGB(255, 255, 255, 255),
                       fontSize: 12,
+                      fontFamily: 'Montserrat Medium',
                       fontWeight: FontWeight.w500),
                 ),
               ),

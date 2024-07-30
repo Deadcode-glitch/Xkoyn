@@ -138,6 +138,7 @@ class _SendzState extends State<Sendz> with TickerProviderStateMixin {
                   'Withdraw USDT',
                   style: TextStyle(
                       color: Color.fromARGB(255, 0, 0, 0),
+                      fontFamily: 'Montserrat SemiBold',
                       fontWeight: FontWeight.w500),
                 )
               ],
@@ -150,7 +151,9 @@ class _SendzState extends State<Sendz> with TickerProviderStateMixin {
                 Text(
                   'Address',
                   style: TextStyle(
-                      color: Color.fromARGB(255, 0, 0, 0), fontSize: 12),
+                      color: Color.fromARGB(255, 0, 0, 0),
+                      fontFamily: 'Montserrat Medium',
+                      fontSize: 12),
                 ),
               ],
             ),
@@ -166,14 +169,19 @@ class _SendzState extends State<Sendz> with TickerProviderStateMixin {
                   borderRadius: BorderRadius.circular(10)),
               child: TextFormField(
                 style: const TextStyle(
-                    fontSize: 12, color: Color.fromARGB(255, 0, 0, 0)),
+                    fontSize: 12,
+                    fontFamily: 'Montserrat Regular',
+                    color: Color.fromARGB(255, 0, 0, 0)),
                 decoration: const InputDecoration(
                   hintText: 'Enter wallet address',
                   enabledBorder:
                       InputBorder.none, // Remove underline when enabled
                   focusedBorder:
                       InputBorder.none, // Remove underline when focused
-                  hintStyle: TextStyle(fontSize: 12, color: Color(0xFFA0A0A0)),
+                  hintStyle: TextStyle(
+                      fontSize: 12,
+                      fontFamily: 'Montserrat Regular',
+                      color: Color(0xFFA0A0A0)),
                 ),
               ),
             ),
@@ -186,12 +194,16 @@ class _SendzState extends State<Sendz> with TickerProviderStateMixin {
                 Text(
                   'Amount',
                   style: TextStyle(
-                      color: Color.fromARGB(255, 0, 0, 0), fontSize: 12),
+                      color: Color.fromARGB(255, 0, 0, 0),
+                      fontFamily: 'Montserrat Medium',
+                      fontSize: 12),
                 ),
                 Text(
                   'Available: 10.00 USDT',
                   style: TextStyle(
-                      color: Color.fromARGB(255, 175, 175, 175), fontSize: 10),
+                      color: Color.fromARGB(255, 175, 175, 175),
+                      fontFamily: 'Montserrat Regular',
+                      fontSize: 10),
                 ),
               ],
             ),
@@ -216,7 +228,9 @@ class _SendzState extends State<Sendz> with TickerProviderStateMixin {
                   focusedBorder:
                       InputBorder.none, // Remove underline when focused
                   hintStyle: TextStyle(
-                      fontSize: 12, color: Color.fromARGB(255, 203, 203, 203)),
+                      fontSize: 12,
+                      fontFamily: 'Montserrat Regular',
+                      color: Color.fromARGB(255, 203, 203, 203)),
                 ),
               ),
             ),
@@ -228,7 +242,9 @@ class _SendzState extends State<Sendz> with TickerProviderStateMixin {
                 Text(
                   'Dollar Equivalent: \$$_dollarEquivalent',
                   style: const TextStyle(
-                      color: Color.fromARGB(255, 185, 185, 185), fontSize: 10),
+                      color: Color.fromARGB(255, 185, 185, 185),
+                      fontFamily: 'Montserrat Regular',
+                      fontSize: 10),
                 ),
               ],
             ),
@@ -242,6 +258,7 @@ class _SendzState extends State<Sendz> with TickerProviderStateMixin {
                   'Chain',
                   style: TextStyle(
                     color: Color.fromARGB(255, 0, 0, 0),
+                    fontFamily: 'Montserrat Medium',
                     fontSize: 12,
                   ),
                 ),
@@ -277,7 +294,10 @@ class _SendzState extends State<Sendz> with TickerProviderStateMixin {
                               SizedBox(width: 12),
                               Text(
                                 chain['name'],
-                                style: TextStyle(fontSize: 12),
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontFamily: 'Montserrat Regular',
+                                ),
                               ),
                             ],
                           ),
@@ -310,6 +330,7 @@ class _SendzState extends State<Sendz> with TickerProviderStateMixin {
                     style: TextStyle(
                         color: Color.fromARGB(255, 255, 33, 33),
                         fontSize: 10,
+                        fontFamily: 'Montserrat Regular',
                         fontWeight: FontWeight.w300),
                   ),
                 ],
@@ -345,6 +366,7 @@ class _SendzState extends State<Sendz> with TickerProviderStateMixin {
                       style: TextStyle(
                           color: Color.fromARGB(255, 255, 255, 255),
                           fontSize: 12,
+                          fontFamily: 'Montserrat Medium',
                           fontWeight: FontWeight.w500),
                     ),
                   ],

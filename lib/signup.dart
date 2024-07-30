@@ -157,8 +157,8 @@ class _SignUpPageState extends State<SignUpPage> with TickerProviderStateMixin {
               style: TextStyle(
                   color: Color.fromARGB(255, 0, 0, 0),
                   fontSize: 24,
-                  fontFamily: 'OpenSans Medium',
-                  fontWeight: FontWeight.w900),
+                  fontFamily: 'Montserrat SemiBold',
+                  fontWeight: FontWeight.w600),
             ),
             const SizedBox(
               height: 20,
@@ -177,9 +177,10 @@ class _SignUpPageState extends State<SignUpPage> with TickerProviderStateMixin {
                 decoration: const InputDecoration(
                   labelText: 'Nickname',
                   labelStyle: TextStyle(
-                      fontSize: 12,
-                      color: Color.fromARGB(255, 133, 133, 133),
-                      fontFamily: 'OpenSans Regular'),
+                    fontSize: 12,
+                    color: Color.fromARGB(255, 133, 133, 133),
+                    fontFamily: 'Montserrat Regular',
+                  ),
                   enabledBorder:
                       InputBorder.none, // Remove underline when enabled
                   focusedBorder: InputBorder.none,
@@ -206,11 +207,11 @@ class _SignUpPageState extends State<SignUpPage> with TickerProviderStateMixin {
                   hintStyle: TextStyle(
                       fontSize: 12,
                       color: Color.fromARGB(255, 163, 163, 163),
-                      fontFamily: 'OpenSans Regular'),
+                      fontFamily: 'Montserrat Regular'),
                   labelStyle: TextStyle(
                       fontSize: 12,
                       color: Color.fromARGB(255, 133, 133, 133),
-                      fontFamily: 'OpenSans Regular'),
+                      fontFamily: 'Montserrat Regular'),
                   enabledBorder:
                       InputBorder.none, // Remove underline when enabled
                   focusedBorder: InputBorder.none,
@@ -234,7 +235,7 @@ class _SignUpPageState extends State<SignUpPage> with TickerProviderStateMixin {
                     style: TextStyle(
                         color: Color.fromARGB(255, 255, 255, 255),
                         fontSize: 12,
-                        fontFamily: 'OpenSans Medium',
+                        fontFamily: 'Montserrat Regular',
                         fontWeight: FontWeight.w500),
                   ),
                 ),

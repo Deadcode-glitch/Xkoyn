@@ -52,6 +52,7 @@ class _DepoState extends State<Depo> {
                 style: TextStyle(
                     color: Color.fromARGB(255, 0, 0, 0),
                     fontSize: 20,
+                    fontFamily: 'Montserrat SemiBold',
                     fontWeight: FontWeight.w700),
               ),
               const SizedBox(
@@ -78,7 +79,9 @@ class _DepoState extends State<Depo> {
                     const Text(
                       '0x73e503f8470ede16b27ff3bf0de7714b550aae63',
                       style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0), fontSize: 8),
+                          color: Color.fromARGB(255, 0, 0, 0),
+                          fontFamily: 'Montserrat Regular',
+                          fontSize: 8),
                     ),
                     const SizedBox(
                       width: 4,
@@ -122,6 +125,7 @@ class _DepoState extends State<Depo> {
                       style: TextStyle(
                           color: Color.fromARGB(255, 255, 33, 33),
                           fontSize: 10,
+                          fontFamily: 'Montserrat Regular',
                           fontWeight: FontWeight.w300),
                     ),
                   ],
@@ -151,6 +155,7 @@ class _DepoState extends State<Depo> {
                                 style: TextStyle(
                                     color: Color.fromARGB(255, 0, 0, 0),
                                     fontSize: 14,
+                                    fontFamily: 'Montserrat SemiBold',
                                     fontWeight: FontWeight.w700),
                               ),
                               SizedBox(
@@ -160,6 +165,7 @@ class _DepoState extends State<Depo> {
                                 'Send coins to the wallet above in order to receive them here',
                                 style: TextStyle(
                                     color: Color.fromARGB(255, 143, 143, 143),
+                                    fontFamily: 'Montserrat Regular',
                                     fontSize: 12),
                               ),
                             ],
@@ -211,6 +217,7 @@ class _DepoState extends State<Depo> {
                                 '1',
                                 style: TextStyle(
                                     color: Color.fromARGB(255, 70, 70, 70),
+                                    fontFamily: 'Montserrat Regular',
                                     fontSize: 12),
                               ),
                             ],
@@ -228,6 +235,7 @@ class _DepoState extends State<Depo> {
                                 style: TextStyle(
                                     color: Color(0xFF737373),
                                     fontWeight: FontWeight.w300,
+                                    fontFamily: 'Montserrat Regular',
                                     fontSize: 11),
                               ),
                             ],
@@ -260,6 +268,7 @@ class _DepoState extends State<Depo> {
                                 '2',
                                 style: TextStyle(
                                     color: Color.fromARGB(255, 70, 70, 70),
+                                    fontFamily: 'Montserrat Regular',
                                     fontSize: 12),
                               ),
                             ],
@@ -277,6 +286,7 @@ class _DepoState extends State<Depo> {
                                 style: TextStyle(
                                     color: Color(0xFF737373),
                                     fontWeight: FontWeight.w300,
+                                    fontFamily: 'Montserrat Regular',
                                     fontSize: 11),
                               ),
                             ],
@@ -309,6 +319,7 @@ class _DepoState extends State<Depo> {
                                 '3',
                                 style: TextStyle(
                                     color: Color.fromARGB(255, 70, 70, 70),
+                                    fontFamily: 'Montserrat Regular',
                                     fontSize: 12),
                               ),
                             ],
@@ -326,6 +337,7 @@ class _DepoState extends State<Depo> {
                                 style: TextStyle(
                                     color: Color(0xFF737373),
                                     fontWeight: FontWeight.w300,
+                                    fontFamily: 'Montserrat Regular',
                                     fontSize: 11),
                               ),
                             ],

@@ -35,6 +35,7 @@ class _KoynState extends State<Koyn> {
                     style: const TextStyle(
                       color: Color.fromARGB(255, 0, 0, 0),
                       fontSize: 14,
+                      fontFamily: 'Montserrat Medium',
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -44,6 +45,7 @@ class _KoynState extends State<Koyn> {
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Color(0xFF898989),
+                        fontFamily: 'Montserrat Regular',
                         fontSize: 10,
                         fontWeight: FontWeight.w300),
                   ),
@@ -68,6 +70,7 @@ class _KoynState extends State<Koyn> {
                             'close',
                             style: TextStyle(
                                 fontSize: 10,
+                                fontFamily: 'Montserrat Medium',
                                 color: Color.fromARGB(255, 255, 255, 255)),
                           ),
                         ),
@@ -126,6 +129,7 @@ class _KoynState extends State<Koyn> {
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 12,
+                        fontFamily: 'Montserrat Medium',
                         fontWeight: FontWeight.w400,
                       ),
                     ),
@@ -140,6 +144,7 @@ class _KoynState extends State<Koyn> {
                           style: TextStyle(
                             color: Color.fromARGB(255, 0, 0, 0),
                             fontSize: 30,
+                            fontFamily: 'Montserrat Bold',
                             fontWeight: FontWeight.w700,
                           ),
                         ),
@@ -155,6 +160,7 @@ class _KoynState extends State<Koyn> {
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 12,
+                        fontFamily: 'Montserrat Regular',
                         fontWeight: FontWeight.w300,
                       ),
                     ),
@@ -193,6 +199,7 @@ class _KoynState extends State<Koyn> {
                               style: TextStyle(
                                 color: Color.fromARGB(255, 0, 0, 0),
                                 fontSize: 12,
+                                fontFamily: 'Montserrat Regular',
                               ),
                             ),
                           ],
@@ -230,6 +237,7 @@ class _KoynState extends State<Koyn> {
                               style: TextStyle(
                                 color: Color.fromARGB(255, 0, 0, 0),
                                 fontSize: 12,
+                                fontFamily: 'Montserrat Regular',
                               ),
                             ),
                           ],
@@ -260,6 +268,7 @@ class _KoynState extends State<Koyn> {
                               'Xkoyn withdrawals and deposits will be open after the token goes live on exchanges',
                               style: TextStyle(
                                 color: Color.fromARGB(255, 78, 78, 78),
+                                fontFamily: 'Montserrat Regular',
                                 fontSize: 10,
                                 fontWeight: FontWeight.w300,
                               ),
@@ -281,6 +290,7 @@ class _KoynState extends State<Koyn> {
                     style: TextStyle(
                       color: Color.fromARGB(255, 0, 0, 0),
                       fontSize: 20,
+                      fontFamily: 'Montserrat SemiBold',
                       fontWeight: FontWeight.w700,
                     ),
                   ),
@@ -293,6 +303,7 @@ class _KoynState extends State<Koyn> {
                     style: TextStyle(
                       color: Color(0xFF8A8A8A),
                       fontSize: 10,
+                      fontFamily: 'Montserrat Regular',
                       fontWeight: FontWeight.w300,
                     ),
                   ),

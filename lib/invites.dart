@@ -74,6 +74,7 @@ class _InvitesState extends State<Invites> {
               style: TextStyle(
                   color: Color.fromARGB(255, 0, 0, 0),
                   fontSize: 30,
+                  fontFamily: 'Montserrat SemiBold',
                   fontWeight: FontWeight.w700),
             ),
             const SizedBox(
@@ -83,7 +84,9 @@ class _InvitesState extends State<Invites> {
               'Earn 0.05 USDT for your direct referrals. Earn up to 15,000 XCOIN & 0.05 USDT for each invite, while your friend receives 30,000!',
               textAlign: TextAlign.center,
               style: TextStyle(
-                  color: Color.fromARGB(255, 143, 143, 143), fontSize: 12),
+                  color: Color.fromARGB(255, 143, 143, 143),
+                  fontFamily: 'Montserrat Regular',
+                  fontSize: 12),
             ),
             const SizedBox(
               height: 50,
@@ -106,6 +109,7 @@ class _InvitesState extends State<Invites> {
                       style: const TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontSize: 16,
+                          fontFamily: 'Montserrat SemiBold',
                           fontWeight: FontWeight.w600),
                     ),
                     IconButton(
@@ -135,6 +139,7 @@ class _InvitesState extends State<Invites> {
                   style: const TextStyle(
                       color: Color.fromARGB(255, 0, 0, 0),
                       fontSize: 54,
+                      fontFamily: 'Montserrat Bold',
                       fontWeight: FontWeight.w800),
                 ),
               ],
@@ -150,7 +155,9 @@ class _InvitesState extends State<Invites> {
               child: const Text(
                 ' Friends Invited',
                 style: TextStyle(
-                    fontSize: 12, color: Color.fromARGB(255, 0, 0, 0)),
+                    fontSize: 12,
+                    fontFamily: 'Montserrat Regular',
+                    color: Color.fromARGB(255, 0, 0, 0)),
               ),
             ),
             const SizedBox(height: 3),
@@ -168,6 +175,7 @@ class _InvitesState extends State<Invites> {
                         style: const TextStyle(
                             color: Colors.white,
                             fontSize: 12,
+                            fontFamily: 'Montserrat Regular',
                             fontWeight: FontWeight.w300),
                       ),
                     );

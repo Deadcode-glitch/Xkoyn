@@ -136,6 +136,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                         style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontSize: 14,
+                          fontFamily: 'Montserrat Regular',
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -146,6 +147,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                         style: TextStyle(
                           color: Color.fromARGB(255, 80, 80, 80),
                           fontSize: 10,
+                          fontFamily: 'Montserrat Regular',
                           fontWeight: FontWeight.w300,
                         ),
                       ),
@@ -169,6 +171,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                                 'Continue',
                                 style: TextStyle(
                                   fontSize: 12,
+                                  fontFamily: 'Montserrat Regular',
                                   color: Color.fromARGB(255, 0, 0, 0),
                                   fontWeight: FontWeight.w600,
                                 ),
@@ -421,6 +424,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
               style: TextStyle(
                 color: Color.fromARGB(255, 0, 0, 0),
                 fontSize: 24,
+                fontFamily: 'Montserrat SemiBold',
                 fontWeight: FontWeight.w700,
               ),
             ),
@@ -434,6 +438,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                   style: TextStyle(
                     color: Color.fromARGB(255, 0, 0, 0),
                     fontSize: 12,
+                    fontFamily: 'Montserrat Regular',
                     fontWeight: FontWeight.w400,
                   ),
                 ),
@@ -445,6 +450,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                   style: const TextStyle(
                     color: Color.fromARGB(255, 0, 0, 0),
                     fontSize: 40,
+                    fontFamily: 'Montserrat Bold',
                     fontWeight: FontWeight.w700,
                   ),
                 ),
@@ -489,6 +495,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                             'Deposit',
                             style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12,
                             ),
                           ),
@@ -526,6 +533,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                             'Withdraw',
                             style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 12,
                             ),
                           ),
@@ -574,6 +582,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                               'XKOYN',
                               style: TextStyle(
                                 color: Color.fromARGB(255, 0, 0, 0),
+                                fontFamily: 'Montserrat Regular',
                                 fontSize: 12,
                               ),
                             ),
@@ -588,6 +597,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                               style: TextStyle(
                                 color: Color.fromARGB(255, 0, 0, 0),
                                 fontSize: 12,
+                                fontFamily: 'Montserrat Regular',
                                 fontWeight: FontWeight.w500,
                               ),
                             ),
@@ -599,6 +609,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                               style: TextStyle(
                                 color: Color.fromARGB(255, 96, 96, 96),
                                 fontSize: 8,
+                                fontFamily: 'Montserrat Regular',
                                 fontWeight: FontWeight.w500,
                               ),
                             ),
@@ -645,6 +656,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                               style: TextStyle(
                                 color: Color.fromARGB(255, 0, 0, 0),
                                 fontSize: 12,
+                                fontFamily: 'Montserrat Regular',
                               ),
                             ),
                           ],
@@ -658,6 +670,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                               style: TextStyle(
                                 color: Color.fromARGB(255, 0, 0, 0),
                                 fontSize: 12,
+                                fontFamily: 'Montserrat Regular',
                                 fontWeight: FontWeight.w500,
                               ),
                             ),
@@ -669,6 +682,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                               style: const TextStyle(
                                 color: Color.fromARGB(255, 96, 96, 96),
                                 fontSize: 8,
+                                fontFamily: 'Montserrat Regular',
                                 fontWeight: FontWeight.w500,
                               ),
                             ),

@@ -158,7 +158,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                               ' $name',
                               style: const TextStyle(
                                   color: Color.fromARGB(255, 0, 0, 0),
-                                  fontFamily: 'OpenSans Regular',
+                                  fontFamily: 'Montserrat Regular',
                                   fontSize: 12),
                             ),
                           ],
@@ -191,7 +191,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                   'Invites',
                                   style: TextStyle(
                                       color: Color.fromARGB(255, 0, 0, 0),
-                                      fontFamily: 'OpenSans Regular',
+                                      fontFamily: 'Montserrat Regular',
                                       fontSize: 12),
                                 ),
                               ],
@@ -219,7 +219,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                   'Profit per click',
                                   style: TextStyle(
                                       color: Color.fromARGB(255, 0, 0, 0),
-                                      fontFamily: 'OpenSans Regular',
+                                      fontFamily: 'Montserrat Regular',
                                       fontSize: 12),
                                 ),
                                 const SizedBox(
@@ -242,7 +242,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                           color: Color.fromARGB(
                                               255, 105, 105, 105),
                                           fontSize: 10,
-                                          fontFamily: 'OpenSans Regular',
+                                          fontFamily: 'Montserrat Regular',
                                           fontWeight: FontWeight.w400),
                                     ),
                                   ],
@@ -267,7 +267,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                           color: Color.fromARGB(
                                               255, 105, 105, 105),
                                           fontSize: 10,
-                                          fontFamily: 'OpenSans Regular',
+                                          fontFamily: 'Montserrat Regular',
                                           fontWeight: FontWeight.w500),
                                     ),
                                   ],
@@ -290,7 +290,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                   'Profit per hour',
                                   style: TextStyle(
                                       color: Color.fromARGB(255, 0, 0, 0),
-                                      fontFamily: 'OpenSans Regular',
+                                      fontFamily: 'Montserrat Regular',
                                       fontSize: 12),
                                 ),
                                 const SizedBox(
@@ -313,7 +313,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                           color: Color.fromARGB(
                                               255, 105, 105, 105),
                                           fontSize: 10,
-                                          fontFamily: 'OpenSans Regular',
+                                          fontFamily: 'Montserrat Regular',
                                           fontWeight: FontWeight.w400),
                                     ),
                                   ],
@@ -338,7 +338,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                           color: Color.fromARGB(
                                               255, 105, 105, 105),
                                           fontSize: 10,
-                                          fontFamily: 'OpenSans Regular',
+                                          fontFamily: 'Montserrat Regular',
                                           fontWeight: FontWeight.w500),
                                     ),
                                   ],
@@ -372,7 +372,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                           style: const TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
                               fontSize: 34,
-                              fontFamily: 'OpenSans',
+                              fontFamily: 'Montserrat Bold',
                               fontWeight: FontWeight.w800),
                         ),
                       ],
@@ -390,7 +390,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                           style: const TextStyle(
                               color: Color.fromARGB(255, 127, 127, 127),
                               fontSize: 16,
-                              fontFamily: 'OpenSans Regular',
+                              fontFamily: 'Montserrat Medium',
                               fontWeight: FontWeight.w600),
                         ),
                       ],
@@ -460,7 +460,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             '$progressCounter / 200',
                             style: const TextStyle(
                                 color: Color.fromARGB(255, 14, 13, 13),
-                                fontFamily: 'OpenSans Medium',
+                                //fontFamily: 'Montserrat Regular',
+                                fontWeight: FontWeight.w700,
                                 fontSize: 12),
                           ),
                         ],
