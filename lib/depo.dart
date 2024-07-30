@@ -8,7 +8,7 @@ class Depo extends StatefulWidget {
   State<Depo> createState() => _DepoState();
 }
 
-final String textToCopy = 'bc1qr3cd3lml75fxy64s7hdr0xagmrjnma5zpkdqmg';
+final String textToCopy = '0x73e503f8470ede16b27ff3bf0de7714b550aae63';
 
 class _DepoState extends State<Depo> {
   @override
@@ -76,7 +76,7 @@ class _DepoState extends State<Depo> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Text(
-                      '0x3f7832693e244208f7786ef6c7e474692dbd078e',
+                      '0x73e503f8470ede16b27ff3bf0de7714b550aae63',
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0), fontSize: 8),
                     ),
