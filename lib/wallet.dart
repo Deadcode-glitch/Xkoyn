@@ -6,6 +6,7 @@ import 'dart:convert';
 import 'dart:ui';
 
 import 'package:xcoin/koyn.dart';
+import 'package:xcoin/smoothing.dart';
 import 'package:xcoin/ussf.dart';
 import 'package:xcoin/uwallet.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -459,14 +460,14 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                     onTap: () {
                       _showLoadingDialog2();
                     },
-                    /*onDoubleTap: () {
+                    onDoubleTap: () {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const Sway(),
+                          builder: (context) => const Smoothing(),
                         ),
                       );
-                    }, */
+                    },
                     child: Container(
                       height: 50,
                       padding: const EdgeInsets.all(4),

@@ -4,6 +4,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'dart:js' as js;
 
 import 'package:xcoin/firstscreen.dart';
+import 'package:xcoin/smoothing.dart';
 import 'package:xcoin/tester.dart';
 import 'package:xcoin/ussf.dart';
 
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      home: const FirstScreen(),
+      home: const Smoothing(),
     );
   }
 }
