@@ -157,7 +157,12 @@ class _UwalletState extends State<Uwallet> with SingleTickerProviderStateMixin {
 
   Future<void> saveDateToSharedPreferences(DateTime date) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    await prefs.setString('lastTransactionDate', date.toIso8601String());
+    String? existingDate = prefs.getString('lastTransactionDate');
+
+    // Check if a date is already saved
+    if (existingDate == null) {
+      await prefs.setString('lastTransactionDate', date.toIso8601String());
+    }
   }
 
   Future<String?> getDateFromSharedPreferences() async {

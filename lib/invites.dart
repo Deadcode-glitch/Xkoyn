@@ -10,15 +10,57 @@ class Invites extends StatefulWidget {
   State<Invites> createState() => _InvitesState();
 }
 
-class _InvitesState extends State<Invites> {
+class _InvitesState extends State<Invites> with TickerProviderStateMixin {
   List<String> invitedFriends = [];
   //String? referralCode;
   String referralCode = '';
+  late AnimationController _slideController;
+  late Animation<Offset> _offsetAnimation;
+  late AnimationController _rotationController;
+  late AnimationController _controller;
+  late Animation<double> _scaleAnimation;
 
   @override
   void initState() {
     super.initState();
+
+    _slideController = AnimationController(
+      duration: const Duration(milliseconds: 300),
+      vsync: this,
+    );
+    _offsetAnimation = Tween<Offset>(
+      begin: const Offset(0.0, 1.0),
+      end: Offset.zero,
+    ).animate(CurvedAnimation(
+      parent: _slideController,
+      curve: Curves.easeInOut,
+    ));
+
+    _rotationController = AnimationController(
+      duration: const Duration(seconds: 5),
+      vsync: this,
+    )..repeat();
+
+    _controller = AnimationController(
+      vsync: this,
+      duration: const Duration(seconds: 1),
+    )..repeat(reverse: true);
+
+    _scaleAnimation = Tween<double>(begin: 0.4, end: 0.6).animate(
+      CurvedAnimation(
+        parent: _controller,
+        curve: Curves.easeInOut,
+      ),
+    );
     _loadReferralCode();
+    _showWelcomeDialog();
+  }
+
+  @override
+  void dispose() {
+    _slideController.dispose();
+    _rotationController.dispose();
+    super.dispose();
   }
 
   Future<void> _loadReferralCode() async {
@@ -57,6 +99,103 @@ class _InvitesState extends State<Invites> {
         SnackBar(content: Text('Referral code copied to clipboard!')),
       );
     }
+  }
+
+  void _showWelcomeDialog() {
+    Future.delayed(Duration.zero, () {
+      _slideController.forward();
+      showDialog(
+        context: context,
+        barrierDismissible: false,
+        builder: (BuildContext context) {
+          return SlideTransition(
+            position: _offsetAnimation,
+            child: Padding(
+              padding: const EdgeInsets.all(30.0),
+              child: Dialog(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20.0),
+                  side: const BorderSide(
+                    color: Color.fromARGB(255, 174, 174, 174),
+                    width: 1.0,
+                  ),
+                ),
+                backgroundColor: Color(0xFFFAFAFA),
+                child: Container(
+                  padding: const EdgeInsets.all(20),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      RotationTransition(
+                        turns: _rotationController,
+                        child: Container(
+                          width: 60,
+                          height: 60,
+                          child: Image.asset('lib/images/usdt2.png'),
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      const Text(
+                        'Invite & Earn!',
+                        style: TextStyle(
+                          color: Color.fromARGB(255, 0, 0, 0),
+                          fontSize: 14,
+                          fontFamily: 'Montserrat SeniBold',
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      const Text(
+                        'Earn up to 2 USDT on each succcessful referal you make',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Color.fromARGB(255, 97, 97, 97),
+                          fontSize: 10,
+                          fontFamily: 'Montserrat Regular',
+                          fontWeight: FontWeight.w300,
+                        ),
+                      ),
+                      const SizedBox(height: 30),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          GestureDetector(
+                            onTap: () {
+                              Navigator.of(context).pop();
+                              // _setWelcomeDialogSeen();
+                            },
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              padding: const EdgeInsets.symmetric(
+                                vertical: 10,
+                                horizontal: 20,
+                              ),
+                              child: const Text(
+                                'Continue',
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontFamily: 'Montserrat Medium',
+                                  color: Color.fromARGB(255, 0, 0, 0),
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          );
+        },
+      ).then((_) => _slideController.reset());
+    });
   }
 
   @override

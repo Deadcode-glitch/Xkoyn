@@ -225,13 +225,10 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      RotationTransition(
-                        turns: _rotationController,
-                        child: Container(
-                          width: 80,
-                          height: 80,
-                          child: Image.asset('lib/images/usdt2.png'),
-                        ),
+                      Container(
+                        width: 80,
+                        height: 80,
+                        child: Image.asset('lib/images/welcomin.png'),
                       ),
                       const SizedBox(
                         height: 10,
@@ -250,8 +247,8 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                         'You just received 10 USDT for joining. We are giving out 10 USDT to random players who join the XKoyn telegram mini app. You can view your balance in your wallet.',
                         textAlign: TextAlign.center,
                         style: TextStyle(
-                          color: Color.fromARGB(255, 97, 97, 97),
-                          fontSize: 10,
+                          color: Color.fromARGB(255, 124, 124, 124),
+                          fontSize: 9,
                           fontFamily: 'Montserrat Regular',
                           fontWeight: FontWeight.w300,
                         ),

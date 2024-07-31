@@ -337,7 +337,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                         style: TextStyle(
                             color: Color.fromARGB(255, 0, 0, 0),
                             fontWeight: FontWeight.w700,
-                            fontFamily: 'Montserrat SemiBold',
+                            fontFamily: 'Montserrat Bold',
                             fontSize: 22),
                       ),
                     ],
