@@ -16,6 +16,9 @@ class _SignUpPageState extends State<SignUpPage> with TickerProviderStateMixin {
   final TextEditingController _referralController = TextEditingController();
   late AnimationController _controller;
   late Animation<double> _scaleAnimation;
+  late AnimationController _entryController;
+  late Animation<double> _fadeAnimation;
+  late Animation<Offset> _slideAnimation;
 
   @override
   void initState() {
@@ -33,6 +36,37 @@ class _SignUpPageState extends State<SignUpPage> with TickerProviderStateMixin {
         curve: Curves.easeInOut,
       ),
     );
+
+    _entryController = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 800),
+    );
+
+    _fadeAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(
+      CurvedAnimation(
+        parent: _entryController,
+        curve: Curves.easeIn,
+      ),
+    );
+
+    _slideAnimation =
+        Tween<Offset>(begin: Offset(0, 0.1), end: Offset.zero).animate(
+      CurvedAnimation(
+        parent: _entryController,
+        curve: Curves.easeInOut,
+      ),
+    );
+
+    _entryController.forward();
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    _entryController.dispose();
+    _nicknameController.dispose();
+    _referralController.dispose();
+    super.dispose();
   }
 
   Future<void> _checkUserEmail() async {
@@ -145,103 +179,109 @@ class _SignUpPageState extends State<SignUpPage> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 255, 255, 255),
-      body: Container(
-        padding: const EdgeInsets.only(left: 50, top: 20, right: 50),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            const Text(
-              'Xkoyn ',
-              style: TextStyle(
-                  color: Color.fromARGB(255, 0, 0, 0),
-                  fontSize: 24,
-                  fontFamily: 'Montserrat SemiBold',
-                  fontWeight: FontWeight.w600),
-            ),
-            const SizedBox(
-              height: 20,
-            ),
-            Container(
-              padding: const EdgeInsets.only(left: 10, right: 10),
-              width: MediaQuery.of(context).size.width,
-              height: 45,
-              decoration: BoxDecoration(
-                  color: Color(0xFF3FAFAFA),
-                  borderRadius: BorderRadius.circular(10)),
-              child: TextField(
-                controller: _nicknameController,
-                style: const TextStyle(
-                    fontSize: 12, color: Color.fromARGB(255, 0, 0, 0)),
-                decoration: const InputDecoration(
-                  labelText: 'Nickname',
-                  labelStyle: TextStyle(
-                    fontSize: 12,
-                    color: Color.fromARGB(255, 133, 133, 133),
-                    fontFamily: 'Montserrat Regular',
-                  ),
-                  enabledBorder:
-                      InputBorder.none, // Remove underline when enabled
-                  focusedBorder: InputBorder.none,
+      backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+      body: FadeTransition(
+        opacity: _fadeAnimation,
+        child: SlideTransition(
+          position: _slideAnimation,
+          child: Container(
+            padding: const EdgeInsets.only(left: 50, top: 20, right: 50),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                const Text(
+                  'Xkoyn',
+                  style: TextStyle(
+                      color: Color.fromARGB(255, 0, 0, 0),
+                      fontSize: 24,
+                      fontFamily: 'Montserrat SemiBold',
+                      fontWeight: FontWeight.w600),
                 ),
-              ),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            Container(
-              padding: const EdgeInsets.only(left: 10, right: 10),
-              width: MediaQuery.of(context).size.width,
-              height: 45,
-              decoration: BoxDecoration(
-                  color: Color(0xFFFAFAFA),
-                  borderRadius: BorderRadius.circular(10)),
-              child: TextField(
-                controller: _referralController,
-                style: const TextStyle(
-                    fontSize: 12, color: Color.fromARGB(255, 0, 0, 0)),
-                decoration: const InputDecoration(
-                  labelText: 'Referral Code',
-                  hintText: 'optional',
-                  hintStyle: TextStyle(
-                      fontSize: 12,
-                      color: Color.fromARGB(255, 163, 163, 163),
-                      fontFamily: 'Montserrat Regular'),
-                  labelStyle: TextStyle(
-                      fontSize: 12,
-                      color: Color.fromARGB(255, 133, 133, 133),
-                      fontFamily: 'Montserrat Regular'),
-                  enabledBorder:
-                      InputBorder.none, // Remove underline when enabled
-                  focusedBorder: InputBorder.none,
+                const SizedBox(
+                  height: 20,
                 ),
-              ),
-            ),
-            const SizedBox(height: 40),
-            InkWell(
-              onTap: _showLoadingDialog,
-              child: Container(
-                width: MediaQuery.of(context).size.width,
-                padding: const EdgeInsets.only(
-                    top: 15, bottom: 15, right: 8, left: 8),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8),
-                  color: Color.fromARGB(255, 0, 0, 0),
-                ),
-                child: const Center(
-                  child: Text(
-                    'Continue',
-                    style: TextStyle(
-                        color: Color.fromARGB(255, 255, 255, 255),
+                Container(
+                  padding: const EdgeInsets.only(left: 10, right: 10),
+                  width: MediaQuery.of(context).size.width,
+                  height: 45,
+                  decoration: BoxDecoration(
+                      color: const Color(0xFFFAFAFA),
+                      borderRadius: BorderRadius.circular(10)),
+                  child: TextField(
+                    controller: _nicknameController,
+                    style: const TextStyle(
+                        fontSize: 12, color: Color.fromARGB(255, 0, 0, 0)),
+                    decoration: const InputDecoration(
+                      labelText: 'Nickname',
+                      labelStyle: TextStyle(
                         fontSize: 12,
+                        color: Color.fromARGB(255, 133, 133, 133),
                         fontFamily: 'Montserrat Regular',
-                        fontWeight: FontWeight.w500),
+                      ),
+                      enabledBorder:
+                          InputBorder.none, // Remove underline when enabled
+                      focusedBorder: InputBorder.none,
+                    ),
                   ),
                 ),
-              ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Container(
+                  padding: const EdgeInsets.only(left: 10, right: 10),
+                  width: MediaQuery.of(context).size.width,
+                  height: 45,
+                  decoration: BoxDecoration(
+                      color: const Color(0xFFFAFAFA),
+                      borderRadius: BorderRadius.circular(10)),
+                  child: TextField(
+                    controller: _referralController,
+                    style: const TextStyle(
+                        fontSize: 12, color: Color.fromARGB(255, 0, 0, 0)),
+                    decoration: const InputDecoration(
+                      labelText: 'Referral Code',
+                      hintText: 'optional',
+                      hintStyle: TextStyle(
+                          fontSize: 12,
+                          color: Color.fromARGB(255, 163, 163, 163),
+                          fontFamily: 'Montserrat Regular'),
+                      labelStyle: TextStyle(
+                          fontSize: 12,
+                          color: Color.fromARGB(255, 133, 133, 133),
+                          fontFamily: 'Montserrat Regular'),
+                      enabledBorder:
+                          InputBorder.none, // Remove underline when enabled
+                      focusedBorder: InputBorder.none,
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 40),
+                InkWell(
+                  onTap: _showLoadingDialog,
+                  child: Container(
+                    width: MediaQuery.of(context).size.width,
+                    padding: const EdgeInsets.only(
+                        top: 15, bottom: 15, right: 8, left: 8),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8),
+                      color: const Color.fromARGB(255, 0, 0, 0),
+                    ),
+                    child: const Center(
+                      child: Text(
+                        'Continue',
+                        style: TextStyle(
+                            color: Color.fromARGB(255, 255, 255, 255),
+                            fontSize: 12,
+                            fontFamily: 'Montserrat Regular',
+                            fontWeight: FontWeight.w500),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
-          ],
+          ),
         ),
       ),
     );

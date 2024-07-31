@@ -241,6 +241,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                         style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontSize: 14,
+                          fontFamily: 'Montserrat SeniBold',
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -249,8 +250,9 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                         'You just received 10 USDT for joining. We are giving out 10 USDT to random players who join the XKoyn telegram mini app. You can view your balance in your wallet.',
                         textAlign: TextAlign.center,
                         style: TextStyle(
-                          color: Color.fromARGB(255, 60, 60, 60),
+                          color: Color.fromARGB(255, 97, 97, 97),
                           fontSize: 10,
+                          fontFamily: 'Montserrat Regular',
                           fontWeight: FontWeight.w300,
                         ),
                       ),
@@ -275,6 +277,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                                 'Continue',
                                 style: TextStyle(
                                   fontSize: 12,
+                                  fontFamily: 'Montserrat Medium',
                                   color: Color.fromARGB(255, 0, 0, 0),
                                   fontWeight: FontWeight.w600,
                                 ),
