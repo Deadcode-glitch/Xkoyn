@@ -139,7 +139,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Container(
                               padding: const EdgeInsets.all(8),
                               decoration: BoxDecoration(
-                                  color: Colors.white.withOpacity(0.5),
+                                  color: Color(0xFFFAFAFA).withOpacity(1),
                                   borderRadius: BorderRadius.circular(50)),
                               child: Row(
                                 children: const [
@@ -175,7 +175,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                           child: Container(
                             padding: const EdgeInsets.all(8),
                             decoration: BoxDecoration(
-                                color: Colors.white.withOpacity(0.5),
+                                color: Color(0xFFFAFAFA).withOpacity(1),
                                 borderRadius: BorderRadius.circular(8)),
                             child: Row(
                               children: const [
