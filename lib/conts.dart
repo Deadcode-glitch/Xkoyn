@@ -11,8 +11,7 @@ class UpgradeModal extends StatelessWidget {
       width: MediaQuery.of(context).size.width,
       padding: const EdgeInsets.only(left: 25, top: 20, right: 25),
       decoration: BoxDecoration(
-          color: const Color.fromARGB(255, 255, 255, 255),
-          borderRadius: BorderRadius.circular(20)),
+          color: Color(0xFF232532), borderRadius: BorderRadius.circular(20)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
@@ -27,7 +26,7 @@ class UpgradeModal extends StatelessWidget {
           const Text(
             'Electro Pack',
             style: TextStyle(
-                color: Color.fromARGB(255, 0, 0, 0),
+                color: Color.fromARGB(255, 255, 255, 255),
                 fontSize: 24,
                 fontFamily: 'Montserrat SemiBold',
                 fontWeight: FontWeight.w700),
@@ -44,7 +43,7 @@ class UpgradeModal extends StatelessWidget {
                     'Upgrade Period',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                        color: Color.fromARGB(255, 165, 165, 165),
+                        color: Color.fromARGB(255, 228, 228, 228),
                         fontWeight: FontWeight.w300,
                         fontFamily: 'Montserrat Regular',
                         fontSize: 12),
@@ -61,7 +60,7 @@ class UpgradeModal extends StatelessWidget {
                       '14 Days',
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0),
+                          color: Color.fromARGB(255, 255, 255, 255),
                           fontFamily: 'Montserrat Regular',
                           fontSize: 12),
                     ),
@@ -78,7 +77,7 @@ class UpgradeModal extends StatelessWidget {
             height: 1,
             padding: const EdgeInsets.all(4),
             decoration: const BoxDecoration(
-              color: Color.fromARGB(255, 234, 234, 234),
+              color: Color(0xFF191B2A),
             ),
           ),
           const SizedBox(
@@ -96,7 +95,7 @@ class UpgradeModal extends StatelessWidget {
                     'You receive',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                        color: Color.fromARGB(255, 165, 165, 165),
+                        color: Color.fromARGB(255, 228, 228, 228),
                         fontWeight: FontWeight.w300,
                         fontFamily: 'Montserrat Regular',
                         fontSize: 12),
@@ -123,7 +122,7 @@ class UpgradeModal extends StatelessWidget {
                           '15 /  ',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -143,7 +142,7 @@ class UpgradeModal extends StatelessWidget {
                           '150',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -162,7 +161,7 @@ class UpgradeModal extends StatelessWidget {
             height: 1,
             padding: const EdgeInsets.all(4),
             decoration: const BoxDecoration(
-              color: Color.fromARGB(255, 234, 234, 234),
+              color: Color(0xFF191B2A),
             ),
           ),
           const SizedBox(
@@ -180,7 +179,7 @@ class UpgradeModal extends StatelessWidget {
                     'Profit per hour',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                        color: Color.fromARGB(255, 165, 165, 165),
+                        color: Color.fromARGB(255, 228, 228, 228),
                         fontWeight: FontWeight.w300,
                         fontFamily: 'Montserrat Regular',
                         fontSize: 12),
@@ -207,7 +206,7 @@ class UpgradeModal extends StatelessWidget {
                           '+0.025 /  ',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -227,7 +226,7 @@ class UpgradeModal extends StatelessWidget {
                           '0.25',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -246,7 +245,7 @@ class UpgradeModal extends StatelessWidget {
             height: 1,
             padding: const EdgeInsets.all(4),
             decoration: const BoxDecoration(
-              color: Color.fromARGB(255, 234, 234, 234),
+              color: Color(0xFF191B2A),
             ),
           ),
           const SizedBox(
@@ -264,7 +263,7 @@ class UpgradeModal extends StatelessWidget {
                     'Profit per click',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                        color: Color.fromARGB(255, 165, 165, 165),
+                        color: Color.fromARGB(255, 228, 228, 228),
                         fontWeight: FontWeight.w300,
                         fontFamily: 'Montserrat Regular',
                         fontSize: 12),
@@ -291,7 +290,7 @@ class UpgradeModal extends StatelessWidget {
                           '0.000010 / ',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -314,7 +313,7 @@ class UpgradeModal extends StatelessWidget {
                           '5',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -339,7 +338,7 @@ class UpgradeModal extends StatelessWidget {
                   const EdgeInsets.only(top: 15, bottom: 15, right: 8, left: 8),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
-                color: Color.fromARGB(255, 0, 0, 0),
+                color: Color(0xFF7540F0),
               ),
               child: const Center(
                 child: Text(
@@ -370,8 +369,7 @@ class UpgradeModal2 extends StatelessWidget {
       width: MediaQuery.of(context).size.width,
       padding: const EdgeInsets.only(left: 25, top: 20, right: 25),
       decoration: BoxDecoration(
-          color: Color.fromARGB(255, 255, 255, 255),
-          borderRadius: BorderRadius.circular(20)),
+          color: Color(0xFF232532), borderRadius: BorderRadius.circular(20)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
@@ -386,7 +384,7 @@ class UpgradeModal2 extends StatelessWidget {
           const Text(
             'Mystic Pack',
             style: TextStyle(
-                color: Color.fromARGB(255, 0, 0, 0),
+                color: Color.fromARGB(255, 255, 255, 255),
                 fontSize: 24,
                 fontFamily: 'Montserrat SemiBold',
                 fontWeight: FontWeight.w700),
@@ -403,7 +401,7 @@ class UpgradeModal2 extends StatelessWidget {
                     'Upgrade Period',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                        color: Color.fromARGB(255, 165, 165, 165),
+                        color: Color.fromARGB(255, 228, 228, 228),
                         fontWeight: FontWeight.w300,
                         fontFamily: 'Montserrat Regular',
                         fontSize: 12),
@@ -420,7 +418,7 @@ class UpgradeModal2 extends StatelessWidget {
                       '14 Days',
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0),
+                          color: Color.fromARGB(255, 255, 255, 255),
                           fontFamily: 'Montserrat Regular',
                           fontSize: 12),
                     ),
@@ -437,7 +435,7 @@ class UpgradeModal2 extends StatelessWidget {
             height: 1,
             padding: const EdgeInsets.all(4),
             decoration: const BoxDecoration(
-              color: Color.fromARGB(255, 234, 234, 234),
+              color: Color(0xFF191B2A),
             ),
           ),
           const SizedBox(
@@ -455,7 +453,7 @@ class UpgradeModal2 extends StatelessWidget {
                     'You receive',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                        color: Color.fromARGB(255, 165, 165, 165),
+                        color: Color.fromARGB(255, 228, 228, 228),
                         fontWeight: FontWeight.w300,
                         fontFamily: 'Montserrat Regular',
                         fontSize: 12),
@@ -482,7 +480,7 @@ class UpgradeModal2 extends StatelessWidget {
                           '20 /  ',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -502,7 +500,7 @@ class UpgradeModal2 extends StatelessWidget {
                           '300',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -521,7 +519,7 @@ class UpgradeModal2 extends StatelessWidget {
             height: 1,
             padding: const EdgeInsets.all(4),
             decoration: const BoxDecoration(
-              color: Color.fromARGB(255, 234, 234, 234),
+              color: Color(0xFF191B2A),
             ),
           ),
           const SizedBox(
@@ -539,7 +537,7 @@ class UpgradeModal2 extends StatelessWidget {
                     'Profit per hour',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                        color: Color.fromARGB(255, 165, 165, 165),
+                        color: Color.fromARGB(255, 228, 228, 228),
                         fontWeight: FontWeight.w300,
                         fontFamily: 'Montserrat Regular',
                         fontSize: 12),
@@ -566,7 +564,7 @@ class UpgradeModal2 extends StatelessWidget {
                           '+0.035 /  ',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -586,7 +584,7 @@ class UpgradeModal2 extends StatelessWidget {
                           '0.35',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -605,7 +603,7 @@ class UpgradeModal2 extends StatelessWidget {
             height: 1,
             padding: const EdgeInsets.all(4),
             decoration: const BoxDecoration(
-              color: Color.fromARGB(255, 234, 234, 234),
+              color: Color(0xFF191B2A),
             ),
           ),
           const SizedBox(
@@ -623,7 +621,7 @@ class UpgradeModal2 extends StatelessWidget {
                     'Profit per click',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                        color: Color.fromARGB(255, 165, 165, 165),
+                        color: Color.fromARGB(255, 228, 228, 228),
                         fontWeight: FontWeight.w300,
                         fontFamily: 'Montserrat Regular',
                         fontSize: 12),
@@ -650,7 +648,7 @@ class UpgradeModal2 extends StatelessWidget {
                           '0.000015 /',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -670,7 +668,7 @@ class UpgradeModal2 extends StatelessWidget {
                           '10',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -695,7 +693,7 @@ class UpgradeModal2 extends StatelessWidget {
                   const EdgeInsets.only(top: 15, bottom: 15, right: 8, left: 8),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
-                color: Color.fromARGB(255, 0, 0, 0),
+                color: Color(0xFF7540F0),
               ),
               child: const Center(
                 child: Text(
@@ -726,8 +724,7 @@ class UpgradeModal3 extends StatelessWidget {
       width: MediaQuery.of(context).size.width,
       padding: const EdgeInsets.only(left: 25, top: 20, right: 25),
       decoration: BoxDecoration(
-          color: Color.fromARGB(255, 255, 255, 255),
-          borderRadius: BorderRadius.circular(20)),
+          color: Color(0xFF232532), borderRadius: BorderRadius.circular(20)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
@@ -742,7 +739,7 @@ class UpgradeModal3 extends StatelessWidget {
           const Text(
             'Solar Pack',
             style: TextStyle(
-                color: Color.fromARGB(255, 0, 0, 0),
+                color: Color.fromARGB(255, 255, 255, 255),
                 fontSize: 24,
                 fontFamily: 'Montserrat SemiBold',
                 fontWeight: FontWeight.w700),
@@ -759,7 +756,7 @@ class UpgradeModal3 extends StatelessWidget {
                     'Upgrade Period',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                        color: Color.fromARGB(255, 165, 165, 165),
+                        color: Color.fromARGB(255, 228, 228, 228),
                         fontWeight: FontWeight.w300,
                         fontFamily: 'Montserrat Regular',
                         fontSize: 12),
@@ -776,7 +773,7 @@ class UpgradeModal3 extends StatelessWidget {
                       '14 Days',
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0),
+                          color: Color.fromARGB(255, 255, 255, 255),
                           fontFamily: 'Montserrat Regular',
                           fontSize: 12),
                     ),
@@ -793,7 +790,7 @@ class UpgradeModal3 extends StatelessWidget {
             height: 1,
             padding: const EdgeInsets.all(4),
             decoration: const BoxDecoration(
-              color: Color.fromARGB(255, 234, 234, 234),
+              color: Color(0xFF191B2A),
             ),
           ),
           const SizedBox(
@@ -811,7 +808,7 @@ class UpgradeModal3 extends StatelessWidget {
                     'You receive',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                        color: Color.fromARGB(255, 165, 165, 165),
+                        color: Color.fromARGB(255, 228, 228, 228),
                         fontWeight: FontWeight.w300,
                         fontFamily: 'Montserrat Regular',
                         fontSize: 12),
@@ -838,7 +835,7 @@ class UpgradeModal3 extends StatelessWidget {
                           '30 /  ',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -858,7 +855,7 @@ class UpgradeModal3 extends StatelessWidget {
                           '500',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -877,7 +874,7 @@ class UpgradeModal3 extends StatelessWidget {
             height: 1,
             padding: const EdgeInsets.all(4),
             decoration: const BoxDecoration(
-              color: Color.fromARGB(255, 234, 234, 234),
+              color: Color(0xFF191B2A),
             ),
           ),
           const SizedBox(
@@ -895,7 +892,7 @@ class UpgradeModal3 extends StatelessWidget {
                     'Profit per hour',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                        color: Color.fromARGB(255, 165, 165, 165),
+                        color: Color.fromARGB(255, 228, 228, 228),
                         fontFamily: 'Montserrat Regular',
                         fontWeight: FontWeight.w300,
                         fontSize: 12),
@@ -922,7 +919,7 @@ class UpgradeModal3 extends StatelessWidget {
                           '+0.045 /  ',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -942,7 +939,7 @@ class UpgradeModal3 extends StatelessWidget {
                           '0.45',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -961,7 +958,7 @@ class UpgradeModal3 extends StatelessWidget {
             height: 1,
             padding: const EdgeInsets.all(4),
             decoration: const BoxDecoration(
-              color: Color.fromARGB(255, 234, 234, 234),
+              color: Color(0xFF191B2A),
             ),
           ),
           const SizedBox(
@@ -979,7 +976,7 @@ class UpgradeModal3 extends StatelessWidget {
                     'Profit per click',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                        color: Color.fromARGB(255, 165, 165, 165),
+                        color: Color.fromARGB(255, 228, 228, 228),
                         fontFamily: 'Montserrat Regular',
                         fontWeight: FontWeight.w300,
                         fontSize: 12),
@@ -1006,7 +1003,7 @@ class UpgradeModal3 extends StatelessWidget {
                           '0.000020 /  ',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -1029,7 +1026,7 @@ class UpgradeModal3 extends StatelessWidget {
                           '15',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -1054,13 +1051,13 @@ class UpgradeModal3 extends StatelessWidget {
                   const EdgeInsets.only(top: 15, bottom: 15, right: 8, left: 8),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
-                color: Color.fromARGB(255, 0, 0, 0),
+                color: Color(0xFF7540F0),
               ),
               child: const Center(
                 child: Text(
                   'Continue',
                   style: TextStyle(
-                      color: Color.fromARGB(255, 255, 255, 255),
+                      color: Color(0xFFFFFFFF),
                       fontSize: 12,
                       fontFamily: 'Montserrat Medium',
                       fontWeight: FontWeight.w500),
@@ -1085,8 +1082,7 @@ class UpgradeModal4 extends StatelessWidget {
       width: MediaQuery.of(context).size.width,
       padding: const EdgeInsets.only(left: 25, top: 20, right: 25),
       decoration: BoxDecoration(
-          color: Color.fromARGB(255, 255, 255, 255),
-          borderRadius: BorderRadius.circular(20)),
+          color: Color(0xFF232532), borderRadius: BorderRadius.circular(20)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
@@ -1101,7 +1097,7 @@ class UpgradeModal4 extends StatelessWidget {
           const Text(
             'Luna Pack',
             style: TextStyle(
-                color: Color.fromARGB(255, 0, 0, 0),
+                color: Color.fromARGB(255, 255, 255, 255),
                 fontSize: 24,
                 fontFamily: 'Montserrat SemiBold',
                 fontWeight: FontWeight.w700),
@@ -1118,7 +1114,7 @@ class UpgradeModal4 extends StatelessWidget {
                     'Upgrade Period',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                        color: Color.fromARGB(255, 165, 165, 165),
+                        color: Color.fromARGB(255, 228, 228, 228),
                         fontWeight: FontWeight.w300,
                         fontFamily: 'Montserrat Regular',
                         fontSize: 12),
@@ -1135,7 +1131,7 @@ class UpgradeModal4 extends StatelessWidget {
                       '14 Days',
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0),
+                          color: Color.fromARGB(255, 255, 255, 255),
                           fontFamily: 'Montserrat Regular',
                           fontSize: 12),
                     ),
@@ -1152,7 +1148,7 @@ class UpgradeModal4 extends StatelessWidget {
             height: 1,
             padding: const EdgeInsets.all(4),
             decoration: const BoxDecoration(
-              color: Color.fromARGB(255, 234, 234, 234),
+              color: Color(0xFF191B2A),
             ),
           ),
           const SizedBox(
@@ -1170,7 +1166,7 @@ class UpgradeModal4 extends StatelessWidget {
                     'You receive',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                        color: Color.fromARGB(255, 165, 165, 165),
+                        color: Color.fromARGB(255, 228, 228, 228),
                         fontWeight: FontWeight.w300,
                         fontFamily: 'Montserrat Regular',
                         fontSize: 12),
@@ -1197,7 +1193,7 @@ class UpgradeModal4 extends StatelessWidget {
                           '50 /  ',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromRGBO(255, 255, 255, 1),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -1217,7 +1213,7 @@ class UpgradeModal4 extends StatelessWidget {
                           '800',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -1236,7 +1232,7 @@ class UpgradeModal4 extends StatelessWidget {
             height: 1,
             padding: const EdgeInsets.all(4),
             decoration: const BoxDecoration(
-              color: Color.fromARGB(255, 234, 234, 234),
+              color: Color(0xFF191B2A),
             ),
           ),
           const SizedBox(
@@ -1254,7 +1250,7 @@ class UpgradeModal4 extends StatelessWidget {
                     'Profit per hour',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                        color: Color.fromARGB(255, 165, 165, 165),
+                        color: Color.fromARGB(255, 228, 228, 228),
                         fontFamily: 'Montserrat Regular',
                         fontWeight: FontWeight.w300,
                         fontSize: 12),
@@ -1281,7 +1277,7 @@ class UpgradeModal4 extends StatelessWidget {
                           '+0.055 /  ',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -1301,7 +1297,7 @@ class UpgradeModal4 extends StatelessWidget {
                           '0.55',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -1320,7 +1316,7 @@ class UpgradeModal4 extends StatelessWidget {
             height: 1,
             padding: const EdgeInsets.all(4),
             decoration: const BoxDecoration(
-              color: Color.fromARGB(255, 234, 234, 234),
+              color: Color(0xFF191B2A),
             ),
           ),
           const SizedBox(
@@ -1338,7 +1334,7 @@ class UpgradeModal4 extends StatelessWidget {
                     'Profit per click',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                        color: Color.fromARGB(255, 165, 165, 165),
+                        color: Color.fromARGB(255, 228, 228, 228),
                         fontFamily: 'Montserrat Regular',
                         fontWeight: FontWeight.w300,
                         fontSize: 12),
@@ -1365,7 +1361,7 @@ class UpgradeModal4 extends StatelessWidget {
                           '0.000025 / ',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -1388,7 +1384,7 @@ class UpgradeModal4 extends StatelessWidget {
                           '20',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -1413,7 +1409,7 @@ class UpgradeModal4 extends StatelessWidget {
                   const EdgeInsets.only(top: 15, bottom: 15, right: 8, left: 8),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
-                color: Color.fromARGB(255, 0, 0, 0),
+                color: Color(0xFF7540F0),
               ),
               child: const Center(
                 child: Text(
@@ -1444,8 +1440,7 @@ class UpgradeModal5 extends StatelessWidget {
       width: MediaQuery.of(context).size.width,
       padding: const EdgeInsets.only(left: 25, top: 20, right: 25),
       decoration: BoxDecoration(
-          color: Color.fromARGB(255, 255, 255, 255),
-          borderRadius: BorderRadius.circular(20)),
+          color: Color(0xFF232532), borderRadius: BorderRadius.circular(20)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
@@ -1460,7 +1455,7 @@ class UpgradeModal5 extends StatelessWidget {
           const Text(
             'Aqua Pack',
             style: TextStyle(
-                color: Color.fromARGB(255, 0, 0, 0),
+                color: Color.fromARGB(255, 255, 255, 255),
                 fontSize: 24,
                 fontFamily: 'Montserrat SemiBold',
                 fontWeight: FontWeight.w700),
@@ -1477,7 +1472,7 @@ class UpgradeModal5 extends StatelessWidget {
                     'Upgrade Period',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                        color: Color.fromARGB(255, 165, 165, 165),
+                        color: Color.fromARGB(255, 228, 228, 228),
                         fontWeight: FontWeight.w300,
                         fontFamily: 'Montserrat Regular',
                         fontSize: 12),
@@ -1494,7 +1489,7 @@ class UpgradeModal5 extends StatelessWidget {
                       '14 Days',
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0),
+                          color: Color.fromARGB(255, 255, 255, 255),
                           fontFamily: 'Montserrat Regular',
                           fontSize: 12),
                     ),
@@ -1511,7 +1506,7 @@ class UpgradeModal5 extends StatelessWidget {
             height: 1,
             padding: const EdgeInsets.all(4),
             decoration: const BoxDecoration(
-              color: Color.fromARGB(255, 234, 234, 234),
+              color: Color(0xFF19132A),
             ),
           ),
           const SizedBox(
@@ -1529,7 +1524,7 @@ class UpgradeModal5 extends StatelessWidget {
                     'You receive',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                        color: Color.fromARGB(255, 165, 165, 165),
+                        color: Color.fromARGB(255, 228, 228, 228),
                         fontWeight: FontWeight.w300,
                         fontFamily: 'Montserrat Regular',
                         fontSize: 12),
@@ -1556,7 +1551,7 @@ class UpgradeModal5 extends StatelessWidget {
                           '100 /  ',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -1576,7 +1571,7 @@ class UpgradeModal5 extends StatelessWidget {
                           '1500',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -1595,7 +1590,7 @@ class UpgradeModal5 extends StatelessWidget {
             height: 1,
             padding: const EdgeInsets.all(4),
             decoration: const BoxDecoration(
-              color: Color.fromARGB(255, 234, 234, 234),
+              color: Color(0xFF191B2A),
             ),
           ),
           const SizedBox(
@@ -1613,7 +1608,7 @@ class UpgradeModal5 extends StatelessWidget {
                     'Profit per hour',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                        color: Color.fromARGB(255, 165, 165, 165),
+                        color: Color.fromARGB(255, 228, 228, 228),
                         fontFamily: 'Montserrat Regular',
                         fontWeight: FontWeight.w300,
                         fontSize: 12),
@@ -1640,7 +1635,7 @@ class UpgradeModal5 extends StatelessWidget {
                           '+0.060 /  ',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -1660,7 +1655,7 @@ class UpgradeModal5 extends StatelessWidget {
                           '0.60',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -1679,7 +1674,7 @@ class UpgradeModal5 extends StatelessWidget {
             height: 1,
             padding: const EdgeInsets.all(4),
             decoration: const BoxDecoration(
-              color: Color.fromARGB(255, 234, 234, 234),
+              color: Color(0xFF19132A),
             ),
           ),
           const SizedBox(
@@ -1697,7 +1692,7 @@ class UpgradeModal5 extends StatelessWidget {
                     'Profit per click',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                        color: Color.fromARGB(255, 165, 165, 165),
+                        color: Color.fromARGB(255, 228, 228, 228),
                         fontFamily: 'Montserrat Regular',
                         fontWeight: FontWeight.w300,
                         fontSize: 12),
@@ -1724,7 +1719,7 @@ class UpgradeModal5 extends StatelessWidget {
                           '0.000030 / ',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -1744,7 +1739,7 @@ class UpgradeModal5 extends StatelessWidget {
                           ' 25 ',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -1769,7 +1764,7 @@ class UpgradeModal5 extends StatelessWidget {
                   const EdgeInsets.only(top: 15, bottom: 15, right: 8, left: 8),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
-                color: Color.fromARGB(255, 0, 0, 0),
+                color: Color(0xFF7540F0),
               ),
               child: const Center(
                 child: Text(
@@ -1800,8 +1795,7 @@ class UpgradeModal6 extends StatelessWidget {
       width: MediaQuery.of(context).size.width,
       padding: const EdgeInsets.only(left: 25, top: 20, right: 25),
       decoration: BoxDecoration(
-          color: Color.fromARGB(255, 255, 255, 255),
-          borderRadius: BorderRadius.circular(20)),
+          color: Color(0xFF232532), borderRadius: BorderRadius.circular(20)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
@@ -1816,7 +1810,7 @@ class UpgradeModal6 extends StatelessWidget {
           const Text(
             'Inferno Pack',
             style: TextStyle(
-                color: Color.fromARGB(255, 0, 0, 0),
+                color: Color.fromARGB(255, 255, 255, 255),
                 fontSize: 24,
                 fontFamily: 'Montserrat SemiBold',
                 fontWeight: FontWeight.w700),
@@ -1833,7 +1827,7 @@ class UpgradeModal6 extends StatelessWidget {
                     'Upgrade Period',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                        color: Color.fromARGB(255, 165, 165, 165),
+                        color: Color.fromARGB(255, 228, 228, 228),
                         fontWeight: FontWeight.w300,
                         fontFamily: 'Montserrat Regular',
                         fontSize: 12),
@@ -1850,7 +1844,7 @@ class UpgradeModal6 extends StatelessWidget {
                       '14 Days',
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0),
+                          color: Color.fromARGB(255, 255, 255, 255),
                           fontFamily: 'Montserrat Regular',
                           fontSize: 12),
                     ),
@@ -1867,7 +1861,7 @@ class UpgradeModal6 extends StatelessWidget {
             height: 1,
             padding: const EdgeInsets.all(4),
             decoration: const BoxDecoration(
-              color: Color.fromARGB(255, 234, 234, 234),
+              color: Color(0xFF191B2A),
             ),
           ),
           const SizedBox(
@@ -1885,7 +1879,7 @@ class UpgradeModal6 extends StatelessWidget {
                     'You receive',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                        color: Color.fromARGB(255, 165, 165, 165),
+                        color: Color.fromARGB(255, 228, 228, 228),
                         fontFamily: 'Montserrat Regular',
                         fontWeight: FontWeight.w300,
                         fontSize: 12),
@@ -1912,7 +1906,7 @@ class UpgradeModal6 extends StatelessWidget {
                           '250 /  ',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -1932,7 +1926,7 @@ class UpgradeModal6 extends StatelessWidget {
                           '2500',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -1951,7 +1945,7 @@ class UpgradeModal6 extends StatelessWidget {
             height: 1,
             padding: const EdgeInsets.all(4),
             decoration: const BoxDecoration(
-              color: Color.fromARGB(255, 234, 234, 234),
+              color: Color(0xFF191B2A),
             ),
           ),
           const SizedBox(
@@ -1969,7 +1963,7 @@ class UpgradeModal6 extends StatelessWidget {
                     'Profit per hour',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                        color: Color.fromARGB(255, 165, 165, 165),
+                        color: Color.fromARGB(255, 228, 228, 228),
                         fontFamily: 'Montserrat Regular',
                         fontWeight: FontWeight.w300,
                         fontSize: 12),
@@ -1996,7 +1990,7 @@ class UpgradeModal6 extends StatelessWidget {
                           '+0.070 /  ',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -2016,7 +2010,7 @@ class UpgradeModal6 extends StatelessWidget {
                           '0.70',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -2035,7 +2029,7 @@ class UpgradeModal6 extends StatelessWidget {
             height: 1,
             padding: const EdgeInsets.all(4),
             decoration: const BoxDecoration(
-              color: Color.fromARGB(255, 234, 234, 234),
+              color: Color(0xFF191B2A),
             ),
           ),
           const SizedBox(
@@ -2053,7 +2047,7 @@ class UpgradeModal6 extends StatelessWidget {
                     'Profit per click',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                        color: Color.fromARGB(255, 165, 165, 165),
+                        color: Color.fromARGB(255, 228, 228, 228),
                         fontWeight: FontWeight.w300,
                         fontFamily: 'Montserrat Regular',
                         fontSize: 12),
@@ -2080,7 +2074,7 @@ class UpgradeModal6 extends StatelessWidget {
                           '0.000035 / ',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -2103,7 +2097,7 @@ class UpgradeModal6 extends StatelessWidget {
                           '30',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontFamily: 'Montserrat Regular',
                               fontSize: 12),
                         ),
@@ -2128,7 +2122,7 @@ class UpgradeModal6 extends StatelessWidget {
                   const EdgeInsets.only(top: 15, bottom: 15, right: 8, left: 8),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
-                color: Color.fromARGB(255, 0, 0, 0),
+                color: Color(0xFF7540F0),
               ),
               child: const Center(
                 child: Text(

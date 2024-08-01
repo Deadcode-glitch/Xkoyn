@@ -23,7 +23,7 @@ class _DashboardState extends State<Dashboard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color(0xFF0E101F),
       body: Stack(
         fit: StackFit.expand,
         children: [
@@ -90,7 +90,7 @@ class _DashboardState extends State<Dashboard> {
                     unselectedItemColor: Color.fromARGB(255, 166, 166, 166),
                     showSelectedLabels: true,
                     showUnselectedLabels: true,
-                    backgroundColor: Colors.black, // Set background color
+                    backgroundColor: Color(0xFF232532), // Set background color
                   ),
                 ),
               ),

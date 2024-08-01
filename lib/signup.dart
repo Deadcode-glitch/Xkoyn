@@ -179,7 +179,7 @@ class _SignUpPageState extends State<SignUpPage> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+      backgroundColor: Color(0xFF0E101F),
       body: FadeTransition(
         opacity: _fadeAnimation,
         child: SlideTransition(
@@ -193,7 +193,7 @@ class _SignUpPageState extends State<SignUpPage> with TickerProviderStateMixin {
                 const Text(
                   'Xkoyn',
                   style: TextStyle(
-                      color: Color.fromARGB(255, 0, 0, 0),
+                      color: Color.fromARGB(255, 255, 255, 255),
                       fontSize: 24,
                       fontFamily: 'Montserrat SemiBold',
                       fontWeight: FontWeight.w600),
@@ -206,12 +206,13 @@ class _SignUpPageState extends State<SignUpPage> with TickerProviderStateMixin {
                   width: MediaQuery.of(context).size.width,
                   height: 45,
                   decoration: BoxDecoration(
-                      color: const Color(0xFFFAFAFA),
+                      color: const Color(0xFF232532),
                       borderRadius: BorderRadius.circular(10)),
                   child: TextField(
                     controller: _nicknameController,
                     style: const TextStyle(
-                        fontSize: 12, color: Color.fromARGB(255, 0, 0, 0)),
+                        fontSize: 12,
+                        color: Color.fromARGB(255, 255, 255, 255)),
                     decoration: const InputDecoration(
                       labelText: 'Nickname',
                       labelStyle: TextStyle(
@@ -233,12 +234,13 @@ class _SignUpPageState extends State<SignUpPage> with TickerProviderStateMixin {
                   width: MediaQuery.of(context).size.width,
                   height: 45,
                   decoration: BoxDecoration(
-                      color: const Color(0xFFFAFAFA),
+                      color: const Color(0xFF232532),
                       borderRadius: BorderRadius.circular(10)),
                   child: TextField(
                     controller: _referralController,
                     style: const TextStyle(
-                        fontSize: 12, color: Color.fromARGB(255, 0, 0, 0)),
+                        fontSize: 12,
+                        color: Color.fromARGB(255, 255, 255, 255)),
                     decoration: const InputDecoration(
                       labelText: 'Referral Code',
                       hintText: 'optional',
@@ -265,13 +267,13 @@ class _SignUpPageState extends State<SignUpPage> with TickerProviderStateMixin {
                         top: 15, bottom: 15, right: 8, left: 8),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
-                      color: const Color.fromARGB(255, 0, 0, 0),
+                      color: Color(0xFF7540F0),
                     ),
                     child: const Center(
                       child: Text(
                         'Continue',
                         style: TextStyle(
-                            color: Color.fromARGB(255, 255, 255, 255),
+                            color: Color.fromRGBO(255, 255, 255, 1),
                             fontSize: 12,
                             fontFamily: 'Montserrat Regular',
                             fontWeight: FontWeight.w500),

@@ -23,7 +23,7 @@ class _KoynState extends State<Koyn> {
               ), // Border color and width
             ),
             backgroundColor:
-                Color(0xFFFAFAFA), // Example of custom background color
+                Color(0xFF232532), // Example of custom background color
             child: Container(
               padding: const EdgeInsets.all(20),
               height: 200,
@@ -33,7 +33,7 @@ class _KoynState extends State<Koyn> {
                   Text(
                     '$action Confirmation',
                     style: const TextStyle(
-                      color: Color.fromARGB(255, 0, 0, 0),
+                      color: Color.fromARGB(255, 255, 255, 255),
                       fontSize: 14,
                       fontFamily: 'Montserrat Medium',
                       fontWeight: FontWeight.bold,
@@ -44,7 +44,7 @@ class _KoynState extends State<Koyn> {
                     'You cannot perform any transactions yet until coin has been listed on exchange platforms',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                        color: Color(0xFF898989),
+                        color: Color.fromARGB(255, 215, 215, 215),
                         fontFamily: 'Montserrat Regular',
                         fontSize: 10,
                         fontWeight: FontWeight.w300),
@@ -60,7 +60,7 @@ class _KoynState extends State<Koyn> {
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
-                            color: Color.fromARGB(255, 0, 0, 0),
+                            color: Color(0xFF7540F0),
                           ),
                           padding: const EdgeInsets.symmetric(
                             vertical: 10,
@@ -89,7 +89,7 @@ class _KoynState extends State<Koyn> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color(0xFF0E101F),
       body: SingleChildScrollView(
         child: Container(
           padding: const EdgeInsets.only(left: 20, top: 20, right: 20),
@@ -110,12 +110,12 @@ class _KoynState extends State<Koyn> {
                         padding: const EdgeInsets.all(8),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(5),
-                          color: Color(0xFFFAFAFA),
+                          color: Color(0xFF191B2A),
                         ),
                         child: const Center(
                           child: Icon(
                             Icons.arrow_back_ios,
-                            color: Color.fromARGB(255, 0, 0, 0),
+                            color: Color.fromARGB(255, 255, 255, 255),
                             size: 16,
                           ),
                         ),
@@ -127,7 +127,7 @@ class _KoynState extends State<Koyn> {
                     const Text(
                       'XKOYN Balance',
                       style: TextStyle(
-                        color: Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 255, 255, 255),
                         fontSize: 12,
                         fontFamily: 'Montserrat Medium',
                         fontWeight: FontWeight.w400,
@@ -142,7 +142,7 @@ class _KoynState extends State<Koyn> {
                         const Text(
                           '0.0',
                           style: TextStyle(
-                            color: Color.fromARGB(255, 0, 0, 0),
+                            color: Color.fromARGB(255, 255, 255, 255),
                             fontSize: 30,
                             fontFamily: 'Montserrat Bold',
                             fontWeight: FontWeight.w700,
@@ -158,7 +158,7 @@ class _KoynState extends State<Koyn> {
                     const Text(
                       '\$0.00',
                       style: TextStyle(
-                        color: Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 255, 255, 255),
                         fontSize: 12,
                         fontFamily: 'Montserrat Regular',
                         fontWeight: FontWeight.w300,
@@ -182,7 +182,7 @@ class _KoynState extends State<Koyn> {
                         padding: const EdgeInsets.all(4),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8),
-                          color: Color(0xFFFAFAFA),
+                          color: Color(0xFF191B2A),
                         ),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -190,6 +190,7 @@ class _KoynState extends State<Koyn> {
                             Icon(
                               Icons.arrow_downward,
                               size: 15,
+                              color: Colors.white,
                             ),
                             SizedBox(
                               width: 4,
@@ -197,7 +198,7 @@ class _KoynState extends State<Koyn> {
                             Text(
                               'Deposit',
                               style: TextStyle(
-                                color: Color.fromARGB(255, 0, 0, 0),
+                                color: Color.fromARGB(255, 255, 255, 255),
                                 fontSize: 12,
                                 fontFamily: 'Montserrat Regular',
                               ),
@@ -220,7 +221,7 @@ class _KoynState extends State<Koyn> {
                         padding: const EdgeInsets.all(4),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8),
-                          color: Color(0xFFFAFAFA),
+                          color: Color(0xFF191B2A),
                         ),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -228,6 +229,7 @@ class _KoynState extends State<Koyn> {
                             Icon(
                               Icons.arrow_upward,
                               size: 15,
+                              color: Colors.white,
                             ),
                             SizedBox(
                               width: 4,
@@ -235,7 +237,7 @@ class _KoynState extends State<Koyn> {
                             Text(
                               'Withdraw',
                               style: TextStyle(
-                                color: Color.fromARGB(255, 0, 0, 0),
+                                color: Color.fromARGB(255, 255, 255, 255),
                                 fontSize: 12,
                                 fontFamily: 'Montserrat Regular',
                               ),
@@ -257,7 +259,7 @@ class _KoynState extends State<Koyn> {
                     padding: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
-                      color: Color(0xFFFAFAFA),
+                      color: Color(0xFF191B2A),
                     ),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -267,7 +269,7 @@ class _KoynState extends State<Koyn> {
                             Text(
                               'Xkoyn withdrawals and deposits will be open after the token goes live on exchanges',
                               style: TextStyle(
-                                color: Color.fromARGB(255, 78, 78, 78),
+                                color: Color.fromARGB(255, 255, 255, 255),
                                 fontFamily: 'Montserrat Regular',
                                 fontSize: 10,
                                 fontWeight: FontWeight.w300,
@@ -281,14 +283,17 @@ class _KoynState extends State<Koyn> {
                   const SizedBox(
                     height: 50,
                   ),
-                  const Icon(Icons.cancel),
+                  const Icon(
+                    Icons.cancel,
+                    color: Colors.white,
+                  ),
                   const SizedBox(
                     height: 10,
                   ),
                   const Text(
                     'No Transactions',
                     style: TextStyle(
-                      color: Color.fromARGB(255, 0, 0, 0),
+                      color: Color.fromARGB(255, 255, 255, 255),
                       fontSize: 20,
                       fontFamily: 'Montserrat SemiBold',
                       fontWeight: FontWeight.w700,
@@ -301,7 +306,7 @@ class _KoynState extends State<Koyn> {
                     'You are yet to make a transaction. Any transaction made will show up here',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      color: Color(0xFF8A8A8A),
+                      color: Color.fromARGB(255, 218, 218, 218),
                       fontSize: 10,
                       fontFamily: 'Montserrat Regular',
                       fontWeight: FontWeight.w300,

@@ -190,7 +190,7 @@ class _UwalletState extends State<Uwallet> with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 255, 255, 255),
+      backgroundColor: Color(0xFF0E101F),
       body: Stack(
         children: [
           SingleChildScrollView(
@@ -212,12 +212,13 @@ class _UwalletState extends State<Uwallet> with SingleTickerProviderStateMixin {
                             width: 25,
                             padding: const EdgeInsets.all(8),
                             decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(5),
-                                color: Color(0xFFFAFAFA)),
+                              borderRadius: BorderRadius.circular(5),
+                              color: Color(0xFF191B2A),
+                            ),
                             child: const Center(
                               child: Icon(
                                 Icons.arrow_back_ios,
-                                color: Color.fromARGB(255, 0, 0, 0),
+                                color: Color.fromARGB(255, 255, 255, 255),
                                 size: 16,
                               ),
                             ),
@@ -229,7 +230,7 @@ class _UwalletState extends State<Uwallet> with SingleTickerProviderStateMixin {
                         const Text(
                           'USDT Balance',
                           style: TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontSize: 12,
                               fontFamily: 'Montserrat Medium',
                               fontWeight: FontWeight.w400),
@@ -243,7 +244,7 @@ class _UwalletState extends State<Uwallet> with SingleTickerProviderStateMixin {
                             const Text(
                               '10',
                               style: TextStyle(
-                                  color: Color.fromARGB(255, 0, 0, 0),
+                                  color: Color.fromARGB(255, 255, 255, 255),
                                   fontSize: 30,
                                   fontFamily: 'Montserrat Bold',
                                   fontWeight: FontWeight.w700),
@@ -260,7 +261,7 @@ class _UwalletState extends State<Uwallet> with SingleTickerProviderStateMixin {
                         Text(
                           '\$${dollarEquivalent.toStringAsFixed(2)}',
                           style: const TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 215, 215, 215),
                               fontSize: 12,
                               fontFamily: 'Montserrat Regular',
                               fontWeight: FontWeight.w300),
@@ -283,13 +284,14 @@ class _UwalletState extends State<Uwallet> with SingleTickerProviderStateMixin {
                             padding: const EdgeInsets.all(4),
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(8),
-                                color: Color(0xFFFAFAFA)),
+                                color: Color(0xFF191B2A)),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: const [
                                 Icon(
                                   Icons.arrow_downward,
                                   size: 15,
+                                  color: Colors.white,
                                 ),
                                 SizedBox(
                                   width: 4,
@@ -297,7 +299,7 @@ class _UwalletState extends State<Uwallet> with SingleTickerProviderStateMixin {
                                 Text(
                                   'Deposit ',
                                   style: TextStyle(
-                                      color: Color.fromARGB(255, 0, 0, 0),
+                                      color: Color.fromRGBO(255, 255, 255, 1),
                                       fontFamily: 'Montserrat Regular',
                                       fontSize: 12),
                                 ),
@@ -319,13 +321,14 @@ class _UwalletState extends State<Uwallet> with SingleTickerProviderStateMixin {
                             padding: const EdgeInsets.all(4),
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(8),
-                                color: Color(0xFFFAFAFA)),
+                                color: Color(0xFF191B2A)),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: const [
                                 Icon(
                                   Icons.arrow_upward,
                                   size: 15,
+                                  color: Colors.white,
                                 ),
                                 SizedBox(
                                   width: 4,
@@ -333,7 +336,7 @@ class _UwalletState extends State<Uwallet> with SingleTickerProviderStateMixin {
                                 Text(
                                   'Withdraw',
                                   style: TextStyle(
-                                      color: Color.fromARGB(255, 0, 0, 0),
+                                      color: Color.fromARGB(255, 255, 255, 255),
                                       fontFamily: 'Montserrat Regular',
                                       fontSize: 12),
                                 ),
@@ -352,7 +355,7 @@ class _UwalletState extends State<Uwallet> with SingleTickerProviderStateMixin {
                       Text(
                         'Transactions',
                         style: TextStyle(
-                            color: Color.fromARGB(255, 0, 0, 0),
+                            color: Color.fromARGB(255, 255, 255, 255),
                             fontFamily: 'Montserrat Regular',
                             fontSize: 12),
                       ),
@@ -368,7 +371,7 @@ class _UwalletState extends State<Uwallet> with SingleTickerProviderStateMixin {
                       padding: const EdgeInsets.all(4),
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8),
-                          color: Color(0xFFFAFAFA)),
+                          color: Color(0xFF191B2A)),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
@@ -376,7 +379,7 @@ class _UwalletState extends State<Uwallet> with SingleTickerProviderStateMixin {
                               padding: const EdgeInsets.all(8),
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(50),
-                                color: Color.fromARGB(239, 232, 232, 232),
+                                color: Color(0xFF232532),
                               ),
                               child: const Icon(
                                 Icons.arrow_downward,
@@ -394,7 +397,7 @@ class _UwalletState extends State<Uwallet> with SingleTickerProviderStateMixin {
                                 Text(
                                   'Received',
                                   style: TextStyle(
-                                      color: Color.fromRGBO(0, 0, 0, 1),
+                                      color: Color.fromRGBO(255, 255, 255, 1),
                                       fontFamily: 'Montserrat Regular',
                                       fontSize: 12),
                                 ),
@@ -415,7 +418,7 @@ class _UwalletState extends State<Uwallet> with SingleTickerProviderStateMixin {
                               const Text(
                                 '+10 USDT',
                                 style: TextStyle(
-                                    color: Color.fromARGB(255, 0, 0, 0),
+                                    color: Color.fromARGB(255, 255, 255, 255),
                                     fontFamily: 'Montserrat Regular',
                                     fontSize: 12),
                               ),

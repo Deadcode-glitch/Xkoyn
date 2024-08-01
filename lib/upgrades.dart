@@ -74,11 +74,11 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20.0),
                   side: const BorderSide(
-                    color: Color.fromARGB(255, 174, 174, 174),
+                    color: Color(0xFF232532),
                     width: 1.0,
                   ),
                 ),
-                backgroundColor: Color(0xFFFAFAFA),
+                backgroundColor: Color(0xFF191B2A),
                 child: Container(
                   padding: const EdgeInsets.all(20),
                   child: Column(
@@ -113,7 +113,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                       const Text(
                         'Oops',
                         style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0),
+                          color: Color.fromARGB(255, 255, 255, 255),
                           fontSize: 14,
                           fontFamily: 'Montserrat SemiBold',
                           fontWeight: FontWeight.bold,
@@ -124,7 +124,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                         'You do not have sufficient balance to purchase this pack',
                         textAlign: TextAlign.center,
                         style: TextStyle(
-                          color: Color.fromARGB(255, 80, 80, 80),
+                          color: Color.fromARGB(255, 201, 201, 201),
                           fontSize: 10,
                           fontFamily: 'Montserrat Regular',
                           fontWeight: FontWeight.w300,
@@ -151,7 +151,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                 style: TextStyle(
                                   fontSize: 12,
                                   fontFamily: 'Montserrat SemiBold',
-                                  color: Color.fromARGB(255, 0, 0, 0),
+                                  color: Color(0xFF7540F0),
                                   fontWeight: FontWeight.w600,
                                 ),
                               ),
@@ -318,7 +318,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color(0xFF0E101F),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -335,7 +335,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                       Text(
                         'Upgrades',
                         style: TextStyle(
-                            color: Color.fromARGB(255, 0, 0, 0),
+                            color: Color.fromARGB(255, 255, 255, 255),
                             fontWeight: FontWeight.w700,
                             fontFamily: 'Montserrat Bold',
                             fontSize: 22),
@@ -358,7 +358,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                 height: 170,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(20),
-                                  color: Color(0xFFFAFAFA),
+                                  color: Color(0xFF232532),
                                 ),
                                 child: Column(
                                   children: [
@@ -372,7 +372,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                     Container(
                                       padding: const EdgeInsets.all(8),
                                       decoration: const BoxDecoration(
-                                          color: Color(0xFFF0F0F0),
+                                          color: Color(0xFF191B2A),
                                           borderRadius: BorderRadius.only(
                                               bottomLeft: Radius.circular(20),
                                               bottomRight:
@@ -388,7 +388,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                             'Electro Pack',
                                             style: TextStyle(
                                                 color: Color.fromARGB(
-                                                    255, 0, 0, 0),
+                                                    255, 255, 255, 255),
                                                 fontWeight: FontWeight.w600,
                                                 fontFamily: 'Montserrat Medium',
                                                 fontSize: 12),
@@ -417,12 +417,12 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                       child: const Text(
                                                         '150',
                                                         style: TextStyle(
-                                                            color:
-                                                                Color.fromARGB(
+                                                            color: Color
+                                                                .fromARGB(
                                                                     255,
-                                                                    0,
-                                                                    0,
-                                                                    0),
+                                                                    255,
+                                                                    255,
+                                                                    255),
                                                             fontWeight:
                                                                 FontWeight.w300,
                                                             fontFamily:
@@ -477,7 +477,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                             const Text(
                                                                           '15',
                                                                           style: TextStyle(
-                                                                              color: Color.fromARGB(255, 0, 0, 0),
+                                                                              color: Color.fromARGB(255, 255, 255, 255),
                                                                               fontWeight: FontWeight.w300,
                                                                               fontFamily: 'Montserrat Regular',
                                                                               fontSize: 10),
@@ -498,8 +498,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                   padding:
                                                       const EdgeInsets.all(4),
                                                   decoration: BoxDecoration(
-                                                      color: Color.fromARGB(
-                                                          255, 217, 217, 217),
+                                                      color: Color(0xFF232532),
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               10)),
@@ -509,11 +508,12 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                         'Buy - ',
                                                         style: TextStyle(
                                                             color:
-                                                                Color.fromARGB(
-                                                                    255,
-                                                                    14,
-                                                                    13,
-                                                                    13),
+                                                                Color
+                                                                    .fromARGB(
+                                                                        255,
+                                                                        255,
+                                                                        255,
+                                                                        255),
                                                             fontFamily:
                                                                 'Montserrat Regular',
                                                             fontSize: 10),
@@ -548,9 +548,9 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                     style: TextStyle(
                                                                         color: Color.fromARGB(
                                                                             255,
-                                                                            0,
-                                                                            0,
-                                                                            0),
+                                                                            255,
+                                                                            255,
+                                                                            255),
                                                                         fontWeight:
                                                                             FontWeight
                                                                                 .w300,
@@ -589,7 +589,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                 height: 170,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(20),
-                                  color: Color(0xFFFAFAFA),
+                                  color: Color(0xFF232532),
                                 ),
                                 child: Column(
                                   children: [
@@ -603,7 +603,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                     Container(
                                       padding: const EdgeInsets.all(8),
                                       decoration: const BoxDecoration(
-                                          color: Color(0xFFF0F0F0),
+                                          color: Color(0xFF191B2A),
                                           borderRadius: BorderRadius.only(
                                               bottomLeft: Radius.circular(20),
                                               bottomRight:
@@ -619,7 +619,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                             'Mystic Pack',
                                             style: TextStyle(
                                                 color: Color.fromARGB(
-                                                    255, 0, 0, 0),
+                                                    255, 255, 255, 255),
                                                 fontWeight: FontWeight.w600,
                                                 fontFamily:
                                                     'Montserrat SemiBold',
@@ -649,12 +649,12 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                       child: const Text(
                                                         '300',
                                                         style: TextStyle(
-                                                            color:
-                                                                Color.fromARGB(
+                                                            color: Color
+                                                                .fromARGB(
                                                                     255,
-                                                                    0,
-                                                                    0,
-                                                                    0),
+                                                                    255,
+                                                                    255,
+                                                                    255),
                                                             fontWeight:
                                                                 FontWeight.w300,
                                                             fontFamily:
@@ -708,7 +708,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                             const Text(
                                                                           '20',
                                                                           style: TextStyle(
-                                                                              color: Color.fromARGB(255, 0, 0, 0),
+                                                                              color: Color.fromARGB(255, 255, 255, 255),
                                                                               fontWeight: FontWeight.w300,
                                                                               fontFamily: 'Montserrat Regular',
                                                                               fontSize: 10),
@@ -729,8 +729,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                   padding:
                                                       const EdgeInsets.all(4),
                                                   decoration: BoxDecoration(
-                                                      color: Color.fromARGB(
-                                                          255, 217, 217, 217),
+                                                      color: Color(0xFF232532),
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               10)),
@@ -740,11 +739,12 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                         'Buy - ',
                                                         style: TextStyle(
                                                             color:
-                                                                Color.fromARGB(
-                                                                    255,
-                                                                    14,
-                                                                    13,
-                                                                    13),
+                                                                Color
+                                                                    .fromARGB(
+                                                                        255,
+                                                                        255,
+                                                                        255,
+                                                                        255),
                                                             fontFamily:
                                                                 'Montserrat Regular',
                                                             fontSize: 10),
@@ -779,9 +779,9 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                     style: TextStyle(
                                                                         color: Color.fromARGB(
                                                                             255,
-                                                                            0,
-                                                                            0,
-                                                                            0),
+                                                                            255,
+                                                                            255,
+                                                                            255),
                                                                         fontFamily:
                                                                             'Montserrat Regular',
                                                                         fontWeight:
@@ -824,7 +824,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                 height: 170,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(20),
-                                  color: Color(0xFFFAFAFA),
+                                  color: Color(0xFF232532),
                                 ),
                                 child: Column(
                                   children: [
@@ -838,7 +838,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                     Container(
                                       padding: const EdgeInsets.all(8),
                                       decoration: const BoxDecoration(
-                                          color: Color(0xFFF0F0F0),
+                                          color: Color(0xFF191B2A),
                                           borderRadius: BorderRadius.only(
                                               bottomLeft: Radius.circular(20),
                                               bottomRight:
@@ -854,7 +854,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                             'Solar Pack',
                                             style: TextStyle(
                                                 color: Color.fromARGB(
-                                                    255, 0, 0, 0),
+                                                    255, 255, 255, 255),
                                                 fontWeight: FontWeight.w600,
                                                 fontFamily:
                                                     'Montserrat SemiBold',
@@ -884,12 +884,12 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                       child: const Text(
                                                         '500',
                                                         style: TextStyle(
-                                                            color:
-                                                                Color.fromARGB(
+                                                            color: Color
+                                                                .fromARGB(
                                                                     255,
-                                                                    0,
-                                                                    0,
-                                                                    0),
+                                                                    255,
+                                                                    255,
+                                                                    255),
                                                             fontWeight:
                                                                 FontWeight.w300,
                                                             fontFamily:
@@ -943,7 +943,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                             const Text(
                                                                           '30',
                                                                           style: TextStyle(
-                                                                              color: Color.fromARGB(255, 0, 0, 0),
+                                                                              color: Color.fromARGB(255, 255, 255, 255),
                                                                               fontWeight: FontWeight.w300,
                                                                               fontFamily: 'Montserrat Regular',
                                                                               fontSize: 10),
@@ -964,8 +964,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                   padding:
                                                       const EdgeInsets.all(4),
                                                   decoration: BoxDecoration(
-                                                      color: Color.fromARGB(
-                                                          255, 217, 217, 217),
+                                                      color: Color(0xFF232532),
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               10)),
@@ -975,11 +974,12 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                         'Buy - ',
                                                         style: TextStyle(
                                                             color:
-                                                                Color.fromARGB(
-                                                                    255,
-                                                                    14,
-                                                                    13,
-                                                                    13),
+                                                                Color
+                                                                    .fromARGB(
+                                                                        255,
+                                                                        255,
+                                                                        255,
+                                                                        255),
                                                             fontFamily:
                                                                 'Montserrat Regular',
                                                             fontSize: 10),
@@ -1014,9 +1014,9 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                     style: TextStyle(
                                                                         color: Color.fromARGB(
                                                                             255,
-                                                                            0,
-                                                                            0,
-                                                                            0),
+                                                                            255,
+                                                                            255,
+                                                                            255),
                                                                         fontFamily:
                                                                             'Montserrat Regular',
                                                                         fontWeight:
@@ -1055,7 +1055,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                 height: 170,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(20),
-                                  color: Color(0xFFFAFAFA),
+                                  color: Color(0xFF232532),
                                 ),
                                 child: Column(
                                   children: [
@@ -1069,7 +1069,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                     Container(
                                       padding: const EdgeInsets.all(8),
                                       decoration: const BoxDecoration(
-                                          color: Color(0xFFF0F0F0),
+                                          color: Color(0xFF191B2A),
                                           borderRadius: BorderRadius.only(
                                               bottomLeft: Radius.circular(20),
                                               bottomRight:
@@ -1085,7 +1085,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                             'Luna Pack',
                                             style: TextStyle(
                                                 color: Color.fromARGB(
-                                                    255, 0, 0, 0),
+                                                    255, 255, 255, 255),
                                                 fontWeight: FontWeight.w600,
                                                 fontFamily:
                                                     'Montserrat SemiBold',
@@ -1115,12 +1115,12 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                       child: const Text(
                                                         '800',
                                                         style: TextStyle(
-                                                            color:
-                                                                Color.fromARGB(
+                                                            color: Color
+                                                                .fromARGB(
                                                                     255,
-                                                                    0,
-                                                                    0,
-                                                                    0),
+                                                                    255,
+                                                                    255,
+                                                                    255),
                                                             fontWeight:
                                                                 FontWeight.w300,
                                                             fontFamily:
@@ -1174,7 +1174,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                             const Text(
                                                                           '50',
                                                                           style: TextStyle(
-                                                                              color: Color.fromARGB(255, 0, 0, 0),
+                                                                              color: Color.fromARGB(255, 255, 255, 255),
                                                                               fontWeight: FontWeight.w300,
                                                                               fontFamily: 'Montserrat Regular',
                                                                               fontSize: 10),
@@ -1195,8 +1195,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                   padding:
                                                       const EdgeInsets.all(4),
                                                   decoration: BoxDecoration(
-                                                      color: Color.fromARGB(
-                                                          255, 217, 217, 217),
+                                                      color: Color(0xFF232532),
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               10)),
@@ -1206,11 +1205,12 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                         'Buy - ',
                                                         style: TextStyle(
                                                             color:
-                                                                Color.fromARGB(
-                                                                    255,
-                                                                    14,
-                                                                    13,
-                                                                    13),
+                                                                Color
+                                                                    .fromARGB(
+                                                                        255,
+                                                                        255,
+                                                                        255,
+                                                                        255),
                                                             fontFamily:
                                                                 'Montserrat Regular',
                                                             fontSize: 10),
@@ -1245,9 +1245,9 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                     style: TextStyle(
                                                                         color: Color.fromARGB(
                                                                             255,
-                                                                            0,
-                                                                            0,
-                                                                            0),
+                                                                            255,
+                                                                            255,
+                                                                            255),
                                                                         fontFamily:
                                                                             'Montserrat Regular',
                                                                         fontWeight:
@@ -1290,7 +1290,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                 height: 170,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(20),
-                                  color: Color(0xFFFAFAFA),
+                                  color: Color(0xFF232532),
                                 ),
                                 child: Column(
                                   children: [
@@ -1304,7 +1304,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                     Container(
                                       padding: const EdgeInsets.all(8),
                                       decoration: const BoxDecoration(
-                                          color: Color(0xFFF0F0F0),
+                                          color: Color(0xFF191B2A),
                                           borderRadius: BorderRadius.only(
                                               bottomLeft: Radius.circular(20),
                                               bottomRight:
@@ -1320,7 +1320,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                             'Aqua Pack',
                                             style: TextStyle(
                                                 color: Color.fromARGB(
-                                                    255, 0, 0, 0),
+                                                    255, 255, 255, 255),
                                                 fontWeight: FontWeight.w600,
                                                 fontFamily:
                                                     'Montserrat SemiBold',
@@ -1351,11 +1351,12 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                         '1500',
                                                         style: TextStyle(
                                                             color:
-                                                                Color.fromARGB(
-                                                                    255,
-                                                                    0,
-                                                                    0,
-                                                                    0),
+                                                                Color
+                                                                    .fromARGB(
+                                                                        255,
+                                                                        255,
+                                                                        255,
+                                                                        255),
                                                             fontFamily:
                                                                 'Montserrat Regular',
                                                             fontWeight:
@@ -1409,7 +1410,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                             const Text(
                                                                           '100',
                                                                           style: TextStyle(
-                                                                              color: Color.fromARGB(255, 0, 0, 0),
+                                                                              color: Color.fromARGB(255, 255, 255, 255),
                                                                               fontWeight: FontWeight.w300,
                                                                               fontFamily: 'Montserrat Regular',
                                                                               fontSize: 10),
@@ -1430,8 +1431,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                   padding:
                                                       const EdgeInsets.all(4),
                                                   decoration: BoxDecoration(
-                                                      color: Color.fromARGB(
-                                                          255, 217, 217, 217),
+                                                      color: Color(0xFF232532),
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               10)),
@@ -1441,11 +1441,12 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                         'Buy - ',
                                                         style: TextStyle(
                                                             color:
-                                                                Color.fromARGB(
-                                                                    255,
-                                                                    14,
-                                                                    13,
-                                                                    13),
+                                                                Color
+                                                                    .fromARGB(
+                                                                        255,
+                                                                        255,
+                                                                        255,
+                                                                        255),
                                                             fontFamily:
                                                                 'Montserrat Regular',
                                                             fontSize: 10),
@@ -1480,9 +1481,9 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                     style: TextStyle(
                                                                         color: Color.fromARGB(
                                                                             255,
-                                                                            0,
-                                                                            0,
-                                                                            0),
+                                                                            255,
+                                                                            255,
+                                                                            255),
                                                                         fontFamily:
                                                                             'Montserrat Regular',
                                                                         fontWeight:
@@ -1521,7 +1522,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                 height: 170,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(20),
-                                  color: Color(0xFFFAFAFA),
+                                  color: Color(0xFF232532),
                                 ),
                                 child: Column(
                                   children: [
@@ -1535,7 +1536,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                     Container(
                                       padding: const EdgeInsets.all(8),
                                       decoration: const BoxDecoration(
-                                          color: Color(0xFFF0F0F0),
+                                          color: Color(0xFF191B2A),
                                           borderRadius: BorderRadius.only(
                                               bottomLeft: Radius.circular(20),
                                               bottomRight:
@@ -1551,7 +1552,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                             'Inferno Pack',
                                             style: TextStyle(
                                                 color: Color.fromARGB(
-                                                    255, 0, 0, 0),
+                                                    255, 255, 255, 255),
                                                 fontFamily:
                                                     'Montserrat SemiBold',
                                                 fontWeight: FontWeight.w600,
@@ -1582,11 +1583,12 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                         '2500',
                                                         style: TextStyle(
                                                             color:
-                                                                Color.fromARGB(
-                                                                    255,
-                                                                    0,
-                                                                    0,
-                                                                    0),
+                                                                Color
+                                                                    .fromARGB(
+                                                                        255,
+                                                                        255,
+                                                                        255,
+                                                                        255),
                                                             fontFamily:
                                                                 'Montserrat Regular',
                                                             fontWeight:
@@ -1640,7 +1642,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                             const Text(
                                                                           '250',
                                                                           style: TextStyle(
-                                                                              color: Color.fromARGB(255, 0, 0, 0),
+                                                                              color: Color.fromARGB(255, 255, 255, 255),
                                                                               fontWeight: FontWeight.w300,
                                                                               fontFamily: 'Montserrat Regular',
                                                                               fontSize: 10),
@@ -1661,12 +1663,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                   padding:
                                                       const EdgeInsets.all(4),
                                                   decoration: BoxDecoration(
-                                                      color:
-                                                          const Color.fromARGB(
-                                                              255,
-                                                              217,
-                                                              217,
-                                                              217),
+                                                      color: Color(0xFF232532),
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               10)),
@@ -1676,11 +1673,12 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                         'Buy - ',
                                                         style: TextStyle(
                                                             color:
-                                                                Color.fromARGB(
-                                                                    255,
-                                                                    14,
-                                                                    13,
-                                                                    13),
+                                                                Color
+                                                                    .fromARGB(
+                                                                        255,
+                                                                        255,
+                                                                        255,
+                                                                        255),
                                                             fontFamily:
                                                                 'Montserrat Regular',
                                                             fontSize: 10),
@@ -1715,9 +1713,9 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                     style: TextStyle(
                                                                         color: Color.fromARGB(
                                                                             255,
-                                                                            0,
-                                                                            0,
-                                                                            0),
+                                                                            255,
+                                                                            255,
+                                                                            255),
                                                                         fontFamily:
                                                                             'Montserrat Regular',
                                                                         fontWeight:

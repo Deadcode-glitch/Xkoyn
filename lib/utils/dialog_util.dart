@@ -23,7 +23,7 @@ class DialogUtil {
                     width: 1.0,
                   ),
                 ),
-                backgroundColor: Color(0xFFFAFAFA),
+                backgroundColor: Color(0xFF191B2A),
                 child: Container(
                   padding: const EdgeInsets.all(20),
                   child: Column(
@@ -58,8 +58,9 @@ class DialogUtil {
                       const Text(
                         'Oops',
                         style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0),
+                          color: Color.fromARGB(255, 255, 255, 255),
                           fontSize: 14,
+                          fontFamily: 'Montserrat SemiBold',
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -68,8 +69,9 @@ class DialogUtil {
                         'Bonus balance is locked. Perform any transaction between 10-15 USDT to unlock and withdraw your bonus',
                         textAlign: TextAlign.center,
                         style: TextStyle(
-                          color: Color.fromARGB(255, 99, 99, 99),
+                          color: Color.fromARGB(255, 201, 201, 201),
                           fontSize: 10,
+                          fontFamily: 'Montserrat Regular',
                           fontWeight: FontWeight.w300,
                         ),
                       ),
@@ -93,7 +95,8 @@ class DialogUtil {
                                 'Continue',
                                 style: TextStyle(
                                   fontSize: 12,
-                                  color: Color.fromARGB(255, 0, 0, 0),
+                                  fontFamily: 'Montserrat Medium',
+                                  color: Color(0xFF7540F0),
                                   fontWeight: FontWeight.w600,
                                 ),
                               ),

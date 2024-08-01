@@ -116,11 +116,11 @@ class _InvitesState extends State<Invites> with TickerProviderStateMixin {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20.0),
                   side: const BorderSide(
-                    color: Color.fromARGB(255, 174, 174, 174),
+                    color: Color(0xFF232532),
                     width: 1.0,
                   ),
                 ),
-                backgroundColor: Color(0xFFFAFAFA),
+                backgroundColor: Color(0xFF191b2a),
                 child: Container(
                   padding: const EdgeInsets.all(20),
                   child: Column(
@@ -140,9 +140,9 @@ class _InvitesState extends State<Invites> with TickerProviderStateMixin {
                       const Text(
                         'Invite & Earn!',
                         style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0),
+                          color: Color.fromARGB(255, 255, 255, 255),
                           fontSize: 14,
-                          fontFamily: 'Montserrat SeniBold',
+                          fontFamily: 'Montserrat SemiBold',
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -151,7 +151,7 @@ class _InvitesState extends State<Invites> with TickerProviderStateMixin {
                         'Earn up to 2 USDT on each succcessful referal you make',
                         textAlign: TextAlign.center,
                         style: TextStyle(
-                          color: Color.fromARGB(255, 97, 97, 97),
+                          color: Color.fromARGB(255, 201, 201, 201),
                           fontSize: 10,
                           fontFamily: 'Montserrat Regular',
                           fontWeight: FontWeight.w300,
@@ -179,7 +179,7 @@ class _InvitesState extends State<Invites> with TickerProviderStateMixin {
                                 style: TextStyle(
                                   fontSize: 12,
                                   fontFamily: 'Montserrat Medium',
-                                  color: Color.fromARGB(255, 0, 0, 0),
+                                  color: Color(0xFF7540F0),
                                   fontWeight: FontWeight.w600,
                                 ),
                               ),
@@ -201,19 +201,45 @@ class _InvitesState extends State<Invites> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color(0xFF0E101F),
       body: Container(
         width: MediaQuery.of(context).size.width,
         padding: const EdgeInsets.only(left: 30, top: 50, right: 30),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            Row(
+              children: [
+                GestureDetector(
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
+                  child: Container(
+                    width: 25,
+                    padding: const EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(5),
+                        color: Color(0xFF191B2A)),
+                    child: const Center(
+                      child: Icon(
+                        Icons.arrow_back_ios,
+                        color: Color.fromARGB(255, 255, 255, 255),
+                        size: 16,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 10,
+            ),
             const Text(
               'Invite Friends',
               style: TextStyle(
-                  color: Color.fromARGB(255, 0, 0, 0),
+                  color: Color.fromARGB(255, 255, 255, 255),
                   fontSize: 30,
-                  fontFamily: 'Montserrat SemiBold',
+                  fontFamily: 'Montserrat Bold',
                   fontWeight: FontWeight.w700),
             ),
             const SizedBox(
@@ -223,9 +249,9 @@ class _InvitesState extends State<Invites> with TickerProviderStateMixin {
               'Earn 0.05 USDT for your direct referrals. Earn up to 15,000 XCOIN & 0.05 USDT for each invite, while your friend receives 30,000!',
               textAlign: TextAlign.center,
               style: TextStyle(
-                  color: Color.fromARGB(255, 143, 143, 143),
+                  color: Color.fromARGB(255, 228, 228, 228),
                   fontFamily: 'Montserrat Regular',
-                  fontSize: 12),
+                  fontSize: 11),
             ),
             const SizedBox(
               height: 50,
@@ -237,8 +263,8 @@ class _InvitesState extends State<Invites> with TickerProviderStateMixin {
                     top: 10, bottom: 10, right: 8, left: 8),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Color.fromARGB(255, 246, 226, 0)
-                      .withOpacity(0.2), // Adjust opacity here
+                  color:
+                      Color(0xFF7540F0).withOpacity(0.2), // Adjust opacity here
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -246,7 +272,7 @@ class _InvitesState extends State<Invites> with TickerProviderStateMixin {
                     Text(
                       '$referralCode',
                       style: const TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0),
+                          color: Color.fromARGB(255, 255, 255, 255),
                           fontSize: 16,
                           fontFamily: 'Montserrat SemiBold',
                           fontWeight: FontWeight.w600),
@@ -254,7 +280,7 @@ class _InvitesState extends State<Invites> with TickerProviderStateMixin {
                     IconButton(
                       icon: const Icon(
                         Icons.copy,
-                        color: Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 255, 255, 255),
                         size: 14,
                       ),
                       onPressed: _copyReferralCode,
@@ -276,7 +302,7 @@ class _InvitesState extends State<Invites> with TickerProviderStateMixin {
                 Text(
                   '${invitedFriends.length}',
                   style: const TextStyle(
-                      color: Color.fromARGB(255, 0, 0, 0),
+                      color: Color.fromARGB(255, 255, 255, 255),
                       fontSize: 54,
                       fontFamily: 'Montserrat Bold',
                       fontWeight: FontWeight.w800),
@@ -292,11 +318,11 @@ class _InvitesState extends State<Invites> with TickerProviderStateMixin {
               decoration:
                   BoxDecoration(borderRadius: BorderRadius.circular(10)),
               child: const Text(
-                ' Friends Invited',
+                'Friends Invited',
                 style: TextStyle(
                     fontSize: 12,
                     fontFamily: 'Montserrat Regular',
-                    color: Color.fromARGB(255, 0, 0, 0)),
+                    color: Color.fromARGB(255, 255, 255, 255)),
               ),
             ),
             const SizedBox(height: 3),
@@ -304,7 +330,7 @@ class _InvitesState extends State<Invites> with TickerProviderStateMixin {
               child: Container(
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(15),
-                    color: Color(0xFFFAFAFA)),
+                    color: Color(0xFF232532)),
                 child: ListView.builder(
                   itemCount: invitedFriends.length,
                   itemBuilder: (context, index) {

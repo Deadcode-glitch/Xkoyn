@@ -56,7 +56,7 @@ class _FirstScreenState extends State<FirstScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color(0xFF0E101F),
       body: Center(
         child: AnimatedBuilder(
           animation: _animation,

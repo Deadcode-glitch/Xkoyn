@@ -117,7 +117,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color(0xFF0E101F),
       body: Stack(
         fit: StackFit.expand,
         children: [
@@ -139,13 +139,13 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Container(
                               padding: const EdgeInsets.all(8),
                               decoration: BoxDecoration(
-                                  color: Color(0xFFFAFAFA).withOpacity(1),
+                                  color: Color(0xFF191B2A).withOpacity(1),
                                   borderRadius: BorderRadius.circular(50)),
                               child: Row(
                                 children: const [
                                   Icon(
                                     Icons.person,
-                                    color: Color.fromARGB(255, 207, 180, 0),
+                                    color: Color.fromARGB(255, 255, 255, 255),
                                     size: 14,
                                   ),
                                 ],
@@ -157,7 +157,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Text(
                               ' $name',
                               style: const TextStyle(
-                                  color: Color.fromARGB(255, 0, 0, 0),
+                                  color: Color.fromARGB(255, 255, 255, 255),
                                   fontFamily: 'Montserrat Regular',
                                   fontSize: 12),
                             ),
@@ -175,13 +175,13 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                           child: Container(
                             padding: const EdgeInsets.all(8),
                             decoration: BoxDecoration(
-                                color: Color(0xFFFAFAFA).withOpacity(1),
+                                color: Color(0xFF191B2A).withOpacity(1),
                                 borderRadius: BorderRadius.circular(8)),
                             child: Row(
                               children: const [
                                 Icon(
                                   Icons.people,
-                                  color: Color.fromARGB(255, 0, 0, 0),
+                                  color: Color.fromARGB(255, 255, 255, 255),
                                   size: 14,
                                 ),
                                 SizedBox(
@@ -190,7 +190,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                 Text(
                                   'Invites',
                                   style: TextStyle(
-                                      color: Color.fromARGB(255, 0, 0, 0),
+                                      color: Color.fromARGB(255, 255, 255, 255),
                                       fontFamily: 'Montserrat Regular',
                                       fontSize: 12),
                                 ),
@@ -210,7 +210,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                           child: Container(
                             padding: const EdgeInsets.all(8),
                             decoration: BoxDecoration(
-                                color: Color(0xFFFAFAFA).withOpacity(1),
+                                color: Color(0xFF232532).withOpacity(1),
                                 borderRadius: BorderRadius.circular(8)),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -218,7 +218,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                 const Text(
                                   'Profit per click',
                                   style: TextStyle(
-                                      color: Color.fromARGB(255, 0, 0, 0),
+                                      color: Color.fromARGB(255, 255, 255, 255),
                                       fontFamily: 'Montserrat Regular',
                                       fontSize: 12),
                                 ),
@@ -240,7 +240,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                       '+1',
                                       style: TextStyle(
                                           color: Color.fromARGB(
-                                              255, 105, 105, 105),
+                                              255, 255, 255, 255),
                                           fontSize: 10,
                                           fontFamily: 'Montserrat Regular',
                                           fontWeight: FontWeight.w400),
@@ -265,7 +265,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                       '+0.00005',
                                       style: TextStyle(
                                           color: Color.fromARGB(
-                                              255, 105, 105, 105),
+                                              255, 255, 255, 255),
                                           fontSize: 10,
                                           fontFamily: 'Montserrat Regular',
                                           fontWeight: FontWeight.w500),
@@ -281,7 +281,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                           child: Container(
                             padding: const EdgeInsets.all(8),
                             decoration: BoxDecoration(
-                                color: Color(0xFFFAFAFA).withOpacity(1),
+                                color: Color(0xFF232532).withOpacity(1),
                                 borderRadius: BorderRadius.circular(8)),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -289,7 +289,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                 const Text(
                                   'Profit per hour',
                                   style: TextStyle(
-                                      color: Color.fromARGB(255, 0, 0, 0),
+                                      color: Color.fromARGB(255, 255, 255, 255),
                                       fontFamily: 'Montserrat Regular',
                                       fontSize: 12),
                                 ),
@@ -311,7 +311,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                       '+0',
                                       style: TextStyle(
                                           color: Color.fromARGB(
-                                              255, 105, 105, 105),
+                                              255, 255, 255, 255),
                                           fontSize: 10,
                                           fontFamily: 'Montserrat Regular',
                                           fontWeight: FontWeight.w400),
@@ -336,7 +336,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                       '+0',
                                       style: TextStyle(
                                           color: Color.fromARGB(
-                                              255, 105, 105, 105),
+                                              255, 255, 255, 255),
                                           fontSize: 10,
                                           fontFamily: 'Montserrat Regular',
                                           fontWeight: FontWeight.w500),
@@ -370,7 +370,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                         Text(
                           '$counter1',
                           style: const TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontSize: 34,
                               fontFamily: 'Montserrat Bold',
                               fontWeight: FontWeight.w800),
@@ -388,7 +388,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                         Text(
                           counter2.toStringAsFixed(5),
                           style: const TextStyle(
-                              color: Color.fromARGB(255, 127, 127, 127),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontSize: 16,
                               fontFamily: 'Montserrat Medium',
                               fontWeight: FontWeight.w600),
@@ -436,10 +436,9 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(10),
                                   child: LinearProgressIndicator(
-                                    backgroundColor:
-                                        Color.fromARGB(255, 207, 207, 207),
+                                    backgroundColor: Color(0xFF232532),
                                     valueColor: AlwaysStoppedAnimation<Color>(
-                                        Color.fromARGB(255, 0, 0, 0)),
+                                        Color(0xFFACB1D8)),
                                     minHeight: 10,
                                     value: progressValue,
                                   ),
@@ -459,7 +458,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                           Text(
                             '$progressCounter / 200',
                             style: const TextStyle(
-                                color: Color.fromARGB(255, 14, 13, 13),
+                                color: Color.fromARGB(255, 255, 255, 255),
                                 //fontFamily: 'Montserrat Regular',
                                 fontWeight: FontWeight.w700,
                                 fontSize: 12),

@@ -14,7 +14,7 @@ class _DepoState extends State<Depo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 255, 255, 255),
+      backgroundColor: Color(0xFF0E101F),
       body: SingleChildScrollView(
         child: Container(
           padding: const EdgeInsets.only(left: 25, top: 20, right: 25),
@@ -32,11 +32,11 @@ class _DepoState extends State<Depo> {
                       padding: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(5),
-                          color: Color(0xFFFAFAFA)),
+                          color: Color(0xFF191B2A)),
                       child: const Center(
                         child: Icon(
                           Icons.arrow_back_ios,
-                          color: Color.fromARGB(255, 0, 0, 0),
+                          color: Color.fromARGB(255, 255, 255, 255),
                           size: 16,
                         ),
                       ),
@@ -50,9 +50,9 @@ class _DepoState extends State<Depo> {
               const Text(
                 'DEPOSIT ASSET',
                 style: TextStyle(
-                    color: Color.fromARGB(255, 0, 0, 0),
+                    color: Color.fromARGB(255, 255, 255, 255),
                     fontSize: 20,
-                    fontFamily: 'Montserrat SemiBold',
+                    fontFamily: 'Montserrat Bold',
                     fontWeight: FontWeight.w700),
               ),
               const SizedBox(
@@ -72,14 +72,14 @@ class _DepoState extends State<Depo> {
                 padding: const EdgeInsets.all(4),
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(50),
-                    color: Color(0xFFFAFAFA)),
+                    color: Color(0xFF191B2A)),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Text(
                       '0x73e503f8470ede16b27ff3bf0de7714b550aae63',
                       style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0),
+                          color: Color.fromARGB(255, 255, 255, 255),
                           fontFamily: 'Montserrat Regular',
                           fontSize: 8),
                     ),
@@ -100,7 +100,7 @@ class _DepoState extends State<Depo> {
                       child: const Icon(
                         Icons.copy,
                         size: 14,
-                        color: Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 255, 255, 255),
                       ),
                     )
                   ],
@@ -138,7 +138,7 @@ class _DepoState extends State<Depo> {
                 padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    color: Color(0xFFFAFAFA)),
+                    color: Color(0xFF232532)),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -153,7 +153,7 @@ class _DepoState extends State<Depo> {
                               Text(
                                 'HOW TO SEND ASSET',
                                 style: TextStyle(
-                                    color: Color.fromARGB(255, 0, 0, 0),
+                                    color: Color.fromARGB(255, 255, 255, 255),
                                     fontSize: 14,
                                     fontFamily: 'Montserrat SemiBold',
                                     fontWeight: FontWeight.w700),
@@ -164,9 +164,9 @@ class _DepoState extends State<Depo> {
                               Text(
                                 'Send coins to the wallet above in order to receive them here',
                                 style: TextStyle(
-                                    color: Color.fromARGB(255, 143, 143, 143),
+                                    color: Color.fromARGB(255, 228, 228, 228),
                                     fontFamily: 'Montserrat Regular',
-                                    fontSize: 12),
+                                    fontSize: 10),
                               ),
                             ],
                           ),
@@ -190,7 +190,7 @@ class _DepoState extends State<Depo> {
                       width: MediaQuery.of(context).size.width,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8),
-                          color: Color.fromARGB(255, 221, 221, 221)),
+                          color: Color(0xFF191B2A)),
                     ),
                     const SizedBox(
                       height: 20,
@@ -205,10 +205,9 @@ class _DepoState extends State<Depo> {
                               borderRadius: BorderRadius.circular(
                                 20,
                               ),
-                              color: Color.fromARGB(255, 211, 211, 211),
+                              color: Color(0xFF191B2A),
                               border: Border.all(
-                                  color: Color.fromARGB(255, 177, 177, 177),
-                                  width: 1)),
+                                  color: Color(0xFF191B2A), width: 1)),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -216,7 +215,7 @@ class _DepoState extends State<Depo> {
                               Text(
                                 '1',
                                 style: TextStyle(
-                                    color: Color.fromARGB(255, 70, 70, 70),
+                                    color: Color.fromARGB(255, 228, 228, 228),
                                     fontFamily: 'Montserrat Regular',
                                     fontSize: 12),
                               ),
@@ -233,7 +232,7 @@ class _DepoState extends State<Depo> {
                               Text(
                                 'Send coins to the wallet above in order to receive them here',
                                 style: TextStyle(
-                                    color: Color(0xFF737373),
+                                    color: Color.fromARGB(255, 255, 255, 255),
                                     fontWeight: FontWeight.w300,
                                     fontFamily: 'Montserrat Regular',
                                     fontSize: 11),
@@ -256,10 +255,9 @@ class _DepoState extends State<Depo> {
                               borderRadius: BorderRadius.circular(
                                 20,
                               ),
-                              color: Color.fromARGB(255, 211, 211, 211),
+                              color: Color(0xFF191B2A),
                               border: Border.all(
-                                  color: Color.fromARGB(255, 177, 177, 177),
-                                  width: 1)),
+                                  color: Color(0xFF191B2A), width: 1)),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -267,7 +265,7 @@ class _DepoState extends State<Depo> {
                               Text(
                                 '2',
                                 style: TextStyle(
-                                    color: Color.fromARGB(255, 70, 70, 70),
+                                    color: Color.fromARGB(255, 228, 228, 228),
                                     fontFamily: 'Montserrat Regular',
                                     fontSize: 12),
                               ),
@@ -284,7 +282,7 @@ class _DepoState extends State<Depo> {
                               Text(
                                 'Go to any exchange of your choice. Choose withdraw and find this network',
                                 style: TextStyle(
-                                    color: Color(0xFF737373),
+                                    color: Color.fromARGB(255, 255, 255, 255),
                                     fontWeight: FontWeight.w300,
                                     fontFamily: 'Montserrat Regular',
                                     fontSize: 11),
@@ -307,10 +305,9 @@ class _DepoState extends State<Depo> {
                               borderRadius: BorderRadius.circular(
                                 20,
                               ),
-                              color: Color.fromARGB(255, 211, 211, 211),
+                              color: Color(0xFF191B2A),
                               border: Border.all(
-                                  color: Color.fromARGB(255, 177, 177, 177),
-                                  width: 1)),
+                                  color: Color(0xFF191B2A), width: 1)),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -318,7 +315,7 @@ class _DepoState extends State<Depo> {
                               Text(
                                 '3',
                                 style: TextStyle(
-                                    color: Color.fromARGB(255, 70, 70, 70),
+                                    color: Color.fromARGB(255, 228, 228, 228),
                                     fontFamily: 'Montserrat Regular',
                                     fontSize: 12),
                               ),
@@ -335,7 +332,7 @@ class _DepoState extends State<Depo> {
                               Text(
                                 'Paste the copied address above and click send. Confirm the transaction',
                                 style: TextStyle(
-                                    color: Color(0xFF737373),
+                                    color: Color.fromARGB(255, 255, 255, 255),
                                     fontWeight: FontWeight.w300,
                                     fontFamily: 'Montserrat Regular',
                                     fontSize: 11),

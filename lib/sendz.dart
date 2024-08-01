@@ -91,7 +91,7 @@ class _SendzState extends State<Sendz> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 255, 255, 255),
+      backgroundColor: Color(0xFF0E101F),
       body: Container(
         padding: const EdgeInsets.only(left: 20, top: 20, right: 20),
         alignment: Alignment.center,
@@ -108,11 +108,11 @@ class _SendzState extends State<Sendz> with TickerProviderStateMixin {
                     padding: const EdgeInsets.all(8),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(5),
-                        color: Color(0xFFFAFAFA)),
+                        color: Color(0xFF191B2A)),
                     child: const Center(
                       child: Icon(
                         Icons.arrow_back_ios,
-                        color: Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 255, 255, 255),
                         size: 16,
                       ),
                     ),
@@ -137,7 +137,7 @@ class _SendzState extends State<Sendz> with TickerProviderStateMixin {
                 const Text(
                   'Withdraw USDT',
                   style: TextStyle(
-                      color: Color.fromARGB(255, 0, 0, 0),
+                      color: Color.fromARGB(255, 255, 255, 255),
                       fontFamily: 'Montserrat SemiBold',
                       fontWeight: FontWeight.w500),
                 )
@@ -151,7 +151,7 @@ class _SendzState extends State<Sendz> with TickerProviderStateMixin {
                 Text(
                   'Address',
                   style: TextStyle(
-                      color: Color.fromARGB(255, 0, 0, 0),
+                      color: Color.fromARGB(255, 228, 228, 228),
                       fontFamily: 'Montserrat Medium',
                       fontSize: 12),
                 ),
@@ -165,13 +165,13 @@ class _SendzState extends State<Sendz> with TickerProviderStateMixin {
               width: MediaQuery.of(context).size.width,
               height: 45,
               decoration: BoxDecoration(
-                  color: Color(0xFFFAFAFA),
+                  color: Color(0xFF232532),
                   borderRadius: BorderRadius.circular(10)),
               child: TextFormField(
                 style: const TextStyle(
                     fontSize: 12,
                     fontFamily: 'Montserrat Regular',
-                    color: Color.fromARGB(255, 0, 0, 0)),
+                    color: Color.fromARGB(255, 255, 255, 255)),
                 decoration: const InputDecoration(
                   hintText: 'Enter wallet address',
                   enabledBorder:
@@ -194,7 +194,7 @@ class _SendzState extends State<Sendz> with TickerProviderStateMixin {
                 Text(
                   'Amount',
                   style: TextStyle(
-                      color: Color.fromARGB(255, 0, 0, 0),
+                      color: Color.fromARGB(255, 228, 228, 228),
                       fontFamily: 'Montserrat Medium',
                       fontSize: 12),
                 ),
@@ -215,12 +215,12 @@ class _SendzState extends State<Sendz> with TickerProviderStateMixin {
               width: MediaQuery.of(context).size.width,
               height: 45,
               decoration: BoxDecoration(
-                  color: Color(0xFFFAFAFA),
+                  color: Color(0xFF232532),
                   borderRadius: BorderRadius.circular(10)),
               child: TextFormField(
                 controller: _usdtController,
                 style: const TextStyle(
-                    fontSize: 12, color: Color.fromARGB(255, 0, 0, 0)),
+                    fontSize: 12, color: Color.fromARGB(255, 255, 255, 255)),
                 decoration: const InputDecoration(
                   hintText: 'Enter amount',
                   enabledBorder:
@@ -257,7 +257,7 @@ class _SendzState extends State<Sendz> with TickerProviderStateMixin {
                 const Text(
                   'Chain',
                   style: TextStyle(
-                    color: Color.fromARGB(255, 0, 0, 0),
+                    color: Color.fromARGB(255, 228, 228, 228),
                     fontFamily: 'Montserrat Medium',
                     fontSize: 12,
                   ),
@@ -266,7 +266,7 @@ class _SendzState extends State<Sendz> with TickerProviderStateMixin {
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 12),
                   decoration: BoxDecoration(
-                    color: Color(0xFFFAFAFA),
+                    color: Color(0xFF232532),
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: DropdownButtonHideUnderline(
@@ -294,8 +294,9 @@ class _SendzState extends State<Sendz> with TickerProviderStateMixin {
                               SizedBox(width: 12),
                               Text(
                                 chain['name'],
-                                style: TextStyle(
+                                style: const TextStyle(
                                   fontSize: 12,
+                                  color: Colors.white,
                                   fontFamily: 'Montserrat Regular',
                                 ),
                               ),
@@ -304,7 +305,7 @@ class _SendzState extends State<Sendz> with TickerProviderStateMixin {
                         );
                       }).toList(),
 
-                      dropdownColor: Colors.white,
+                      dropdownColor: Color(0xFF232532),
                       // Background color for the dropdown
                     ),
                   ),
@@ -355,8 +356,8 @@ class _SendzState extends State<Sendz> with TickerProviderStateMixin {
                     top: 15, bottom: 15, right: 8, left: 8),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(8),
-                  color: Color.fromARGB(255, 0, 0, 0)
-                      .withOpacity(1), // Adjust opacity here
+                  color:
+                      Color(0xFF7540F0).withOpacity(1), // Adjust opacity here
                 ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
