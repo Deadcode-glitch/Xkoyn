@@ -26,7 +26,7 @@ class UpgradeModal extends StatelessWidget {
             height: 10,
           ),
           const Text(
-            'Bronze Pack',
+            'Platinum Drill',
             style: TextStyle(
                 color: Color.fromARGB(255, 255, 255, 255),
                 fontSize: 24,
@@ -386,7 +386,7 @@ class UpgradeModal2 extends StatelessWidget {
             height: 10,
           ),
           const Text(
-            'Swift Boots',
+            'Laser Cutter',
             style: TextStyle(
                 color: Color.fromARGB(255, 255, 255, 255),
                 fontSize: 24,
@@ -743,7 +743,7 @@ class UpgradeModal3 extends StatelessWidget {
             height: 10,
           ),
           const Text(
-            'Basic Vest',
+            'Fusion Cell',
             style: TextStyle(
                 color: Color.fromARGB(255, 255, 255, 255),
                 fontSize: 24,
@@ -1103,7 +1103,7 @@ class UpgradeModal4 extends StatelessWidget {
             height: 10,
           ),
           const Text(
-            'Handy Tools',
+            'Power Suit',
             style: TextStyle(
                 color: Color.fromARGB(255, 255, 255, 255),
                 fontSize: 24,
@@ -1463,7 +1463,7 @@ class UpgradeModal5 extends StatelessWidget {
             height: 10,
           ),
           const Text(
-            'Simple Digger',
+            'Ultra Tools',
             style: TextStyle(
                 color: Color.fromARGB(255, 255, 255, 255),
                 fontSize: 24,
@@ -1820,7 +1820,7 @@ class UpgradeModal6 extends StatelessWidget {
             height: 10,
           ),
           const Text(
-            'Drill Bit Pack',
+            'Hyper Miner',
             style: TextStyle(
                 color: Color.fromARGB(255, 255, 255, 255),
                 fontSize: 24,

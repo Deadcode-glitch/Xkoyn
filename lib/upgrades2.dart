@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:xcoin/conts.dart';
 import 'dart:ui';
-
+import 'const2.dart';
 import 'package:xcoin/profs.dart';
 
-class Upgrades extends StatefulWidget {
-  const Upgrades({Key? key}) : super(key: key);
+class Upgrades2 extends StatefulWidget {
+  const Upgrades2({Key? key}) : super(key: key);
 
   @override
-  State<Upgrades> createState() => _UpgradesState();
+  State<Upgrades2> createState() => _Upgrades2State();
 }
 
-class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
+class _Upgrades2State extends State<Upgrades2> with TickerProviderStateMixin {
   late AnimationController _slideController;
   late Animation<Offset> _offsetAnimation;
   late AnimationController _rotationController;
@@ -57,6 +56,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
     _slideController.dispose();
     _rotationController.dispose();
     _controller.dispose();
+
     super.dispose();
   }
 
@@ -377,7 +377,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                             height: 4,
                                           ),
                                           const Text(
-                                            'Bronze Pack',
+                                            'Platinum Drill',
                                             style: TextStyle(
                                                 color: Color.fromARGB(
                                                     255, 255, 255, 255),
@@ -608,7 +608,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                             height: 4,
                                           ),
                                           const Text(
-                                            'Swift Boots',
+                                            'Laser Cutter',
                                             style: TextStyle(
                                                 color: Color.fromARGB(
                                                     255, 255, 255, 255),
@@ -843,7 +843,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                             height: 4,
                                           ),
                                           const Text(
-                                            'Basic Vest',
+                                            'Fusion Cell',
                                             style: TextStyle(
                                                 color: Color.fromARGB(
                                                     255, 255, 255, 255),
@@ -1074,7 +1074,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                             height: 4,
                                           ),
                                           const Text(
-                                            'Handy Tools',
+                                            'Power Suit',
                                             style: TextStyle(
                                                 color: Color.fromARGB(
                                                     255, 255, 255, 255),
@@ -1309,7 +1309,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                             height: 4,
                                           ),
                                           const Text(
-                                            'Simple Digger',
+                                            'Ultra Tools',
                                             style: TextStyle(
                                                 color: Color.fromARGB(
                                                     255, 255, 255, 255),
@@ -1541,7 +1541,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                             height: 4,
                                           ),
                                           const Text(
-                                            'Drill Bit',
+                                            'Hyper Miner',
                                             style: TextStyle(
                                                 color: Color.fromARGB(
                                                     255, 255, 255, 255),
