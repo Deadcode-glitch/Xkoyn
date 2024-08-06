@@ -114,6 +114,113 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
     });
   }
 
+  void _transferDialog() {
+    Future.delayed(Duration.zero, () {
+      //_slideController.forward();
+      showDialog(
+        context: context,
+        barrierDismissible: true,
+        builder: (BuildContext context) {
+          return Padding(
+            padding: const EdgeInsets.all(30.0),
+            child: Dialog(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20.0),
+                side: const BorderSide(
+                  color: Color(0xFF232532),
+                  width: 1.0,
+                ),
+              ),
+              backgroundColor: Color(0xFF191B2A),
+              child: Container(
+                padding: const EdgeInsets.all(20),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Container(
+                      width: 40,
+                      height: 40,
+                      padding: const EdgeInsets.all(5),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(50),
+                        color: const Color.fromARGB(255, 255, 69, 69)
+                            .withOpacity(0.2), // Adjust opacity here
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: const [
+                          Text(
+                            '!',
+                            style: TextStyle(
+                                color: Color.fromARGB(255, 255, 8, 8),
+                                fontSize: 16,
+                                fontWeight: FontWeight.w600),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    const Text(
+                      'Oops',
+                      style: TextStyle(
+                        color: Color.fromARGB(255, 255, 255, 255),
+                        fontSize: 14,
+                        fontFamily: 'Montserrat SemiBold',
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const SizedBox(height: 10),
+                    const Text(
+                      'Withdrawal threshold is 20 USDT. You can transfer to your wallet after when you have accumulated up to 20 USDT',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Color.fromARGB(255, 201, 201, 201),
+                        fontSize: 10,
+                        fontFamily: 'Montserrat Regular',
+                      ),
+                    ),
+                    const SizedBox(height: 30),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        GestureDetector(
+                          onTap: () {
+                            //Navigator.of(context).pop();
+                          },
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            padding: const EdgeInsets.symmetric(
+                              vertical: 10,
+                              horizontal: 20,
+                            ),
+                            child: const Text(
+                              'Transfer',
+                              style: TextStyle(
+                                fontSize: 12,
+                                fontFamily: 'Montserrat Regular',
+                                color: Color.fromARGB(255, 123, 123, 123),
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          );
+        },
+      );
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -393,6 +500,23 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                               fontFamily: 'Montserrat Medium',
                               fontWeight: FontWeight.w600),
                         ),
+                        const SizedBox(
+                          width: 4,
+                        ),
+                        GestureDetector(
+                            onTap: () {
+                              _transferDialog();
+                            },
+                            child: Container(
+                                padding: const EdgeInsets.all(4),
+                                decoration: BoxDecoration(
+                                    color: Color.fromARGB(255, 36, 38, 55),
+                                    borderRadius: BorderRadius.circular(50)),
+                                child: const Icon(
+                                  Icons.arrow_downward_sharp,
+                                  color: Colors.white,
+                                  size: 14,
+                                )))
                       ],
                     ),
                     const SizedBox(

@@ -42,6 +42,7 @@ class _MinezState extends State<Minez> with TickerProviderStateMixin {
                     color: Color(0xFF191B2A),
                     borderRadius: BorderRadius.circular(20)),
                 child: TabBar(
+                    labelPadding: const EdgeInsets.all(8),
                     indicator: BoxDecoration(
                         color: Color(0xFF232532),
                         borderRadius: BorderRadius.circular(20)),
