@@ -65,11 +65,13 @@ class _InvitesState extends State<Invites> with TickerProviderStateMixin {
 
   Future<void> _loadReferralCode() async {
     final prefs = await SharedPreferences.getInstance();
-    final email = prefs.getString('userEmail');
+    final nickname = prefs.getString('userNickname');
 
-    if (email != null) {
-      final userDoc =
-          await FirebaseFirestore.instance.collection('users').doc(email).get();
+    if (nickname != null) {
+      final userDoc = await FirebaseFirestore.instance
+          .collection('users')
+          .doc(nickname)
+          .get();
       setState(() {
         referralCode = userDoc['referralCode'];
       });
@@ -86,7 +88,7 @@ class _InvitesState extends State<Invites> with TickerProviderStateMixin {
 
       setState(() {
         invitedFriends = invitedFriendsSnapshot.docs
-            .map((doc) => doc['email'] as String)
+            .map((doc) => doc['nickname'] as String)
             .toList();
       });
     }
@@ -148,7 +150,7 @@ class _InvitesState extends State<Invites> with TickerProviderStateMixin {
                       ),
                       const SizedBox(height: 10),
                       const Text(
-                        'Earn up to 2 USDT on each succcessful referal you make',
+                        'Earn up to 0.5 USDT on each succcessful referal you make',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           color: Color.fromARGB(255, 201, 201, 201),
