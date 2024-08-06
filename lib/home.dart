@@ -174,7 +174,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                     ),
                     const SizedBox(height: 10),
                     const Text(
-                      'Withdrawal threshold is 20 USDT. You can transfer to your wallet after when you have accumulated up to 20 USDT',
+                      'Withdrawal threshold is 20 USDT. You can transfer to your wallet after you have accumulated up to 20 USDT',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: Color.fromARGB(255, 201, 201, 201),

@@ -50,7 +50,7 @@ class _UwalletState extends State<Uwallet> with SingleTickerProviderStateMixin {
     });
 
     // Save current date to SharedPreferences
-    saveDateToSharedPreferences(currentDate);
+    _saveInitialDate();
   }
 
   @override
@@ -155,13 +155,20 @@ class _UwalletState extends State<Uwallet> with SingleTickerProviderStateMixin {
     });
   }
 
+  Future<void> _saveInitialDate() async {
+    DateTime now = DateTime.now();
+    await saveDateToSharedPreferences(now);
+    String? savedDate = await getDateFromSharedPreferences();
+    print('Saved Transaction Date: $savedDate');
+  }
+
   Future<void> saveDateToSharedPreferences(DateTime date) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    String? existingDate = prefs.getString('lastTransactionDate');
+    bool isFirstTime = prefs.getBool('firstTimeOpened') ?? true;
 
-    // Check if a date is already saved
-    if (existingDate == null) {
+    if (isFirstTime) {
       await prefs.setString('lastTransactionDate', date.toIso8601String());
+      await prefs.setBool('firstTimeOpened', false);
     }
   }
 
