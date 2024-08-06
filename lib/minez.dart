@@ -45,6 +45,7 @@ class _MinezState extends State<Minez> with TickerProviderStateMixin {
                     indicator: BoxDecoration(
                         color: Color(0xFF232532),
                         borderRadius: BorderRadius.circular(20)),
+                    indicatorColor: Colors.transparent,
                     labelStyle: const TextStyle(
                         fontSize: 12, fontFamily: 'Montserrat Regular'),
                     tabs: const [
