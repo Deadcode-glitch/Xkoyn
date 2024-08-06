@@ -50,10 +50,18 @@ class _MinezState extends State<Minez> with TickerProviderStateMixin {
                         fontSize: 12, fontFamily: 'Montserrat Regular'),
                     tabs: const [
                       Tab(
-                        text: 'Basic',
+                        child: Padding(
+                          padding: EdgeInsets.symmetric(
+                              horizontal: 20.0), // Adjust the padding as needed
+                          child: Text('Basic'),
+                        ),
                       ),
                       Tab(
-                        text: 'Advance',
+                        child: Padding(
+                          padding: EdgeInsets.symmetric(
+                              horizontal: 20.0), // Adjust the padding as needed
+                          child: Text('Advance'),
+                        ),
                       )
                     ]),
               ),
