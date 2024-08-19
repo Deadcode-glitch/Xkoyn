@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:xcoin/dash.dart';
 import 'dart:math';
 import 'dart:ui';
 
@@ -75,7 +76,7 @@ class _SignUpPageState extends State<SignUpPage> with TickerProviderStateMixin {
     if (nickname != null) {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const Dashboard()),
+        MaterialPageRoute(builder: (context) => const Dashboard2()),
       );
     }
   }
