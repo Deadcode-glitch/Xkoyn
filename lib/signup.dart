@@ -122,7 +122,7 @@ class _SignUpPageState extends State<SignUpPage> with TickerProviderStateMixin {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => const Dashboard(),
+          builder: (context) => const Dashboard2(),
         ),
       );
     }
