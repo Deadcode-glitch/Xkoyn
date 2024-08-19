@@ -121,7 +121,7 @@ class UpgradeModal extends StatelessWidget {
                           width: 4,
                         ),
                         const Text(
-                          '15 /  ',
+                          '20 /  ',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 255, 255, 255),
@@ -354,6 +354,9 @@ class UpgradeModal extends StatelessWidget {
               ),
             ),
           ),
+          const SizedBox(
+            height: 15,
+          ),
         ],
       ),
     );
@@ -481,7 +484,7 @@ class UpgradeModal2 extends StatelessWidget {
                           width: 4,
                         ),
                         const Text(
-                          '20 /  ',
+                          '35 /  ',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 255, 255, 255),
@@ -711,6 +714,9 @@ class UpgradeModal2 extends StatelessWidget {
               ),
             ),
           ),
+          const SizedBox(
+            height: 15,
+          ),
         ],
       ),
     );
@@ -838,7 +844,7 @@ class UpgradeModal3 extends StatelessWidget {
                           width: 4,
                         ),
                         const Text(
-                          '30 /  ',
+                          '40 /  ',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 255, 255, 255),
@@ -1071,6 +1077,9 @@ class UpgradeModal3 extends StatelessWidget {
               ),
             ),
           ),
+          const SizedBox(
+            height: 15,
+          ),
         ],
       ),
     );
@@ -1198,7 +1207,7 @@ class UpgradeModal4 extends StatelessWidget {
                           width: 4,
                         ),
                         const Text(
-                          '50 /  ',
+                          '65 /  ',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromRGBO(255, 255, 255, 1),
@@ -1431,6 +1440,9 @@ class UpgradeModal4 extends StatelessWidget {
               ),
             ),
           ),
+          const SizedBox(
+            height: 15,
+          ),
         ],
       ),
     );
@@ -1558,7 +1570,7 @@ class UpgradeModal5 extends StatelessWidget {
                           width: 4,
                         ),
                         const Text(
-                          '100 /  ',
+                          '130 /  ',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 255, 255, 255),
@@ -1788,6 +1800,9 @@ class UpgradeModal5 extends StatelessWidget {
               ),
             ),
           ),
+          const SizedBox(
+            height: 15,
+          ),
         ],
       ),
     );
@@ -1915,7 +1930,7 @@ class UpgradeModal6 extends StatelessWidget {
                           width: 4,
                         ),
                         const Text(
-                          '250 /  ',
+                          '300 /  ',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromARGB(255, 255, 255, 255),
@@ -2147,6 +2162,9 @@ class UpgradeModal6 extends StatelessWidget {
                 ),
               ),
             ),
+          ),
+          const SizedBox(
+            height: 15,
           ),
         ],
       ),

@@ -467,7 +467,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                             0),
                                                                         child:
                                                                             const Text(
-                                                                          '15',
+                                                                          '20',
                                                                           style: TextStyle(
                                                                               color: Color.fromARGB(255, 255, 255, 255),
                                                                               fontWeight: FontWeight.w300,
@@ -698,7 +698,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                             0),
                                                                         child:
                                                                             const Text(
-                                                                          '20',
+                                                                          '35',
                                                                           style: TextStyle(
                                                                               color: Color.fromARGB(255, 255, 255, 255),
                                                                               fontWeight: FontWeight.w300,
@@ -933,7 +933,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                             0),
                                                                         child:
                                                                             const Text(
-                                                                          '30',
+                                                                          '40',
                                                                           style: TextStyle(
                                                                               color: Color.fromARGB(255, 255, 255, 255),
                                                                               fontWeight: FontWeight.w300,
@@ -1164,7 +1164,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                             0),
                                                                         child:
                                                                             const Text(
-                                                                          '50',
+                                                                          '65',
                                                                           style: TextStyle(
                                                                               color: Color.fromARGB(255, 255, 255, 255),
                                                                               fontWeight: FontWeight.w300,
@@ -1400,7 +1400,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                             0),
                                                                         child:
                                                                             const Text(
-                                                                          '100',
+                                                                          '130',
                                                                           style: TextStyle(
                                                                               color: Color.fromARGB(255, 255, 255, 255),
                                                                               fontWeight: FontWeight.w300,
@@ -1632,7 +1632,7 @@ class _UpgradesState extends State<Upgrades> with TickerProviderStateMixin {
                                                                             0),
                                                                         child:
                                                                             const Text(
-                                                                          '250',
+                                                                          '300',
                                                                           style: TextStyle(
                                                                               color: Color.fromARGB(255, 255, 255, 255),
                                                                               fontWeight: FontWeight.w300,

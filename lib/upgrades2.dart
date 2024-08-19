@@ -407,7 +407,7 @@ class _Upgrades2State extends State<Upgrades2> with TickerProviderStateMixin {
                                                       offset:
                                                           const Offset(-4, 0),
                                                       child: const Text(
-                                                        '150',
+                                                        '5,000',
                                                         style: TextStyle(
                                                             color: Color
                                                                 .fromARGB(
@@ -467,7 +467,7 @@ class _Upgrades2State extends State<Upgrades2> with TickerProviderStateMixin {
                                                                             0),
                                                                         child:
                                                                             const Text(
-                                                                          '15',
+                                                                          '850',
                                                                           style: TextStyle(
                                                                               color: Color.fromARGB(255, 255, 255, 255),
                                                                               fontWeight: FontWeight.w300,
@@ -536,7 +536,7 @@ class _Upgrades2State extends State<Upgrades2> with TickerProviderStateMixin {
                                                                           0),
                                                                   child:
                                                                       const Text(
-                                                                    '10',
+                                                                    '500',
                                                                     style: TextStyle(
                                                                         color: Color.fromARGB(
                                                                             255,
@@ -639,7 +639,7 @@ class _Upgrades2State extends State<Upgrades2> with TickerProviderStateMixin {
                                                       offset:
                                                           const Offset(-4, 0),
                                                       child: const Text(
-                                                        '300',
+                                                        '7,500',
                                                         style: TextStyle(
                                                             color: Color
                                                                 .fromARGB(
@@ -698,7 +698,7 @@ class _Upgrades2State extends State<Upgrades2> with TickerProviderStateMixin {
                                                                             0),
                                                                         child:
                                                                             const Text(
-                                                                          '20',
+                                                                          '1,000',
                                                                           style: TextStyle(
                                                                               color: Color.fromARGB(255, 255, 255, 255),
                                                                               fontWeight: FontWeight.w300,
@@ -767,7 +767,7 @@ class _Upgrades2State extends State<Upgrades2> with TickerProviderStateMixin {
                                                                           0),
                                                                   child:
                                                                       const Text(
-                                                                    '20',
+                                                                    '700',
                                                                     style: TextStyle(
                                                                         color: Color.fromARGB(
                                                                             255,
@@ -874,7 +874,7 @@ class _Upgrades2State extends State<Upgrades2> with TickerProviderStateMixin {
                                                       offset:
                                                           const Offset(-4, 0),
                                                       child: const Text(
-                                                        '500',
+                                                        '10,000',
                                                         style: TextStyle(
                                                             color: Color
                                                                 .fromARGB(
@@ -933,7 +933,7 @@ class _Upgrades2State extends State<Upgrades2> with TickerProviderStateMixin {
                                                                             0),
                                                                         child:
                                                                             const Text(
-                                                                          '30',
+                                                                          '1,500',
                                                                           style: TextStyle(
                                                                               color: Color.fromARGB(255, 255, 255, 255),
                                                                               fontWeight: FontWeight.w300,
@@ -1002,7 +1002,7 @@ class _Upgrades2State extends State<Upgrades2> with TickerProviderStateMixin {
                                                                           0),
                                                                   child:
                                                                       const Text(
-                                                                    '25',
+                                                                    '900',
                                                                     style: TextStyle(
                                                                         color: Color.fromARGB(
                                                                             255,
@@ -1105,7 +1105,7 @@ class _Upgrades2State extends State<Upgrades2> with TickerProviderStateMixin {
                                                       offset:
                                                           const Offset(-4, 0),
                                                       child: const Text(
-                                                        '800',
+                                                        '13,500',
                                                         style: TextStyle(
                                                             color: Color
                                                                 .fromARGB(
@@ -1164,7 +1164,7 @@ class _Upgrades2State extends State<Upgrades2> with TickerProviderStateMixin {
                                                                             0),
                                                                         child:
                                                                             const Text(
-                                                                          '50',
+                                                                          '2,000',
                                                                           style: TextStyle(
                                                                               color: Color.fromARGB(255, 255, 255, 255),
                                                                               fontWeight: FontWeight.w300,
@@ -1233,7 +1233,7 @@ class _Upgrades2State extends State<Upgrades2> with TickerProviderStateMixin {
                                                                           0),
                                                                   child:
                                                                       const Text(
-                                                                    '45',
+                                                                    '1,300',
                                                                     style: TextStyle(
                                                                         color: Color.fromARGB(
                                                                             255,
@@ -1340,7 +1340,7 @@ class _Upgrades2State extends State<Upgrades2> with TickerProviderStateMixin {
                                                       offset:
                                                           const Offset(-4, 0),
                                                       child: const Text(
-                                                        '1500',
+                                                        '17,500',
                                                         style: TextStyle(
                                                             color:
                                                                 Color
@@ -1400,7 +1400,7 @@ class _Upgrades2State extends State<Upgrades2> with TickerProviderStateMixin {
                                                                             0),
                                                                         child:
                                                                             const Text(
-                                                                          '100',
+                                                                          '3,000',
                                                                           style: TextStyle(
                                                                               color: Color.fromARGB(255, 255, 255, 255),
                                                                               fontWeight: FontWeight.w300,
@@ -1469,7 +1469,7 @@ class _Upgrades2State extends State<Upgrades2> with TickerProviderStateMixin {
                                                                           0),
                                                                   child:
                                                                       const Text(
-                                                                    '95',
+                                                                    '1,900',
                                                                     style: TextStyle(
                                                                         color: Color.fromARGB(
                                                                             255,
@@ -1572,7 +1572,7 @@ class _Upgrades2State extends State<Upgrades2> with TickerProviderStateMixin {
                                                       offset:
                                                           const Offset(-4, 0),
                                                       child: const Text(
-                                                        '2500',
+                                                        '25,000',
                                                         style: TextStyle(
                                                             color:
                                                                 Color
@@ -1632,7 +1632,7 @@ class _Upgrades2State extends State<Upgrades2> with TickerProviderStateMixin {
                                                                             0),
                                                                         child:
                                                                             const Text(
-                                                                          '250',
+                                                                          '5,000',
                                                                           style: TextStyle(
                                                                               color: Color.fromARGB(255, 255, 255, 255),
                                                                               fontWeight: FontWeight.w300,
@@ -1701,7 +1701,7 @@ class _Upgrades2State extends State<Upgrades2> with TickerProviderStateMixin {
                                                                           0),
                                                                   child:
                                                                       const Text(
-                                                                    '245',
+                                                                    '2,500',
                                                                     style: TextStyle(
                                                                         color: Color.fromARGB(
                                                                             255,

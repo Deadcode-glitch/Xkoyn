@@ -85,6 +85,7 @@ class _FaqsState extends State<Faqs> {
         ),
       ),
     );
+  
   }
 
   Widget _buildPanel() {
