@@ -199,7 +199,7 @@ class _SendzState extends State<Sendz> with TickerProviderStateMixin {
                       fontSize: 12),
                 ),
                 Text(
-                  'Available: 10.00 USDT',
+                  'Available: 0.00 USDT',
                   style: TextStyle(
                       color: Color.fromARGB(255, 175, 175, 175),
                       fontFamily: 'Montserrat Regular',

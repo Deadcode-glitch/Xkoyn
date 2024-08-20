@@ -22,7 +22,7 @@ class _UwalletState extends State<Uwallet> with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _scaleAnimation;
   DateTime currentDate = DateTime.now();
-  double usdtBalance = 10;
+  double usdtBalance = 0; //change back to 10
   double usdtToDollarRate = 1.0; // Default value
   double dollarEquivalent = 0.0;
 
@@ -249,7 +249,7 @@ class _UwalletState extends State<Uwallet> with SingleTickerProviderStateMixin {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             const Text(
-                              '10',
+                              '0.00',
                               style: TextStyle(
                                   color: Color.fromARGB(255, 255, 255, 255),
                                   fontSize: 30,
@@ -371,80 +371,84 @@ class _UwalletState extends State<Uwallet> with SingleTickerProviderStateMixin {
                   const SizedBox(
                     height: 8,
                   ),
-                  GestureDetector(
-                    onTap: () {},
-                    child: Container(
-                      height: 50,
-                      padding: const EdgeInsets.all(4),
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8),
-                          color: Color(0xFF191B2A)),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          Container(
-                              padding: const EdgeInsets.all(8),
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(50),
-                                color: Color(0xFF232532),
+                  Visibility(
+                    visible: false,
+                    child: GestureDetector(
+                      onTap: () {},
+                      child: Container(
+                        height: 50,
+                        padding: const EdgeInsets.all(4),
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(8),
+                            color: Color(0xFF191B2A)),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Container(
+                                padding: const EdgeInsets.all(8),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(50),
+                                  color: Color(0xFF232532),
+                                ),
+                                child: const Icon(
+                                  Icons.arrow_downward,
+                                  color: Color.fromARGB(255, 17, 202, 0),
+                                  size: 16,
+                                )),
+                            const SizedBox(
+                              width: 10,
+                            ),
+                            Expanded(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: const [
+                                  Text(
+                                    'Received',
+                                    style: TextStyle(
+                                        color: Color.fromRGBO(255, 255, 255, 1),
+                                        fontFamily: 'Montserrat Regular',
+                                        fontSize: 12),
+                                  ),
+                                  Text(
+                                    'Sign up bonus',
+                                    style: TextStyle(
+                                        color:
+                                            Color.fromARGB(255, 152, 152, 152),
+                                        fontFamily: 'Montserrat Regular',
+                                        fontSize: 10),
+                                  ),
+                                ],
                               ),
-                              child: const Icon(
-                                Icons.arrow_downward,
-                                color: Color.fromARGB(255, 17, 202, 0),
-                                size: 16,
-                              )),
-                          const SizedBox(
-                            width: 10,
-                          ),
-                          Expanded(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.end,
                               mainAxisAlignment: MainAxisAlignment.center,
-                              children: const [
-                                Text(
-                                  'Received',
+                              children: [
+                                const Text(
+                                  '+10 USDT',
                                   style: TextStyle(
-                                      color: Color.fromRGBO(255, 255, 255, 1),
+                                      color: Color.fromARGB(255, 255, 255, 255),
                                       fontFamily: 'Montserrat Regular',
                                       fontSize: 12),
                                 ),
+                                const SizedBox(
+                                  height: 4,
+                                ),
                                 Text(
-                                  'Sign up bonus',
-                                  style: TextStyle(
+                                  '${currentDate.day}/${currentDate.month}/${currentDate.year}',
+                                  style: const TextStyle(
                                       color: Color.fromARGB(255, 152, 152, 152),
                                       fontFamily: 'Montserrat Regular',
                                       fontSize: 10),
                                 ),
                               ],
                             ),
-                          ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.end,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              const Text(
-                                '+10 USDT',
-                                style: TextStyle(
-                                    color: Color.fromARGB(255, 255, 255, 255),
-                                    fontFamily: 'Montserrat Regular',
-                                    fontSize: 12),
-                              ),
-                              const SizedBox(
-                                height: 4,
-                              ),
-                              Text(
-                                '${currentDate.day}/${currentDate.month}/${currentDate.year}',
-                                style: const TextStyle(
-                                    color: Color.fromARGB(255, 152, 152, 152),
-                                    fontFamily: 'Montserrat Regular',
-                                    fontSize: 10),
-                              ),
-                            ],
-                          ),
-                          const SizedBox(
-                            width: 10,
-                          ),
-                        ],
+                            const SizedBox(
+                              width: 10,
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ),

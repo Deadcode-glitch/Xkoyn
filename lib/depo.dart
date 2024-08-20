@@ -8,7 +8,7 @@ class Depo extends StatefulWidget {
   State<Depo> createState() => _DepoState();
 }
 
-final String textToCopy = '0x73e503f8470ede16b27ff3bf0de7714b550aae63';
+final String textToCopy = '0x3d06f98301289767f1db97840253734AD07994CA';
 
 class _DepoState extends State<Depo> {
   @override
@@ -59,9 +59,32 @@ class _DepoState extends State<Depo> {
                 height: 30,
               ),
               Image.asset(
-                'lib/images/usdtbarcode.png',
+                'lib/images/xwall.png',
                 width: 150,
                 height: 150,
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              Container(
+                height: 40,
+                width: 100,
+                padding: const EdgeInsets.all(4),
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(50),
+                    color: Color(0xFF191B2A)),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: const [
+                    Text(
+                      'ERC-20',
+                      style: TextStyle(
+                          color: Color.fromARGB(255, 255, 255, 255),
+                          fontFamily: 'Montserrat Regular',
+                          fontSize: 12),
+                    ),
+                  ],
+                ),
               ),
               const SizedBox(
                 height: 20,
@@ -77,7 +100,7 @@ class _DepoState extends State<Depo> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Text(
-                      '0x73e503f8470ede16b27ff3bf0de7714b550aae63',
+                      '0x3d06f98301289767f1db97840253734AD07994CA',
                       style: TextStyle(
                           color: Color.fromARGB(255, 255, 255, 255),
                           fontFamily: 'Montserrat Regular',

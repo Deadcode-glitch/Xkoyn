@@ -24,7 +24,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
   late AnimationController _rotationController;
   late AnimationController _controller;
   late Animation<double> _scaleAnimation;
-  double usdtBalance = 10;
+  double usdtBalance = 0; //change back to 10
   double usdtToDollarRate = 1.0; // Default value
   double dollarEquivalent = 0.0;
 
@@ -70,7 +70,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
       });
     });
 
-    _checkWelcomeDialogStatus();
+    //_checkWelcomeDialogStatus();
   }
 
   @override
@@ -142,7 +142,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                       ),
                       const SizedBox(height: 10),
                       const Text(
-                        'Bonus balance is locked. Perform any transaction between 5-10 USDT to unlock and withdraw your bonus',
+                        'Insufficient funds',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           color: Color.fromARGB(255, 201, 201, 201),
@@ -667,7 +667,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                           crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
                             const Text(
-                              '10',
+                              '0',
                               style: TextStyle(
                                 color: Color.fromARGB(255, 255, 255, 255),
                                 fontSize: 12,
