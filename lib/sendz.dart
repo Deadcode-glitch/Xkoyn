@@ -25,6 +25,10 @@ class _SendzState extends State<Sendz> with TickerProviderStateMixin {
 
   final List<Map<String, dynamic>> chains = [
     {
+      'image': 'lib/images/eth.png', // Replace with your image path
+      'name': 'Ethereum(ERC-20)',
+    },
+    {
       'image': 'lib/images/ton.png', // Replace with your image path
       'name': 'TON',
     },

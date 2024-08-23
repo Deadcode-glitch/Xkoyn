@@ -85,7 +85,6 @@ class _FaqsState extends State<Faqs> {
         ),
       ),
     );
-  
   }
 
   Widget _buildPanel() {
@@ -150,9 +149,9 @@ class Item {
 List<Item> generateItems() {
   return [
     Item(
-      headerValue: 'What is Xcoin?',
+      headerValue: 'What is Xkoyn?',
       expandedValue:
-          'XCoin is an innovative project introducing a refreshed Tap-to-Earn feature on TON, tailored for the crypto community. With this platform, you can tap to receive USDT, a widely-used stablecoin that can be easily withdrawn, as well as xUSD, the project\'s own token that grants eligibility for airdrops. The app will soon be available not just on TON but also across various other networks.',
+          'Xkoyn is an innovative project introducing a refreshed Tap-to-Earn feature on TON, tailored for the crypto community. With this platform, you can tap to receive USDT, a widely-used stablecoin that can be easily withdrawn, as well as xUSD, the project\'s own token that grants eligibility for airdrops. The app will soon be available not just on TON but also across various other networks.',
     ),
     Item(
       headerValue: 'How to earn USDT',
@@ -166,7 +165,7 @@ List<Item> generateItems() {
           'You can elevate your account with unique enhancements that increase your earnings per tap or provide passive income every hour, even when you\'re not tapping. Navigate to the “Mine” section, select your upgrade plan, and buy it to boost your income. All acquired upgrades are cumulative, so you can invest in several enhancements to maximize your profit.',
     ),
     Item(
-      headerValue: 'Who can use Vortex?',
+      headerValue: 'Who can use Xkoyn?',
       expandedValue:
           'Anyone can make use of our service. Crypto users, Diaspora community, Remote workers and freelancers',
     ),
