@@ -23,7 +23,7 @@ class _SmoothingState extends State<Smoothing>
     _controller = AnimationController(
       duration: const Duration(seconds: 8),
       vsync: this,
-    )..repeat(reverse: true); // Loop the animation
+    )..repeat(reverse: false); // Loop the animation
 
     _animation1 = _buildAnimation(0.0);
     _animation2 = _buildAnimation(0.2);
@@ -104,7 +104,7 @@ class _SmoothingState extends State<Smoothing>
               ],
             ),
           ),
-          BackdropFilter(
+          /* BackdropFilter(
             filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
             child: Container(
               color: Color.fromARGB(255, 255, 223, 152)
@@ -120,7 +120,7 @@ class _SmoothingState extends State<Smoothing>
                 ),
               ),
             ),
-          ),
+          ),*/
         ],
       ),
     );

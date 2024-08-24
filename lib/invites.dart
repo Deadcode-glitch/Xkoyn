@@ -150,7 +150,7 @@ class _InvitesState extends State<Invites> with TickerProviderStateMixin {
                       ),
                       const SizedBox(height: 10),
                       const Text(
-                        'Earn up to 0.5 USDT on each succcessful referal you make',
+                        'Earn up to 0.3 USDT on each succcessful referal you make',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           color: Color.fromARGB(255, 201, 201, 201),
@@ -248,7 +248,7 @@ class _InvitesState extends State<Invites> with TickerProviderStateMixin {
               height: 20,
             ),
             const Text(
-              'Earn 0.05 USDT for your direct referrals. Earn up to 15,000 XCOIN & 0.05 USDT for each invite, while your friend receives 30,000!',
+              'Earn 0.03 USDT for your direct referrals. Earn up to 15,000 XKOYN & 0.03 USDT for each invite, while your friend receives 30,000!',
               textAlign: TextAlign.center,
               style: TextStyle(
                   color: Color.fromARGB(255, 228, 228, 228),
