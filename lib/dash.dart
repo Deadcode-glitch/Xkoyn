@@ -3,6 +3,7 @@ import 'package:xcoin/home.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:xcoin/minez.dart';
+import 'package:xcoin/soon.dart';
 import 'package:xcoin/wallet.dart';
 
 class Dashboard2 extends StatefulWidget {
@@ -15,7 +16,7 @@ class Dashboard2 extends StatefulWidget {
 class _Dashboard2State extends State<Dashboard2> {
   final String message = '';
   int myIndex = 0;
-  List<Widget> widgetList = const [Home(), Minez(), Wallet()];
+  List<Widget> widgetList = const [Home(), Soon(), Wallet()];
 
   @override
   Widget build(BuildContext context) {

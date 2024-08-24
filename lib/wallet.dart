@@ -61,7 +61,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
       ),
     );
 
-    _showWelcomeDialog();
+    // _showWelcomeDialog();
 
     fetchUsdtToDollarRate().then((rate) {
       setState(() {

@@ -2,6 +2,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:xcoin/home.dart';
 import 'package:xcoin/minez.dart';
+import 'package:xcoin/soon.dart';
 import 'package:xcoin/upgrades.dart';
 import 'package:xcoin/wallet.dart';
 
@@ -17,7 +18,7 @@ class _DashboardState extends State<Dashboard> {
   int myIndex = 0;
   List<Widget> widgetList = const [
     Home(),
-    Minez(),
+    Soon(),
     Wallet(),
   ];
 
