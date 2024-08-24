@@ -353,3 +353,6 @@ class _KoynState extends State<Koyn> with SingleTickerProviderStateMixin {
     );
   }
 }
+
+
+//You just received 10 USDT for joining. We are giving out 10 USDT to random players who join the XKoyn telegram mini app. You can view your balance in your wallet.',

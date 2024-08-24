@@ -61,7 +61,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
       ),
     );
 
-    //_showWelcomeDialog();
+    _showWelcomeDialog();
 
     fetchUsdtToDollarRate().then((rate) {
       setState(() {
@@ -70,7 +70,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
       });
     });
 
-    //_checkWelcomeDialogStatus();
+    _checkWelcomeDialogStatus();
   }
 
   @override
@@ -233,7 +233,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                         height: 10,
                       ),
                       const Text(
-                        'Congratulations!',
+                        'Welcome!',
                         style: TextStyle(
                           color: Color.fromARGB(255, 255, 255, 255),
                           fontSize: 14,
@@ -243,7 +243,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                       ),
                       const SizedBox(height: 10),
                       const Text(
-                        'You just received 10 USDT for joining. We are giving out 10 USDT to random players who join the XKoyn telegram mini app. You can view your balance in your wallet.',
+                        'Welcome to Xkoyn Tap & earn App - The next gen decentralized app on telegram. Get started to starting mining free \$XKOYN & USDT',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           color: Color.fromARGB(255, 197, 197, 197),
