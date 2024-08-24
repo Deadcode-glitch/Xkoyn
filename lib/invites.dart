@@ -150,7 +150,7 @@ class _InvitesState extends State<Invites> with TickerProviderStateMixin {
                       ),
                       const SizedBox(height: 10),
                       const Text(
-                        'Earn up to 0.3 USDT on each succcessful referal you make',
+                        'Earn up to 0.3 USDT on each succcessful referral you make',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           color: Color.fromARGB(255, 201, 201, 201),
