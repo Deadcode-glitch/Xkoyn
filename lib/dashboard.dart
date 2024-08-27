@@ -18,7 +18,7 @@ class _DashboardState extends State<Dashboard> {
   int myIndex = 0;
   List<Widget> widgetList = const [
     Home(),
-    Soon(),
+    Minez(),
     Wallet(),
   ];
 
