@@ -22,7 +22,7 @@ class _UwalletState extends State<Uwallet> with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _scaleAnimation;
   DateTime currentDate = DateTime.now();
-  double usdtBalance = 0; //change back to 10
+  double usdtBalance = 10; //change back to 10
   double usdtToDollarRate = 1.0; // Default value
   double dollarEquivalent = 0.0;
 
