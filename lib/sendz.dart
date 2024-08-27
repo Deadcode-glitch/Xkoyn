@@ -14,7 +14,7 @@ class Sendz extends StatefulWidget {
 
 class _SendzState extends State<Sendz> with TickerProviderStateMixin {
   TextEditingController _usdtController = TextEditingController();
-  String _dollarEquivalent = "0.00";
+  String _dollarEquivalent = "10";
   double _usdtToUsdRate = 0.0;
   late AnimationController _slideController;
   late Animation<Offset> _offsetAnimation;
