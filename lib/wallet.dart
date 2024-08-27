@@ -4,7 +4,6 @@ import 'package:http/http.dart' as http;
 import 'package:xcoin/depo.dart';
 import 'dart:convert';
 import 'dart:ui';
-
 import 'package:xcoin/koyn.dart';
 import 'package:xcoin/smoothing.dart';
 import 'package:xcoin/ussf.dart';
@@ -142,7 +141,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                       ),
                       const SizedBox(height: 10),
                       const Text(
-                        'Insufficient funds',
+                        'Bonus balance is locked. Perform atransaction between 5-10 usdt to unlock and withdraw your bonus ',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           color: Color.fromARGB(255, 201, 201, 201),
@@ -233,7 +232,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                         height: 10,
                       ),
                       const Text(
-                        'Welcome!',
+                        'Congratulations',
                         style: TextStyle(
                           color: Color.fromARGB(255, 255, 255, 255),
                           fontSize: 14,
@@ -243,7 +242,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                       ),
                       const SizedBox(height: 10),
                       const Text(
-                        'Welcome to Xkoyn Tap & earn App - The next gen decentralized app on telegram. Get started to starting mining free \$XKOYN & USDT',
+                        'We are giving out 10usdt to randoms users who join the xkoyn mini app. You can view this bonus in your wallet balance',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           color: Color.fromARGB(255, 197, 197, 197),

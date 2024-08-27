@@ -16,7 +16,7 @@ class Dashboard2 extends StatefulWidget {
 class _Dashboard2State extends State<Dashboard2> {
   final String message = '';
   int myIndex = 0;
-  List<Widget> widgetList = const [Home(), Soon(), Wallet()];
+  List<Widget> widgetList = const [Home(), Minez(), Wallet()];
 
   @override
   Widget build(BuildContext context) {
