@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:sensors_plus/sensors_plus.dart';
 import 'dart:async';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -106,6 +107,26 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
         counter2 += 0.00004;
         progressCounter -= 1;
         progressValue = progressCounter / 200;
+
+        // Use .set() to create or update the document in Firestore
+        FirebaseFirestore.instance
+            .collection('yourCollectionName')
+            .doc('yourDocumentId')
+            .set(
+                {
+              'counter1': counter1,
+              'counter2': counter2,
+              'progressCounter': progressCounter,
+              'progressValue': progressValue,
+            },
+                SetOptions(
+                    merge:
+                        true)) // Merge: true ensures it updates existing fields, or creates new ones.
+            .then((_) {
+          print("Values updated successfully in Firestore");
+        }).catchError((error) {
+          print("Failed to update Firestore: $error");
+        });
 
         if (progressCounter == 0) {
           startIncrementing();
