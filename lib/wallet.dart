@@ -10,6 +10,7 @@ import 'package:xcoin/smoothing.dart';
 import 'package:xcoin/ussf.dart';
 import 'package:xcoin/uwallet.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:xcoin/uwallet2.dart';
 
 import 'faqs2.dart';
 
@@ -471,7 +472,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const Faqs2(),
+                          builder: (context) => const Uwallet2(),
                         ),
                       );
                     },
