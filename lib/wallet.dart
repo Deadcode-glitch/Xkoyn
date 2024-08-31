@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:http/http.dart' as http;
 import 'package:xcoin/depo.dart';
+import 'package:xcoin/faqs.dart';
 import 'dart:convert';
 import 'dart:ui';
 import 'package:xcoin/koyn.dart';
@@ -468,7 +469,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const Smoothing(),
+                          builder: (context) => const Faqs(),
                         ),
                       );
                     },
