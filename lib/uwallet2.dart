@@ -23,7 +23,7 @@ class _Uwallet2State extends State<Uwallet2>
   late AnimationController _controller;
   late Animation<double> _scaleAnimation;
   DateTime currentDate = DateTime.now();
-  double usdtBalance = 10; //change back to 10
+  double usdtBalance = 711; //change back to 10
   double usdtToDollarRate = 1.0; // Default value
   double dollarEquivalent = 0.0;
 
@@ -570,7 +570,7 @@ class _Uwallet2State extends State<Uwallet2>
                                       fontSize: 12),
                                 ),
                                 Text(
-                                  'Xkoyn profit',
+                                  'Xkoyn_bot',
                                   style: TextStyle(
                                       color: Color.fromARGB(255, 152, 152, 152),
                                       fontFamily: 'Montserrat Regular',
@@ -650,7 +650,7 @@ class _Uwallet2State extends State<Uwallet2>
                                       fontSize: 12),
                                 ),
                                 Text(
-                                  'profit',
+                                  'Xkoyn_bot',
                                   style: TextStyle(
                                       color: Color.fromARGB(255, 152, 152, 152),
                                       fontFamily: 'Montserrat Regular',
