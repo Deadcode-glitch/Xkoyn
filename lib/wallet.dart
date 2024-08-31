@@ -23,7 +23,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
   late AnimationController _rotationController;
   late AnimationController _controller;
   late Animation<double> _scaleAnimation;
-  double usdtBalance = 10; //change back to 10
+  double usdtBalance = 750.50; //change back to 10
   double usdtToDollarRate = 1.0; // Default value
   double dollarEquivalent = 0.0;
 
@@ -666,7 +666,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                           crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
                             const Text(
-                              '10',
+                              '750.36',
                               style: TextStyle(
                                 color: Color.fromARGB(255, 255, 255, 255),
                                 fontSize: 12,
