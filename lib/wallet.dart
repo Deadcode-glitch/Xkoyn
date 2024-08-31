@@ -11,6 +11,8 @@ import 'package:xcoin/ussf.dart';
 import 'package:xcoin/uwallet.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'faqs2.dart';
+
 class Wallet extends StatefulWidget {
   const Wallet({Key? key}) : super(key: key);
 
@@ -469,7 +471,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const Faqs(),
+                          builder: (context) => const Faqs2(),
                         ),
                       );
                     },
