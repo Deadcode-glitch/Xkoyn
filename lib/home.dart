@@ -3,6 +3,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:sensors_plus/sensors_plus.dart';
 import 'dart:async';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:xcoin/faqs2.dart';
 import 'package:xcoin/invites.dart';
 import 'dart:ui';
 
@@ -561,6 +563,75 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                 ),
                 const SizedBox(
                   height: 20,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      children: [
+                        GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const Faqs2(),
+                                ),
+                              );
+                            },
+                            child: Container(
+                                padding: const EdgeInsets.all(4),
+                                decoration: BoxDecoration(
+                                    color: Color.fromARGB(255, 36, 38, 55),
+                                    borderRadius: BorderRadius.circular(50)),
+                                child: const Icon(
+                                  Icons.question_answer,
+                                  color: Colors.white,
+                                  size: 14,
+                                ))),
+                        const SizedBox(
+                          height: 4,
+                        ),
+                        const Text(
+                          'FAQS',
+                          style: TextStyle(
+                              color: Color.fromARGB(255, 233, 233, 233),
+                              fontSize: 8),
+                        )
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        GestureDetector(
+                            onTap: () async {
+                              const url = 'https://t.me/xkoyn_channel';
+                              if (await canLaunch(url)) {
+                                await launch(url);
+                              } else {
+                                throw 'Could not launch $url';
+                              }
+                            },
+                            child: Container(
+                                padding: const EdgeInsets.all(4),
+                                decoration: BoxDecoration(
+                                    color: Color.fromARGB(255, 36, 38, 55),
+                                    borderRadius: BorderRadius.circular(50)),
+                                child: const Icon(
+                                  Icons.headphones,
+                                  color: Colors.white,
+                                  size: 14,
+                                ))),
+                        const SizedBox(
+                          height: 4,
+                        ),
+                        const Text(
+                          'Support',
+                          style: TextStyle(
+                              color: Color.fromARGB(255, 233, 233, 233),
+                              fontSize: 8),
+                        )
+                      ],
+                    )
+                  ],
                 ),
                 Row(
                   children: [

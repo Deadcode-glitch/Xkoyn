@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences_web/shared_preferences_web.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:xcoin/dashboard.dart';
+import 'package:xcoin/faqs2.dart';
 import 'dart:js' as js;
 
 import 'package:xcoin/firstscreen.dart';
+import 'package:xcoin/home.dart';
 import 'package:xcoin/minez.dart';
 import 'package:xcoin/tester.dart';
 import 'package:xcoin/ussf.dart';

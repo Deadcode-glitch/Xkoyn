@@ -93,7 +93,7 @@ class _Faqs2State extends State<Faqs2> {
                           height: 10,
                         ),
                         Text(
-                          'Xkoyn is an innovative project introducing a refreshed Tap-to-Earn feature on TON, tailored for the crypto community. With this platform, you can tap to receive USDT, a widely-used stablecoin that can be easily withdrawn, as well as xUSD, the project\'s own token that grants eligibility for airdrops. The app will soon be available not just on TON but also across various other networks.',
+                          'Xkoyn is an innovative project introducing a refreshed Tap-to-Earn feature on TON, tailored for the crypto community. With this platform, you can tap to receive USDT, a widely-used stablecoin that can be easily withdrawn, as well as xkoyn(xcoin), the project\'s own token that grants eligibility for airdrops. The app will soon be available not just on TON but also across various other networks.',
                           style: TextStyle(
                               fontSize: 12,
                               color: Color.fromARGB(255, 159, 159, 159),
@@ -165,6 +165,73 @@ class _Faqs2State extends State<Faqs2> {
                         ),
                       ],
                     ),
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  Container(
+                    width: MediaQuery.of(context).size.width,
+                    padding: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: Color(0xFF232532)),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: const [
+                        Text(
+                          'How to purchase a plan ? ',
+                          style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w600,
+                              color: Colors.white),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          'To upgrade or purchase a plan, navigate to the "upgrades" section and choose your desired plan. Then click on the confirm button in the pop up dialog to confirm your purchase. To make your pruchase successful, you need to transfer to your xkoyn usdt wallet before purchasing the upgrade',
+                          style: TextStyle(
+                              fontSize: 12,
+                              color: Color.fromARGB(255, 159, 159, 159),
+                              fontWeight: FontWeight.w300),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Container(
+                    width: MediaQuery.of(context).size.width,
+                    padding: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: Color(0xFF232532)),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: const [
+                        Text(
+                          'How to Withdraw funds ? ',
+                          style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w600,
+                              color: Colors.white),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          'Go to the wallet section of the app and click on the withdraw button to navigate to the withdrawal page where you can withdraw you funds',
+                          style: TextStyle(
+                              fontSize: 12,
+                              color: Color.fromARGB(255, 159, 159, 159),
+                              fontWeight: FontWeight.w300),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 20,
                   ),
                 ],
               ),
