@@ -58,6 +58,7 @@ class _Faqs2State extends State<Faqs2> {
                         'FAQS ',
                         style: TextStyle(
                             fontSize: 20,
+                            fontFamily: 'Montserrat Bold',
                             fontWeight: FontWeight.w600,
                             color: Colors.white),
                       ),
@@ -65,6 +66,7 @@ class _Faqs2State extends State<Faqs2> {
                         'Frequently asked questions ',
                         style: TextStyle(
                             fontSize: 12,
+                            fontFamily: 'Montserrat Regular',
                             color: Color.fromARGB(255, 159, 159, 159),
                             fontWeight: FontWeight.w300),
                       ),
