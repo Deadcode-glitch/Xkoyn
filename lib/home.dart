@@ -579,14 +579,14 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                               );
                             },
                             child: Container(
-                                padding: const EdgeInsets.all(4),
+                                padding: const EdgeInsets.all(6),
                                 decoration: BoxDecoration(
                                     color: Color.fromARGB(255, 36, 38, 55),
                                     borderRadius: BorderRadius.circular(50)),
                                 child: const Icon(
                                   Icons.question_answer,
                                   color: Colors.white,
-                                  size: 14,
+                                  size: 18,
                                 ))),
                         const SizedBox(
                           height: 4,
@@ -595,6 +595,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                           'FAQS',
                           style: TextStyle(
                               color: Color.fromARGB(255, 233, 233, 233),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 8),
                         )
                       ],
@@ -611,14 +612,14 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                               }
                             },
                             child: Container(
-                                padding: const EdgeInsets.all(4),
+                                padding: const EdgeInsets.all(6),
                                 decoration: BoxDecoration(
                                     color: Color.fromARGB(255, 36, 38, 55),
                                     borderRadius: BorderRadius.circular(50)),
                                 child: const Icon(
                                   Icons.headphones,
                                   color: Colors.white,
-                                  size: 14,
+                                  size: 18,
                                 ))),
                         const SizedBox(
                           height: 4,
@@ -627,11 +628,15 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                           'Support',
                           style: TextStyle(
                               color: Color.fromARGB(255, 233, 233, 233),
+                              fontFamily: 'Montserrat Regular',
                               fontSize: 8),
                         )
                       ],
                     )
                   ],
+                ),
+                const SizedBox(
+                  height: 10,
                 ),
                 Row(
                   children: [
@@ -675,7 +680,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             '$progressCounter / 200',
                             style: const TextStyle(
                                 color: Color.fromARGB(255, 255, 255, 255),
-                                //fontFamily: 'Montserrat Regular',
+                                fontFamily: 'Montserrat Bold',
                                 fontWeight: FontWeight.w700,
                                 fontSize: 12),
                           ),
