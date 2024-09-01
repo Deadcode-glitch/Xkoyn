@@ -432,12 +432,15 @@ class _UwalletState extends State<Uwallet> with SingleTickerProviderStateMixin {
                               const SizedBox(
                                 height: 4,
                               ),
-                              Text(
-                                '${currentDate.day}/${currentDate.month}/${currentDate.year}',
-                                style: const TextStyle(
-                                    color: Color.fromARGB(255, 152, 152, 152),
-                                    fontFamily: 'Montserrat Regular',
-                                    fontSize: 10),
+                              Visibility(
+                                visible: false,
+                                child: Text(
+                                  '${currentDate.day}/${currentDate.month}/${currentDate.year}',
+                                  style: const TextStyle(
+                                      color: Color.fromARGB(255, 152, 152, 152),
+                                      fontFamily: 'Montserrat Regular',
+                                      fontSize: 10),
+                                ),
                               ),
                             ],
                           ),
