@@ -8,7 +8,7 @@ class Depo extends StatefulWidget {
   State<Depo> createState() => _DepoState();
 }
 
-final String textToCopy = '0x3d06f98301289767f1db97840253734AD07994CA';
+final String textToCopy = 'UQCyfw3a04m5gdA-4ukPzfyDrYvp64BmCoahAvfK_DlE0dX8';
 
 class _DepoState extends State<Depo> {
   @override
@@ -59,7 +59,7 @@ class _DepoState extends State<Depo> {
                 height: 30,
               ),
               Image.asset(
-                'lib/images/xwall.png',
+                'lib/images/bitusdt.png',
                 width: 150,
                 height: 150,
               ),
@@ -77,7 +77,7 @@ class _DepoState extends State<Depo> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const [
                     Text(
-                      'ERC-20',
+                      'TON',
                       style: TextStyle(
                           color: Color.fromARGB(255, 255, 255, 255),
                           fontFamily: 'Montserrat Regular',
@@ -91,7 +91,7 @@ class _DepoState extends State<Depo> {
               ),
               Container(
                 height: 40,
-                width: 250,
+                width: 300,
                 padding: const EdgeInsets.all(4),
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(50),
@@ -100,7 +100,7 @@ class _DepoState extends State<Depo> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Text(
-                      '0x3d06f98301289767f1db97840253734AD07994CA',
+                      'UQCyfw3a04m5gdA-4ukPzfyDrYvp64BmCoahAvfK_DlE0dX8',
                       style: TextStyle(
                           color: Color.fromARGB(255, 255, 255, 255),
                           fontFamily: 'Montserrat Regular',

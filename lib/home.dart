@@ -111,7 +111,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
         progressValue = progressCounter / 200;
 
         // Use .set() to create or update the document in Firestore
-        FirebaseFirestore.instance
+        /*  FirebaseFirestore.instance
             .collection('yourCollectionName')
             .doc('yourDocumentId')
             .set(
@@ -128,7 +128,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
           print("Values updated successfully in Firestore");
         }).catchError((error) {
           print("Failed to update Firestore: $error");
-        });
+        }); */
 
         if (progressCounter == 0) {
           startIncrementing();

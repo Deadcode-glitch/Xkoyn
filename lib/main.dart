@@ -15,10 +15,10 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
       options: const FirebaseOptions(
-          apiKey: "AIzaSyB5Nj3k3kPtjLhp5991731ZAFr-g408JQ0",
-          appId: "1:153612046895:web:3ef7e0ea71183cb3e92cda",
-          messagingSenderId: "153612046895",
-          projectId: "pocket-4c593"));
+          apiKey: "AIzaSyBIJKH8YRLEZswvNihme6ZP7ovliOKnZi8",
+          appId: "1:142122818916:web:1433e233cb73aa6b9cae71",
+          messagingSenderId: "142122818916",
+          projectId: "xkoyn-app"));
   runApp(const MyApp());
 }
 
