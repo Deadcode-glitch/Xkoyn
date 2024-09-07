@@ -146,7 +146,7 @@ class _WalletState extends State<Wallet> with TickerProviderStateMixin {
                       ),
                       const SizedBox(height: 10),
                       const Text(
-                        'Bonus balance is locked. Perform any transaction between 5-10 usdt to unlock and withdraw your bonus ',
+                        'Bonus balance is locked. Perform any transaction between 5-10 usdt to unlock your balance',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           color: Color.fromARGB(255, 201, 201, 201),

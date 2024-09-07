@@ -8,6 +8,7 @@ import 'dart:js' as js;
 import 'package:xcoin/firstscreen.dart';
 import 'package:xcoin/home.dart';
 import 'package:xcoin/minez.dart';
+import 'package:xcoin/task.dart';
 import 'package:xcoin/tester.dart';
 import 'package:xcoin/ussf.dart';
 
